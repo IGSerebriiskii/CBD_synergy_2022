@@ -1,0 +1,374 @@
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,162974,151675,130688,133368,130282,136943,144520,151692,136784,127301,114851,31501,
+B,163485,146997,59805,110133,103836,107738,70022,89312,130434,53974,65792,30907,
+C,165291,151924,146800,90587,103032,130884,139036,145283,133264,135671,119147,31896,
+D,162057,152403,160040,71409,135548,133016,155867,120648,123332,165630,117159,31870,
+E,39375,163060,112723,116788,109594,38257,137366,136372,98474,56068,138049,141856,
+F,38057,148051,127407,142272,112396,121923,89516,121769,131343,116542,101796,133493,
+G,34553,146056,113590,105180,119086,57615,144424,150804,113963,138166,134920,123166,
+H,35870,142943,114263,106208,125025,99920,125159,121895,145727,73243,110703,136080,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+1,1,,14.78,23.73,23.73,16.2,15.9,23.44,23.54,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 1:57:09 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+1,Tim_CTB,0,1063,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,139602,133910,135487,135928,146639,151838,152785,164066,148195,130075,121651,32485,
+B,127868,129484,73773,108397,109084,109290,74335,87350,135808,57792,73736,31678,
+C,139429,146165,152628,95264,105072,119417,150237,162672,148618,140144,112994,32133,
+D,143365,137199,156969,80624,134159,134579,160991,134189,125400,180813,116444,31894,
+E,39332,143414,106845,113981,109682,30425,146773,144204,114738,57623,139719,135885,
+F,33945,136559,136339,135490,110082,125384,101506,141642,146431,116933,113171,135539,
+G,34529,142281,111550,94916,121888,64631,137405,158383,112220,134286,139221,143412,
+H,31166,125104,116724,107201,120191,89714,124500,119660,126784,69490,118114,139036,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+2,1,,14.78,23.73,23.73,15.4,15.5,23.54,23.54,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 1:57:51 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+2,Tim_CTB,0,1146,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,117725,87502,168674,126024,122745,114332,129548,120961,113984,145913,125071,31551,
+B,102670,86276,71538,86714,93592,78252,58317,85329,70350,69320,82946,31535,
+C,117126,89915,209814,74797,92507,95982,111115,157447,151590,150131,123543,31701,
+D,109819,92720,184645,71192,113716,98933,151746,142558,130491,165191,115603,32357,
+E,35277,83612,122105,95703,118629,30268,140324,159556,109766,57449,129873,122568,
+F,31538,74153,152985,111487,96654,97214,93907,140782,135782,105243,94183,120510,
+G,31055,80584,137027,87692,99593,49567,137278,149675,111966,124525,114072,123254,
+H,30155,77961,125596,91551,86804,70641,115680,113969,127475,57403,103943,120266,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+3,1,,14.78,23.73,23.73,15.4,15.5,23.64,23.64,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 1:58:39 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+3,Tim_CTB,0,1115,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,154760,157487,149086,163085,151958,150417,149811,160512,157134,153235,150783,33617,
+B,134954,142209,76724,128746,131646,130669,140361,139109,134521,69020,83121,32648,
+C,149684,150663,149551,101568,106915,130397,154965,162447,160712,154913,132913,32713,
+D,149643,138252,151167,91026,152451,145264,166365,159063,141163,166819,139723,34657,
+E,39174,146016,152931,135475,115355,158835,165338,152185,134676,59086,149738,151192,
+F,36258,145151,143971,152392,145218,147966,137543,136336,153906,145176,122367,150349,
+G,35980,146600,139698,138368,135562,94733,158387,153065,129973,147921,145436,148408,
+H,32508,137423,142783,131832,143430,123027,143524,142922,154460,82526,141890,151763,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+4,1,,14.78,23.73,23.75,15.4,15.4,23.54,23.56,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 1:59:18 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+4,Tim_CTB,0,1086,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,149824,151804,149226,151126,150674,146519,147143,151978,153031,151518,145169,32373,
+B,141721,142094,77334,127706,138095,136361,149346,144878,140674,79468,86464,31968,
+C,147499,152988,140564,94791,100465,127997,159063,158366,147109,152926,127291,33020,
+D,138632,137135,147553,89689,140400,141139,153643,148984,137601,164206,142539,33467,
+E,37591,147793,146364,137028,107971,141952,146270,156940,132216,57595,157962,158232,
+F,33915,142277,129084,130109,133523,134331,137878,134248,148965,137501,135793,159612,
+G,37617,149260,136746,131631,129015,93818,146036,152040,131281,144727,145561,147655,
+H,31802,134058,139109,125868,130641,124112,134667,146658,149679,81544,136761,152305,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+5,1,,14.78,23.83,23.85,15.1,15.4,23.44,23.56,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 1:59:56 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+5,Tim_CTB,0,1130,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,151225,143343,141216,133978,140369,143289,141493,146769,147201,147782,132144,33545,
+B,140282,140179,75278,133300,144070,122205,142514,138151,130433,80975,84340,32440,
+C,143849,149026,148529,95909,102778,118510,148105,139338,152283,141779,122663,33103,
+D,140593,143973,147493,92576,130648,130402,143864,141183,134718,151357,135599,34032,
+E,38114,152013,141218,140483,110162,148823,143948,136208,128303,59389,142949,146938,
+F,34946,140671,134814,128680,133525,138916,133447,133788,140829,143098,131425,140189,
+G,39772,141938,146391,135686,134868,95824,150655,142504,125419,134245,135357,144052,
+H,33042,136263,136728,126208,132160,120467,139791,138105,149951,82830,137570,144216,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+6,1,,14.78,23.83,23.83,15.2,15.2,23.64,23.64,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:00:40 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+6,Tim_CTB,0,1106,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,142915,177709,151375,165465,162668,173951,159018,170120,178767,154298,139830,33139,
+B,139129,168649,67207,135283,126921,122039,91182,94940,153457,63301,65638,31712,
+C,149509,163673,173428,120023,112950,149763,174465,175573,167877,171902,153557,33503,
+D,139825,162257,171584,86595,156040,152403,184833,144318,174664,214999,156128,33400,
+E,36158,166565,132577,139396,128939,30842,162564,148515,125332,63672,166027,152122,
+F,32665,157199,143212,158625,125747,157483,114190,160433,171654,141224,135838,141503,
+G,32157,159133,130084,126395,153852,71387,173155,171824,161059,170340,155020,147093,
+H,30133,133334,121287,122664,130246,114525,162327,167394,182359,83236,159114,144418,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+7,1,,14.78,23.83,23.85,15.1,15.1,23.73,23.66,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:01:20 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+7,Tim_CTB,0,1112,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,145780,166496,160265,169032,170052,172495,166557,168865,173420,157949,145240,32076,
+B,144354,160755,70618,136111,127460,129027,88788,96934,166917,63343,67779,31549,
+C,144085,163767,159705,120712,118421,153295,183516,187952,184127,176802,152985,32941,
+D,142134,164985,174861,89208,152152,166759,200502,153151,175070,217102,162406,33563,
+E,38101,164348,127321,137020,138861,30782,162880,169205,131775,67661,178313,150303,
+F,33579,154628,141733,156744,131317,175697,128518,156921,181329,148840,132301,154203,
+G,33230,154864,123270,128502,160070,70313,187509,192363,173589,175382,157245,149293,
+H,32169,129231,124629,127362,138929,123639,165554,181789,194910,85746,150706,146425,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+8,1,,14.78,23.83,23.85,14.6,15.7,23.54,23.85,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:02:17 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+8,Tim_CTB,0,1047,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,133839,162925,165383,156965,166438,161899,161415,197943,180085,165713,150511,32511,
+B,135809,153581,65750,124052,129783,111636,85460,99860,160160,63700,73405,31509,
+C,147228,168375,183830,111236,111301,138271,157257,198024,185859,185722,161113,32329,
+D,136686,158826,188660,81464,156167,147852,193331,154125,185422,228312,156049,32804,
+E,39505,170288,128232,140527,142802,29829,155649,160973,131684,62696,167218,141625,
+F,34291,150395,147421,165836,131409,149362,117069,154903,138915,126425,124123,123413,
+G,33848,157741,141259,123039,144248,63397,179579,163593,151851,152607,122903,112028,
+H,31237,147604,138411,123181,118506,118269,139848,131559,129962,63695,106921,125894,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+9,1,,14.78,23.83,23.95,15.4,15.4,23.83,23.75,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:02:58 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+9,Tim_CTB,0,934,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,152164,163901,176559,181964,187532,178557,182516,187862,178451,182123,172326,32864,
+B,137902,182647,82283,164260,162588,152154,177420,166743,163000,108633,82239,32337,
+C,151895,179845,180988,121922,122277,149191,194139,187690,202043,178062,139152,32436,
+D,150087,178626,188333,114123,167390,172940,163638,157034,135196,166825,138760,33878,
+E,36638,171853,182005,179120,131274,146072,162119,157068,115066,60440,171535,150377,
+F,38344,162607,170277,159661,152026,154572,142616,111500,136035,134075,126329,138839,
+G,36370,164596,164088,154038,153522,108530,159338,138167,138224,151481,168708,144976,
+H,31692,165226,167106,145589,151464,126336,152434,145648,139977,73984,144794,135376,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+10,1,,14.78,23.93,23.93,15.4,15.2,23.73,23.73,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:03:39 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+10,Tim_CTB,0,1042,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,150829,183227,167463,176344,181271,175591,174873,179091,170262,181638,164718,32088,
+B,140069,179232,75138,166600,166228,157526,184095,174746,163377,101199,81549,32551,
+C,152744,182239,176006,127207,135024,151681,183807,186238,185104,188265,147782,32635,
+D,147308,171832,185356,102484,177470,191512,193687,180162,182373,196145,172926,33392,
+E,39298,176712,172542,165370,129722,174233,177410,181176,149276,70126,173528,150045,
+F,33663,157925,166224,153428,132297,120419,139792,147548,144364,141269,136245,147983,
+G,36468,166964,164683,139079,130917,93472,153910,148871,153695,160919,166008,150504,
+H,32864,158992,151200,141804,130576,89243,147033,136925,138542,79229,144462,144482,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+11,1,,14.78,23.93,23.93,15.1,15.1,23.64,23.54,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:04:20 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+11,Tim_CTB,0,1133,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+Results for Tim_CTB(1) - channel 1 (RFU)
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,132672,151767,148057,153417,152861,153204,156584,160970,160068,154113,146153,31135,
+B,127364,143738,76140,124763,130192,144343,140212,130520,138707,91553,73771,31910,
+C,125453,164304,151912,101975,93519,137951,147416,151210,162242,161155,138655,33035,
+D,128743,143749,129372,80087,134258,138159,142812,144909,155915,177125,152929,33148,
+E,35707,144944,113289,111647,101007,139861,158922,159150,137876,62689,163576,135002,
+F,35028,136894,120675,116353,112323,131201,151673,138727,149041,153431,139006,142410,
+G,34488,149689,137789,128491,127668,86948,159590,165369,166202,168167,158955,144260,
+H,31758,133168,137665,111774,114252,97168,143079,150629,163199,81458,145711,137365,
+
+Plate information 
+Plate,Repeat,Barcode,Measured height,Inside temperature at start,Inside temperature at end,Humidity at start,Humidity at end,Ambient temperature at start,Ambient temperature at end,Group,Label,ScanX,ScanY,Measinfo,Kinetics,Measurement date,
+12,1,,14.78,23.93,23.93,15.1,15.1,23.64,23.54,1,Tim_CTB(1),0,0,De=1st Ex=Top Em=Top Wdw=N/A (14),0,11/21/2022 2:05:01 PM,
+
+Background information
+Plate,Label,Result,Signal,Flashes/Time,Meastime,MeasInfo,
+12,Tim_CTB,0,1059,1,00:00:00.000,De=1st Ex=Top Em=Top Wdw=N/A (14),
+
+
+Basic assay information 
+Assay ID: ,,,,24220
+Assay Started: ,,,,11/21/2022 1:56:47 PM
+Assay Finished: ,,,,11/21/2022 2:05:20 PM
+Assay Exported: ,,,,11/21/2022 2:07:25 PM
+Protocol ID: ,,,,100568
+Protocol Name: ,,,,Copy of 96well-CTB_Tim
+Serial#: ,,,,="1020141"
+
+
+
+Protocol information
+Protocol:
+Protocol name,,,,Copy of 96well-CTB_Tim
+Number of assay repeats,,,,1
+Start assay repeat each,,,,N/A
+Number of plate repeats,,,,1
+Start plate repeat each,,,,N/A
+Is label meas. height used,,,,Yes
+Height of measurement,,,,Defined in label
+Is gripper height used,,,,No
+Mode of measurement,,,,By Rows  bi-directional
+Rotated plate,,,,No
+Soft move,,,,No
+Protocol notes,,,, 
+
+Plate type:
+Name of the plate type,,,,96 General
+Number of rows,,,,8
+Number of columns,,,,12
+Number of the wells in the plate,,,,96
+Height of the plate,,,,14.35 mm
+
+Coordinates of corners:
+96 General + Tim_CTB
+14.38 mm x------------------------------------------------------ x 113.38 mm
+11.24 mm                                                           11.24 mm
+
+14.38 mm x------------------------------------------------------ x 113.38 mm
+74.24 mm                                                           74.24 mm
+
+Platemap:
+Plate,,,,1
+Group,,,,1
+
+,01,02,03,04,05,06,07,08,09,10,11,12,
+A,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+B,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+C,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+D,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+E,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+F,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+G,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+H,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- ,- 
+
+ - - Undefined
+
+Calculations:
+No calculations.
+
+Auto export parameters:
+Export format,,,,Plate2
+Include basic assay information,,,,Yes
+Place assay information at,,,,End of file
+Include basic plate information,,,,Yes
+Place plate information at,,,,Beginning of plate
+Include protocol information,,,,Yes
+Protocol info level,,,,Large
+Include error and warning information,,,,Yes
+Include background information,,,,Yes
+Add plate number to the file name,,,,Yes
+Each plate to separate file,,,,No
+Field separator to use,,,,System
+File name format,,,,<DefaultDataFolder>\<Date>\<ProtocolName>_<AssayID>.csv
+
+Operations:
+Plate 1
+  Group 1
+    Measurement
+      Label,,,,Tim_CTB(1)
+
+Labels:
+Tim_CTB,,,,4000137
+Top mirror,,,,General
+Bottom mirror,,,,N/A
+Exc. filter,,,,Photometric 530
+Using of excitation filter,,,,Top
+2nd exc. filter,,,,N/A
+Using of 2nd excitation filter,,,,Top
+Ems. filter,,,,Photometric 590
+2nd ems. filter,,,,N/A
+Measurement height,,,,6.5 mm
+Number of flashes,,,,1
+Number of flashes integrated,,,,1
+PMT gain,,,,1
+Excitation light,,,,100%
+Reference excitation light,,,,100%
+Emission light,,,,100%
+Reference AD gain,,,,4
+Reference signal,,,,383728
+Last edited,,,,2/11/2019 10:20:00 AM
+Last edited by,,,,EnVision
+Factory preset,,,,No
+
+Filters:
+Photometric 530,,,,310
+Filter type,,,,Excitation
+Description,,,,P530 CWL=530nm BW=8nm Tmin=55%
+Used with,,,,Absorbance DELFIA - Time-resolved Fluorescence Fluorescence Intensity Fluorescence Polarization LANCE - Time-resolved Fluorescence
+Last edited,,,,8/19/2014 4:24:21 PM
+Last edited by,,,,Installation
+Factory preset,,,,Yes
+
+Photometric 590,,,,314
+Filter type,,,,Excitation
+Description,,,,P590 CWL=590nm BW=8nm Tmin=40%
+Used with,,,,Absorbance DELFIA - Time-resolved Fluorescence Fluorescence Intensity Fluorescence Polarization LANCE - Time-resolved FluorescenceAbsorbance DELFIA - Time-resolved Fluorescence Fluorescence Intensity Fluorescence Polarization LANCE - Time-resolved Fluorescence
+Last edited,,,,8/19/2014 4:24:21 PM
+Last edited by,,,,Installation
+Factory preset,,,,Yes
+
+Mirror modules:
+General,,,,401
+Used by,,,,Top
+Dual,,,,No
+Bias,,,,No
+Description,,,,BS50
+Used with,,,,Luminescence DELFIA - Time-resolved Fluorescence Fluorescence Intensity Fluorescence Polarization LANCE - Time-resolved Fluorescence
+Last edited,,,,8/19/2014 4:24:21 PM
+Last edited by,,,,Installation
+Factory preset,,,,Yes
+
+Instrument:
+Serial number,,,,1020141
+Nickname,,,,EnVision
+
+
+
+
+Assay notifications:
+INFO: Assay aborted at plate 12  plate repeat 1 and well H01. There may be missing results
+
+
+
+Exported with EnVision Workstation version 1.13.3009.1409
