@@ -1,4 +1,5 @@
 setwd("~/Work/CBD_synergy_2022")
+setwd("~/Work/Flavi CBD screen/CBD_synergy_2022") # at work desktop!!!
 library(tidyverse)
 library(readxl)
 library(pheatmap)
@@ -23,6 +24,7 @@ fadu_staur_wells1 = c(paste0(LETTERS[5:8],"01"))
 fadu_staur_wells2 = c(paste0(LETTERS[1:4],12))
 fadu_dmso_wells = c(fadu_dmso_wells1,fadu_dmso_wells2)
 fadu_staur_wells = c(fadu_staur_wells1,fadu_staur_wells2)
+fadu_cbd_wells = c(paste0(LETTERS[1:5],"02"))
 
 
 fadu_data_mean = fadu_data %>% group_by(Well,cbd,comp) %>% 
@@ -91,6 +93,7 @@ fadu_data_by_cbd_plot = fadu_data_mean %>%
 fadu_data_by_cbd_plot = fadu_data_by_cbd_plot %>% 
   mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
                                 Well %in% fadu_staur_wells ~ "PC",
+                                Well %in% fadu_cbd_wells ~ "cbd",
                                 TRUE ~ "test_compounds"))
 
 fadu_data_by_cbd_plot %>% filter(comp == 2)  %>% 
@@ -111,6 +114,14 @@ fadu_data_by_cbd_plot %>% filter(comp == 200)  %>%
 
 ggsave("control vs cbd run1 conc200 detailed with errorbars.png")
 
+controls_trend_data = fadu_data_by_cbd_plot %>% filter(well_type != "test_compounds") %>% 
+          mutate(ratio = Avg_cbd/Avg_control) %>% 
+          arrange(desc(comp),well_type)
+controls_trend_data %>% write_csv("controls_trend_data.csv")
+
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#  end of Nov 2022 section
 # - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 ggplot(fadu_data, aes(x = V_pl_1)) +
