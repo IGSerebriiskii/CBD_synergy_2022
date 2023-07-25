@@ -370,3 +370,23 @@ fadu_data_normalized_controls_run3 %>% ggplot(aes(x = Avg_control_2000, y = Avg_
   geom_errorbarh(aes(xmin = Avg_control_2000 - SD_control_2000, xmax = Avg_control_2000 + SD_control_2000), height = 0.1) +
   coord_cartesian(xlim = c(0,1.5),ylim = c(0,1.5))
 ggsave("run3 2000 vs 5000.png") 
+
+
+matrix(filter(fadu_data,Plate == 16)$Signal,8,12, byrow = T) %>% 
+pheatmap(cluster_rows = F,cluster_cols = F, breaks = seq(30000, 150000, length.out = 100),  
+         cellwidth = 15, cellheight = 15, fontsize = 8,  
+         filename = "FADU run3 cbd plate16.pdf")
+
+fadu_data_annotated %>% filter(Plate == 16, well_type != "test_compounds") %>% 
+  ggplot(aes(x = as.factor(well_type),y = Signal)) + geom_dotplot()
+fadu_data_annotated %>% filter(Plate == 16, well_type != "test_compounds") %>% 
+  ggplot(aes(x = as.factor(well_type),y = Signal)) + geom_boxplot()
+ggsave("run3 plate16 controls boxplot.png")
+fadu_data_annotated %>% filter(Plate == 16, well_type != "test_compounds") %>% 
+  ggplot(aes(x = well_type,y = Signal,color = well_type)) + geom_point()
+ggsave("run3 plate16 controls dotplot.png")
+
+matrix(filter(fadu_data,Plate == 16)$Signal,8,12, byrow = T) %>% 
+  pheatmap(cluster_rows = F,cluster_cols = F, breaks = seq(15000, 75000, length.out = 100),  
+           cellwidth = 15, cellheight = 15, fontsize = 8,  
+           filename = "FADU run3 cbd plate16 nucl area.pdf")
