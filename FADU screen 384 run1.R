@@ -8,6 +8,9 @@ plate_controls = read_excel("plate384_controls.xlsx")
 
 fadu_data = read_excel("plate_map_1_1.xlsx",
                        na = "NA")
+fadu_drug_map = read_excel("plate_map_1_drugs.xlsx",
+                       na = "NA")
+
 fadu_data_m = matrix(fadu_data$signal,16,24, byrow = T)
 pheatmap(fadu_data_m,cluster_rows = F,cluster_cols = F)
 fadu_data$groups %>% unique()
@@ -37,7 +40,34 @@ fadu_data2  = fadu_data  %>%  mutate(kind = case_when(fadu_data$groups == "DMSO 
 fadu_data3 = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data2)
 colnames(fadu_data3) = c("row","col",colnames(fadu_data2))
 fadu_data3 = fadu_data3 %>% mutate(signal2 = ifelse(kind_code >1, NA,signal))
+fadu_data3 %>% left_join(fadu_drug_map)   %>%  mutate(drugs = case_when(fadu_data3$groups == "DMSO + dmso" ~ "bckg",
+                                                                       fadu_data3$groups == "STAUR + dmso" ~ "staur",
+                                                                       fadu_data3$groups == "dmso wellmate only/unpinned" ~ "dmso",
+                                                                       fadu_data3$groups == "library 0.2µM + dmso wellmate" ~ "lib",
+                                                                       fadu_data3$groups == "library + dmso" ~ "lib"))
+# it works
+fadu_data3_ann = fadu_data3 %>% left_join(fadu_drug_map)   %>%  mutate(drugs = case_when(drugs == "DMSO + dmso" ~ "bckg",
+                                                                        drugs == "STAUR + dmso" ~ "staur",
+                                                                        drugs == "dmso wellmate only/unpinned" ~ "dmso",
+                                                                        TRUE ~ drugs))
 
+
+fadu_data3_ann %>% group_by(drugs) %>% 
+          summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
+
+
+fadu_data3_ann %>% select(row,col, well,drugs) %>% arrange(drugs)
+fadu_data3_ann %>% select(row,col, well,drugs) %>% arrange(drugs, row, col) %>% mutate(col1 = col + 1)
+fadu_data3_ann %>% select(row,col, well,drugs) %>% arrange(drugs, row, col) %>% mutate(col = col + 1)
+fadu_data3_ann_subset = fadu_data3_ann %>% select(row,col, well,drugs) %>% arrange(drugs, row, col) %>% mutate(col = col + 1)
+
+fadu_data3_ann_subset %>% slice(1:15) %>% filter(row_number() %% 3 == 0) %>% select(-well)
+# https://stackoverflow.com/questions/23279550/select-every-nth-row-from-dataframe
+fadu_data3_ann_subset %>% slice(1:15) %>% filter(row_number() %% 3 == 0) %>% select(-well) %>% left_join(fadu_data3)
+
+
+#####
+# it works
 
 # pl <- plot_ly(
 #           fadu_data3, x= ~row, y= ~col, z= ~signal2,
@@ -48,6 +78,8 @@ fadu_data3 = fadu_data3 %>% mutate(signal2 = ifelse(kind_code >1, NA,signal))
 #           range = c(0,450000))))
 # having too many NAs causes the surface to rip
 
+
+#####
 fadu_data4 = fadu_data3 %>% filter(kind_code <2)
 pl <- plot_ly(
           fadu_data4, x= ~row, y= ~col, z= ~signal2,
