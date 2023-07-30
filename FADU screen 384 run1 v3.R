@@ -11,9 +11,17 @@ fadu_drug_map = read_excel("plate_map_1_drugs.xlsx",
                        na = "NA")
 
 fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
-unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(Plate==5) ) 
+colnames(fadu_data_all) = c("plate","well","signal")
+
+# visuzlizing unperturbed plate
+#####
+unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
 colnames(unperturbed) = c("row","col","plate","well","signal")
 matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
+# image saved as "unperturbed plate run 2 heatmap.png"
+
+summary(unperturbed$signal)
+
 plu <- plot_ly(
           unperturbed, x= ~row, y= ~col, z= ~signal,
           type='mesh3d', intensity = ~signal,
@@ -22,16 +30,10 @@ plu <- plot_ly(
 plu2 = plu %>% layout(scene = list(zaxis=list(
           range = c(0,600000))))
 plu2
+# image saved as "uperturbed view1.png", "uperturbed view2.png"
+#####
 
-# plotting heatmap and figuring out the annotation quirks 
-##### 
-matrix(fadu_data$signal,16,24, byrow = T) %>% pheatmap(fadu_data_m,cluster_rows = F,cluster_cols = F)
-fadu_data$groups %>% unique()
-
-# [1] "DMSO + dmso"                   "dmso wellmate only/unpinned"   "library + dmso"               
-# [4] "STAUR + dmso"                  "library 0.2µM + dmso wellmate"
-# note that "library + dmso" is the same as "library 0.2µM + dmso wellmate"
-
+# creating annotation template
 #####
 
 fadu_data_ann = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data)
@@ -50,24 +52,24 @@ fadu_data_ann = fadu_data_ann  %>%
                                          groups == "dmso wellmate only/unpinned" ~ "dmso",
                                          TRUE ~ "lib"))
 
-matrix(fadu_data_ann$group_code,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "384well plate map.png"
-matrix(fadu_data_ann$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "384well plate1.png"
 
+#####
+fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_ann %>% select(-signal))
 
-fadu_data_ann_calc = fadu_data_ann %>% group_by(drugs) %>% 
+fadu_data_all_ann_calc = fadu_data_all_ann %>% group_by(plate,drugs) %>% 
           summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
-
-fadu_data_ann_summary  = fadu_data_ann %>% group_by(groups) %>% 
+fadu_data_all_ann_calc %>% write_csv("384plate run 2 CTB calc")
+fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
           summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
-
-fadu_data_ann %>% ggplot(aes(x = as.factor(groups),y = signal)) +
+fadu_data_all_ann_summary %>% write_csv("384plate run 2 CTB summary.csv")
+fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  ggplot(aes(x = as.factor(annotation),y = signal)) +
           geom_violin(trim = F)+ 
           geom_boxplot(width=0.1, color="red") +
-          theme(axis.text.x = element_text(angle = 90))
+          theme(axis.text.x = element_text(angle = 45))
+ggsave("384plate run 2 CTB summary.png")
 
 # matching DMSO wells to drugs
+#####
 #  create pattern for DMSO wells
 
 fadu_data_ann_dmso_wells_matching = fadu_data_ann %>% 
@@ -89,6 +91,8 @@ pl2
 fadu_data_drugs = fadu_data_ann_dmso_matching %>% filter(!is.na(Avg)) %>% filter(drugs !="dmso"|drugs !="bckg")
 add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg)
 add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data5$col, z = fadu_data_drugs$Avg)
+
+#####
 
 #####
 fadu_data4 = fadu_data3 %>% filter(kind_code <2)
@@ -166,6 +170,14 @@ add_markers(pl2, x = fadu_data5$row, y = fadu_data5$col, z = fadu_data5$signal)
 # fadu_cbd_wells = c(paste0(LETTERS[1:5],"02"))
 # # - - - - - - - - - - - - - - - - - - -
 #####
+
+fadu_data_all_ann_calc_plot = fadu_data_all_ann_calc %>% 
+          pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
+          mutate(ratio = Avg_cbd/Avg_control, log2ratio = log2(ratio), 
+                 ratioSD = ratio*sqrt((SD_control/Avg_control)^2 + (SD_cbd/Avg_cbd)^2))
+
+
+
 fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
                                                         Well %in% fadu_staur_wells ~ "PC",
                                                         Well %in% fadu_cbd_wells ~ "cbd",
