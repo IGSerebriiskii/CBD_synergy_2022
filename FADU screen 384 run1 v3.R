@@ -176,7 +176,7 @@ fadu_data_all_ann_calc_plot = fadu_data_all_ann_calc %>%
           mutate(ratio = Avg_cbd/Avg_control, log2ratio = log2(ratio), 
                  ratioSD = ratio*sqrt((SD_control/Avg_control)^2 + (SD_cbd/Avg_cbd)^2))
 
-
+fadu_data_all_ann_calc %>% left_join()
 
 fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
                                                         Well %in% fadu_staur_wells ~ "PC",
