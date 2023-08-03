@@ -98,6 +98,9 @@ add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data
 fadu_data_drugs = fadu_data_drugs %>% mutate(dot_color = case_when(abs(signal-Avg) > 2*SD ~ "orange",
                                                  abs(signal-Avg) > 3*SD ~ "red",
                                                  TRUE ~ "gray") )
+# this adds an estimate of significance 
+# (> 2 SD between drug and dmso in the samer "corner" as drug)
+
 add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg, 
             marker = list(color = ~fadu_data_drugs$dot_color))
 
@@ -184,6 +187,36 @@ fadu_data_all_ann_calc_plot = fadu_data_all_ann_calc %>%
           pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
           mutate(ratio = Avg_cbd/Avg_control, log2ratio = log2(ratio), 
                  ratioSD = ratio*sqrt((SD_control/Avg_control)^2 + (SD_cbd/Avg_cbd)^2))
+
+fadu_data_all_ann_calc %>% 
+  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
+  mutate(groups = "lib")
+
+fadu_data_all_ann_calc %>% 
+  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
+  mutate(groups = "lib") %>% select(-drugs) %>% relocate(groups,)
+
+
+fadu_data_all_no_drugs = fadu_data_all_ann  %>%   filter(group_code !=2) %>% 
+  pivot_wider(names_from = plate, values_from = c(signal)) %>% 
+  select(-c(well:col, group_code))
+
+colnames(fadu_data_all_no_drugs)  = c("groups",paste0("Avg_",1:4))
+
+fadu_data_all_for_plot = fadu_data_all_ann_calc %>% 
+  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
+  mutate(groups = "lib") %>% select(-drugs) %>% relocate(groups,) %>% 
+  bind_rows(fadu_data_all_no_drugs)
+
+
+fadu_data_all_for_plot   %>% 
+  ggplot(aes(x = Avg_1, y = Avg_2, color = groups))+
+  geom_point() + geom_smooth(method = 'lm') +
+  geom_errorbar(aes(ymin = Avg_2 - SD_2, ymax = Avg_2 + SD_2), width = 0.1) +
+  geom_errorbarh(aes(xmin = Avg_1 - SD_1, xmax = Avg_1 + SD_1), height = 0.1) +
+  coord_cartesian(xlim = c(100000,600000),ylim = c(100000,600000))
+
+ggsave("plate1 vs plate2a.png", width = 2400, height = 1200, units = "px")
 
 fadu_data_all_ann_calc %>% left_join()
 
