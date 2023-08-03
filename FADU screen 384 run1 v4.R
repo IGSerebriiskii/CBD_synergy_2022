@@ -218,6 +218,16 @@ fadu_data_all_for_plot   %>%
 
 ggsave("plate1 vs plate2a.png", width = 2400, height = 1200, units = "px")
 
+
+fadu_data_all_for_plot   %>% 
+  ggplot(aes(x = Avg_1, y = Avg_3, color = groups))+
+  geom_point() + geom_smooth(method = 'lm') +
+  geom_errorbar(aes(ymin = Avg_3 - SD_3, ymax = Avg_3 + SD_3), width = 0.1) +
+  geom_errorbarh(aes(xmin = Avg_1 - SD_1, xmax = Avg_1 + SD_1), height = 0.1) +
+  coord_cartesian(xlim = c(100000,600000),ylim = c(100000,600000))
+
+ggsave("plate1 vs plate3.png", width = 2400, height = 1200, units = "px")
+
 fadu_data_all_ann_calc %>% left_join()
 
 fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
