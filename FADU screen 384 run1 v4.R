@@ -228,6 +228,17 @@ fadu_data_all_for_plot   %>%
 
 ggsave("plate1 vs plate3.png", width = 2400, height = 1200, units = "px")
 
+fadu_data_all_for_plot = fadu_data_all_for_plot %>% 
+  mutate(ratio_2_1 = Avg_2/Avg_1, ratio_3_1 = Avg_3/Avg_1)
+fadu_data_all_for_plot %>% filter(ratio_2_1 < 0.75) %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_3_1 < 0.75) %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_2_1 > 1.25) %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_3_1 > 1.25) %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_2_1 < 0.75, groups == "lib") %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_3_1 < 0.75, groups == "lib") %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_2_1 > 1.25, groups == "lib") %>% nrow()
+fadu_data_all_for_plot %>% filter(ratio_3_1 > 1.25, groups == "lib") %>% nrow()
+
 fadu_data_all_ann_calc %>% left_join()
 
 fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
