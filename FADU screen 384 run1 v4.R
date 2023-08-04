@@ -12,29 +12,6 @@ fadu_data = read_excel("plate_map_1_1.xlsx",
 fadu_drug_map = read_excel("plate_map_1_drugs.xlsx",
                        na = "NA")
 
-fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
-colnames(fadu_data_all) = c("plate","well","signal")
-
-# visuzlizing unperturbed plate
-#####
-unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
-colnames(unperturbed) = c("row","col","plate","well","signal")
-matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "unperturbed plate run 2 heatmap.png"
-
-summary(unperturbed$signal)
-sd(unperturbed$signal)
-
-plu <- plot_ly(
-          unperturbed, x= ~row, y= ~col, z= ~signal,
-          type='mesh3d', intensity = ~signal,
-          colors=  colorRamp(gray.colors(5))
-)
-plu2 = plu %>% layout(scene = list(zaxis=list(
-          range = c(0,600000))))
-plu2
-# image saved as "uperturbed view1.png", "uperturbed view2.png"
-#####
 
 # creating annotation template
 #####
@@ -57,53 +34,95 @@ fadu_data_ann = fadu_data_ann  %>%
 
 fadu_data_ann %>% write_csv("fadu_data_annotated_plate.csv")
 
-fadu_data_ann %>% filter(drugs == "Fulvestrant")
-(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,1]
-(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,2]
-(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,2] %>% as.numeric()
-
-test1 = fadu_data_ann %>% filter(drugs == "Fulvestrant") %>% select(row,col)
-test1_result = fadu_data_ann %>% filter(row == test1$row)
-
-fadu_data_ann %>% filter(row <= 2) %>% filter(col == max(test1$col))
-
-test2 = mutate(test1,row = row+1) %>% 
-  bind_rows(mutate(test1,row = row-1)) %>% 
-  bind_rows(mutate(test1,col = col+1)) %>% 
-  bind_rows(mutate(test1,col = col-1))
-test2 %>% filter(row != 0, col != 0)
-test2_result = fadu_data_ann %>% filter(row == test2$row, col == test2$col)
-fadu_data_ann %>% filter(row == test2$row)
 
 fadu_data_ann_calc = fadu_data_ann %>% group_by(drugs) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 
+# importing all data
+#####
+
+fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
+colnames(fadu_data_all) = c("plate","well","signal")
+#####
+# visuzlizing unperturbed plate
+#####
+unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
+colnames(unperturbed) = c("row","col","plate","well","signal")
+matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
+# image saved as "unperturbed plate run 2 heatmap.png"
+
+summary(unperturbed$signal)
+sd(unperturbed$signal)
+
+plu <- plot_ly(
+  unperturbed, x= ~row, y= ~col, z= ~signal,
+  type='mesh3d', intensity = ~signal,
+  colors=  colorRamp(gray.colors(5))
+)
+plu2 = plu %>% layout(scene = list(zaxis=list(
+  range = c(0,600000))))
+plu2
+# image saved as "uperturbed view1.png", "uperturbed view2.png"
+
+
+# annotating all data, calculating average and SD, plotting comparison (violin plots)
 #####
 fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_ann %>% select(-signal))
-
+# calculating average and SD by drugs
 fadu_data_all_ann_calc = fadu_data_all_ann %>% group_by(plate,drugs) %>% 
           summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 fadu_data_all_ann_calc %>% write_csv("384plate run 2 CTB calc")
+# rough summary by library/controls
 fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
           summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 fadu_data_all_ann_summary %>% write_csv("384plate run 2 CTB summary.csv")
-fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  ggplot(aes(x = as.factor(annotation),y = signal)) +
+
+fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  
+  ggplot(aes(x = as.factor(annotation),y = signal)) +
           geom_violin(trim = F)+ 
           geom_boxplot(width=0.1, color="red") +
           theme(axis.text.x = element_text(angle = 45))
 ggsave("384plate run 2 CTB summary.png")
+#####
 
 # matching DMSO wells to drugs
 #####
-#  create pattern for DMSO wells
+#  create pattern for DMSO wells, juxtaposed with averages/SD for the drugs 
+# then plotting in 3D
 
 fadu_data_ann_dmso_wells_matching = fadu_data_ann %>% 
           filter(groups == "lib") %>% select(row,col, well,drugs) %>% arrange(drugs, row, col) %>% 
           mutate(col = col + 1) %>%  filter(row_number() %% 3 == 0) %>% select(-well)
- 
+# these are coordinate of the wells,
+# which are the  in the rightmost bottom corner of 2x2 square
+
 fadu_data_ann_dmso_matching = fadu_data_ann %>% select(-drugs) %>% 
           filter(group_code < 2) %>% left_join(fadu_data_ann_dmso_wells_matching) 
 fadu_data_ann_dmso_matching = fadu_data_ann_dmso_matching %>%  left_join(fadu_data_ann_calc)
+# all wells with negative controls, with the avg/SD of the drugs in the corresponding positions
+
+
+
+pl <- plot_ly(
+          fadu_data_ann_dmso_matching, x= ~row, y= ~col, z= ~signal,
+          type='mesh3d', intensity = ~signal,
+          colors=  colorRamp(gray.colors(5))
+)
+pl2 = pl %>% layout(scene = list(zaxis=list(
+          range = c(0,450000))))
+pl2
+fadu_data_drugs = fadu_data_ann_dmso_matching %>% filter(!is.na(Avg)) %>% filter(drugs !="dmso"|drugs !="bckg") %>% 
+   mutate(dot_color = case_when(abs(signal-Avg) > 2*SD ~ "orange",
+                                                 abs(signal-Avg) > 3*SD ~ "red",
+                                                 TRUE ~ "gray") )
+# this adds an estimate of significance 
+# (> 2 SD between drug and dmso in the samer "corner" as drug)
+
+add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg, 
+            marker = list(color = ~fadu_data_drugs$dot_color))
+#####
+# now averaging neg controls surrounding the drugs
+#####
 
 fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching %>% 
   mutate(row_max = NA,row_min = NA, col_max = NA,col_min = NA)
@@ -121,45 +140,25 @@ fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching1 %>%
   add_column(ctrl_count = NA, ctrl_avg = NA, ctrl_sd = NA)
 
 for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1) ){
- 
+  
   fadu_data_ann_dmso_wells_matching1$ctrl_count[i] = fadu_data_ann %>% 
-  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-  filter(drugs == "dmso") %>% nrow()
+    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+    filter(drugs == "dmso") %>% nrow()
   
   fadu_data_ann_dmso_wells_matching1$ctrl_avg[i] = fadu_data_ann %>% 
-  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-  filter(drugs == "dmso") %>% pull(signal)  %>%  mean()
+    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+    filter(drugs == "dmso") %>% pull(signal)  %>%  mean()
   
   fadu_data_ann_dmso_wells_matching1$ctrl_sd[i] = fadu_data_ann %>% 
-  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-  filter(drugs == "dmso") %>% pull(signal) %>% sd()
-
+    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+    filter(drugs == "dmso") %>% pull(signal) %>% sd()
+  
 }
 
 
-pl <- plot_ly(
-          fadu_data_ann_dmso_matching, x= ~row, y= ~col, z= ~signal,
-          type='mesh3d', intensity = ~signal,
-          colors=  colorRamp(gray.colors(5))
-)
-pl2 = pl %>% layout(scene = list(zaxis=list(
-          range = c(0,450000))))
-pl2
-fadu_data_drugs = fadu_data_ann_dmso_matching %>% filter(!is.na(Avg)) %>% filter(drugs !="dmso"|drugs !="bckg")
-add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg)
-fadu_data_drugs = fadu_data_drugs %>% mutate(dot_color = case_when(abs(signal-Avg) > 2*SD ~ "orange",
-                                                 abs(signal-Avg) > 3*SD ~ "red",
-                                                 TRUE ~ "gray") )
-# this adds an estimate of significance 
-# (> 2 SD between drug and dmso in the samer "corner" as drug)
-
-add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg, 
-            marker = list(color = ~fadu_data_drugs$dot_color))
-
-#####
 
 #####
 fadu_data4 = fadu_data3 %>% filter(kind_code <2)
