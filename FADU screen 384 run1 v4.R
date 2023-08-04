@@ -55,6 +55,26 @@ fadu_data_ann = fadu_data_ann  %>%
                                          groups == "dmso wellmate only/unpinned" ~ "dmso",
                                          TRUE ~ "lib"))
 
+fadu_data_ann %>% write_csv("fadu_data_annotated_plate.csv")
+
+fadu_data_ann %>% filter(drugs == "Fulvestrant")
+(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,1]
+(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,2]
+(fadu_data_ann %>% filter(drugs == "Fulvestrant"))[1,2] %>% as.numeric()
+
+test1 = fadu_data_ann %>% filter(drugs == "Fulvestrant") %>% select(row,col)
+test1_result = fadu_data_ann %>% filter(row == test1$row)
+
+fadu_data_ann %>% filter(row <= 2) %>% filter(col == max(test1$col))
+
+test2 = mutate(test1,row = row+1) %>% 
+  bind_rows(mutate(test1,row = row-1)) %>% 
+  bind_rows(mutate(test1,col = col+1)) %>% 
+  bind_rows(mutate(test1,col = col-1))
+test2 %>% filter(row != 0, col != 0)
+test2_result = fadu_data_ann %>% filter(row == test2$row, col == test2$col)
+fadu_data_ann %>% filter(row == test2$row)
+
 fadu_data_ann_calc = fadu_data_ann %>% group_by(drugs) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 
@@ -239,6 +259,7 @@ fadu_data_all_for_plot %>% filter(ratio_3_1 < 0.75, groups == "lib") %>% nrow()
 fadu_data_all_for_plot %>% filter(ratio_2_1 > 1.25, groups == "lib") %>% nrow()
 fadu_data_all_for_plot %>% filter(ratio_3_1 > 1.25, groups == "lib") %>% nrow()
 
+fadu_data_all_for_plot %>% write_csv("fadu_data_all_for_plot.csv")
 fadu_data_all_ann_calc %>% left_join()
 
 fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
