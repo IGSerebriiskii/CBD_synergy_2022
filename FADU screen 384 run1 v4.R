@@ -105,6 +105,41 @@ fadu_data_ann_dmso_matching = fadu_data_ann %>% select(-drugs) %>%
           filter(group_code < 2) %>% left_join(fadu_data_ann_dmso_wells_matching) 
 fadu_data_ann_dmso_matching = fadu_data_ann_dmso_matching %>%  left_join(fadu_data_ann_calc)
 
+fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching %>% 
+  mutate(row_max = NA,row_min = NA, col_max = NA,col_min = NA)
+for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1) ){
+  fadu_data_ann_dmso_wells_matching1$row_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% max()
+  fadu_data_ann_dmso_wells_matching1$row_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% min()
+  fadu_data_ann_dmso_wells_matching1$col_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% max()
+  fadu_data_ann_dmso_wells_matching1$col_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% min()
+  
+}
+
+fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching1 %>% 
+  mutate(row_max = row_max+1,row_min = row_min-1, col_max = col_max+1,col_min = col_min-1)
+fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching1 %>% 
+  add_column(ctrl_count = NA, ctrl_avg = NA, ctrl_sd = NA)
+
+for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1) ){
+ 
+  fadu_data_ann_dmso_wells_matching1$ctrl_count[i] = fadu_data_ann %>% 
+  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+  filter(drugs == "dmso") %>% nrow()
+  
+  fadu_data_ann_dmso_wells_matching1$ctrl_avg[i] = fadu_data_ann %>% 
+  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+  filter(drugs == "dmso") %>% pull(signal)  %>%  mean()
+  
+  fadu_data_ann_dmso_wells_matching1$ctrl_sd[i] = fadu_data_ann %>% 
+  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+  filter(drugs == "dmso") %>% pull(signal) %>% sd()
+
+}
+
+
 pl <- plot_ly(
           fadu_data_ann_dmso_matching, x= ~row, y= ~col, z= ~signal,
           type='mesh3d', intensity = ~signal,
