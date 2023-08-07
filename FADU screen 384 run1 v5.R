@@ -127,54 +127,39 @@ add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data
 #####
 
 fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching %>% 
-  mutate(row_max = NA,row_min = NA, col_max = NA,col_min = NA)
-for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1) ){
-  fadu_data_ann_dmso_wells_matching1$row_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% max()
-  fadu_data_ann_dmso_wells_matching1$row_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% min()
-  fadu_data_ann_dmso_wells_matching1$col_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% max()
-  fadu_data_ann_dmso_wells_matching1$col_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% min()
+  mutate(row_max = NA,row_min = NA, col_max = NA,col_min = NA, ctrl_count = NA, ctrl_avg = NA, ctrl_sd = NA, p.val = NA)
+
+# 
+for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1)) {
+  fadu_data_ann_dmso_wells_matching1$row_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% max()+1
+  fadu_data_ann_dmso_wells_matching1$row_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(row) %>% min()-1
+  fadu_data_ann_dmso_wells_matching1$col_max[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% max()+1
+  fadu_data_ann_dmso_wells_matching1$col_min[i] = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% select(col) %>% min()-1
+  control_matrix = fadu_data_ann %>% 
+    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
+    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
+    filter(drugs == "dmso")
+  control  = control_matrix %>% pull(signal)
+
+  fadu_data_ann_dmso_wells_matching1$ctrl_count[i] =control_matrix %>% nrow()
+  fadu_data_ann_dmso_wells_matching1$ctrl_avg[i] = mean(control)
+  fadu_data_ann_dmso_wells_matching1$ctrl_sd[i] = sd(control)
+  
+  drug = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[i]) %>% 
+    pull(signal)
+  fadu_data_ann_dmso_wells_matching1$p.val[i] =wilcox.test(drug,control)$p.value
+  
   
 }
+fadu_data_ann_dmso_wells_matching1 %>% write_csv("fadu_data_ann_dmso_wells_matching1.csv")
 
-fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching1 %>% 
-  mutate(row_max = row_max+1,row_min = row_min-1, col_max = col_max+1,col_min = col_min-1)
-fadu_data_ann_dmso_wells_matching1 = fadu_data_ann_dmso_wells_matching1 %>% 
-  add_column(ctrl_count = NA, ctrl_avg = NA, ctrl_sd = NA)
 
-for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1) ){
-  
-  fadu_data_ann_dmso_wells_matching1$ctrl_count[i] = fadu_data_ann %>% 
-    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-    filter(drugs == "dmso") %>% nrow()
-  
-  fadu_data_ann_dmso_wells_matching1$ctrl_avg[i] = fadu_data_ann %>% 
-    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-    filter(drugs == "dmso") %>% pull(signal)  %>%  mean()
-  
-  fadu_data_ann_dmso_wells_matching1$ctrl_sd[i] = fadu_data_ann %>% 
-    filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[i] & row >= fadu_data_ann_dmso_wells_matching1$row_min[i] ) %>% 
-    filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[i] & col >= fadu_data_ann_dmso_wells_matching1$col_min[i] ) %>% 
-    filter(drugs == "dmso") %>% pull(signal) %>% sd()
-  
-}
-
-drug = fadu_data_ann %>% filter(drugs == fadu_data_ann_dmso_wells_matching1$drugs[1]) %>% pull(signal)
-control_matrix = fadu_data_ann %>% 
-  filter(row <= fadu_data_ann_dmso_wells_matching1$row_max[1] & row >= fadu_data_ann_dmso_wells_matching1$row_min[1] ) %>% 
-  filter(col <= fadu_data_ann_dmso_wells_matching1$col_max[1] & col >= fadu_data_ann_dmso_wells_matching1$col_min[1] ) %>% 
-  filter(drugs == "dmso")
-
-control  = control_matrix %>% pull(signal)
-wilcox.test(drug,control)
-wilcox.test(drug,control)$p.value
-
-fadu_data_drugs_vs_ctrl = fadu_data_ann_dmso_wells_matching1 %>% select(row, col, drugs,ctrl_avg,ctrl_sd) %>% 
+fadu_data_drugs_vs_ctrl = fadu_data_ann_dmso_wells_matching1 %>% select(row, col, drugs,ctrl_avg,ctrl_sd,p.val) %>% 
   left_join(fadu_data_ann_calc) %>% rename(drug_avg = Avg, drug_sd = SD) %>% 
-  mutate(dot_color = case_when(abs(ctrl_avg-drug_avg) > 2*drug_sd ~ "orange",
-                               abs(ctrl_avg-drug_avg) > 3*drug_sd ~ "red",
+  mutate(dot_color = case_when(p.val <= 0.05 ~ "orange",
+                               p.val <= 0.005 ~ "red",
                                TRUE ~ "gray") )
+fadu_data_drugs_vs_ctrl %>% write_csv("fadu_data_drugs_vs_ctrl.csv")
 
 # https://www.medcalc.org/calc/comparison_of_means.php
 
