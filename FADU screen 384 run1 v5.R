@@ -38,51 +38,7 @@ fadu_data_ann %>% write_csv("fadu_data_annotated_plate.csv")
 fadu_data_ann_calc = fadu_data_ann %>% group_by(drugs) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 
-# importing all data
-#####
 
-fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
-colnames(fadu_data_all) = c("plate","well","signal")
-#####
-# visuzlizing unperturbed plate
-#####
-unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
-colnames(unperturbed) = c("row","col","plate","well","signal")
-matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "unperturbed plate run 2 heatmap.png"
-
-summary(unperturbed$signal)
-sd(unperturbed$signal)
-
-plu <- plot_ly(
-  unperturbed, x= ~row, y= ~col, z= ~signal,
-  type='mesh3d', intensity = ~signal,
-  colors=  colorRamp(gray.colors(5))
-)
-plu2 = plu %>% layout(scene = list(zaxis=list(
-  range = c(0,600000))))
-plu2
-# image saved as "uperturbed view1.png", "uperturbed view2.png"
-
-
-# annotating all data, calculating average and SD, plotting comparison (violin plots)
-#####
-fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_ann %>% select(-signal))
-# calculating average and SD by drugs
-fadu_data_all_ann_calc = fadu_data_all_ann %>% group_by(plate,drugs) %>% 
-          summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
-fadu_data_all_ann_calc %>% write_csv("384plate run 2 CTB calc")
-# rough summary by library/controls
-fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
-          summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
-fadu_data_all_ann_summary %>% write_csv("384plate run 2 CTB summary.csv")
-
-fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  
-  ggplot(aes(x = as.factor(annotation),y = signal)) +
-          geom_violin(trim = F)+ 
-          geom_boxplot(width=0.1, color="red") +
-          theme(axis.text.x = element_text(angle = 45))
-ggsave("384plate run 2 CTB summary.png")
 #####
 
 # matching DMSO wells to drugs and visuzlizing the hits
@@ -153,13 +109,16 @@ for (i in 1:nrow(fadu_data_ann_dmso_wells_matching1)) {
 }
 fadu_data_ann_dmso_wells_matching1 %>% write_csv("fadu_data_ann_dmso_wells_matching1.csv")
 
-
+# color-coding for significance
 fadu_data_drugs_vs_ctrl = fadu_data_ann_dmso_wells_matching1 %>% select(row, col, drugs,ctrl_avg,ctrl_sd,p.val) %>% 
   left_join(fadu_data_ann_calc) %>% rename(drug_avg = Avg, drug_sd = SD) %>% 
   mutate(dot_color = case_when(p.val <= 0.05 ~ "orange",
                                p.val <= 0.005 ~ "red",
                                TRUE ~ "gray") )
 fadu_data_drugs_vs_ctrl %>% write_csv("fadu_data_drugs_vs_ctrl.csv")
+# now plotting (plate 1 only!)
+add_markers(pl2, x = fadu_data_drugs_vs_ctrl$row, y = fadu_data_drugs_vs_ctrl$col, z = fadu_data_drugs_vs_ctrl$drug_avg, 
+            marker = list(color = ~fadu_data_drugs_vs_ctrl$dot_color))
 
 # https://www.medcalc.org/calc/comparison_of_means.php
 
@@ -241,15 +200,104 @@ add_markers(pl2, x = fadu_data5$row, y = fadu_data5$col, z = fadu_data5$signal)
 # # - - - - - - - - - - - - - - - - - - -
 #####
 
+
+# importing all data
+#####
+# reading all CTB data (note the Excel file was manually purged of all comments!!!)
+fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
+colnames(fadu_data_all) = c("plate","well","signal")
+
+# visuzlizing unperturbed plate
+#####
+unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
+colnames(unperturbed) = c("row","col","plate","well","signal")
+matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
+# image saved as "unperturbed plate run 2 heatmap.png"
+
+summary(unperturbed$signal)
+sd(unperturbed$signal)
+
+plu <- plot_ly(
+  unperturbed, x= ~row, y= ~col, z= ~signal,
+  type='mesh3d', intensity = ~signal,
+  colors=  colorRamp(gray.colors(5))
+)
+plu2 = plu %>% layout(scene = list(zaxis=list(
+  range = c(0,600000))))
+plu2
+# image saved as "uperturbed view1.png", "uperturbed view2.png"
+
+
+# annotating all data, calculating average and SD, plotting comparison (violin plots)
+# creating rough summary and violin plots
+#####
+fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_ann %>% select(-signal))
+# rough summary by library/controls
+fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
+  summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
+fadu_data_all_ann_summary %>% write_csv("384plate run 2 CTB summary.csv")
+
+fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  
+  ggplot(aes(x = as.factor(annotation),y = signal)) +
+  geom_violin(trim = F)+ 
+  geom_boxplot(width=0.1, color="red") +
+  theme(axis.text.x = element_text(angle = 45))
+ggsave("384plate run 2 CTB summary.png")
+
+#####
+
+# calculating average and SD by drugs
+fadu_data_all_ann_calc = fadu_data_all_ann %>% group_by(plate,drugs) %>% 
+  summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
+fadu_data_all_ann_calc %>% write_csv("384plate run 2 CTB calc")
+
+fadu_data_all_drugs_vs_ctrl = fadu_data_all_ann_calc %>% 
+  left_join(fadu_data_ann_dmso_wells_matching1) %>% rename(drug_avg = Avg, drug_sd = SD)
+
+fadu_data_all_drugs_vs_ctrl = fadu_data_all_drugs_vs_ctrl %>% 
+  mutate(p.val = NA) %>% filter(drugs !="bckg") %>% filter(drugs !="dmso") %>% filter(drugs !="staur")
+ # filter(drugs !="bckg" | drugs !="dmso") somehow stopped working!!!
+
+# 
+# 1:nrow(fadu_data_all_drugs_vs_ctrl)
+
+# %>% 
+#   filter(!is.na(Avg)) %>% filter(drugs !="dmso"|drugs !="bckg") %>%
+for (i in 1:nrow(fadu_data_all_drugs_vs_ctrl)) {
+  control_matrix = fadu_data_all_ann %>% 
+    filter(plate == fadu_data_all_drugs_vs_ctrl$plate[i],row <= fadu_data_all_drugs_vs_ctrl$row_max[i] & row >= fadu_data_all_drugs_vs_ctrl$row_min[i] ) %>% 
+    filter(plate == fadu_data_all_drugs_vs_ctrl$plate[i], col <= fadu_data_all_drugs_vs_ctrl$col_max[i] & col >= fadu_data_all_drugs_vs_ctrl$col_min[i] ) %>% 
+    filter(drugs == "dmso")
+  # print(control_matrix)
+  control  = control_matrix %>% pull(signal)
+  # print(mean(control))
+  fadu_data_all_drugs_vs_ctrl$ctrl_count[i] =control_matrix %>% nrow()
+  fadu_data_all_drugs_vs_ctrl$ctrl_avg[i] = mean(control)
+  fadu_data_all_drugs_vs_ctrl$ctrl_sd[i] = sd(control)
+  
+  drug = fadu_data_all_ann %>% filter(plate == fadu_data_all_drugs_vs_ctrl$plate[i],drugs ==  drugs[i]) %>% 
+    pull(signal)
+  fadu_data_all_drugs_vs_ctrl$p.val[i] =wilcox.test(drug,control)$p.value
+  
+  
+}
+
+fadu_data_all_drugs_vs_ctrl = fadu_data_all_drugs_vs_ctrl %>%
+  mutate(dot_color = case_when(p.val <= 0.05 ~ "orange",
+                               p.val <= 0.005 ~ "red",
+                               TRUE ~ "gray") )
+
+fadu_data_all_drugs_vs_ctrl %>% write_csv("fadu_data_all_drugs_vs_ctrl.csv")
+
 fadu_data_all_ann_calc_plot = fadu_data_all_ann_calc %>% 
           pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
           mutate(ratio = Avg_cbd/Avg_control, log2ratio = log2(ratio), 
                  ratioSD = ratio*sqrt((SD_control/Avg_control)^2 + (SD_cbd/Avg_cbd)^2))
 
-fadu_data_all_ann_calc %>% 
-  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
-  mutate(groups = "lib")
+fadu_data_all_drugs_vs_ctrl_plot = fadu_data_all_drugs_vs_ctrl %>% select(plate, drugs, row, col, drug_avg,drug_sd,ctrl_avg, ctrl_sd,p.val) %>% 
+  pivot_wider(names_from = plate, values_from = c(drug_avg,drug_sd,ctrl_avg,ctrl_sd,p.val))
 
+fadu_data_all_drugs_vs_ctrl_plot %>% write_csv("fadu_data_all_drugs_vs_ctrl_plot.csv")
 fadu_data_all_ann_calc %>% 
   pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
   mutate(groups = "lib") %>% select(-drugs) %>% relocate(groups,)
