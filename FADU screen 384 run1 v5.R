@@ -57,6 +57,20 @@ fadu_data_ann_dmso_matching = fadu_data_ann %>% select(-drugs) %>%
 fadu_data_ann_dmso_matching = fadu_data_ann_dmso_matching %>%  left_join(fadu_data_ann_calc)
 # all wells with negative controls, with the avg/SD of the drugs in the corresponding positions
 
+fadu_data_controls_left = fadu_data_ann %>% filter(groups != "lib", col<3) %>% 
+  mutate(rand = sample(32)) %>% arrange(drugs,rand) %>% 
+  mutate(comp_ctrl = paste0(groups, rep(1:5,c(3,3,3,3,4))))
+fadu_data_controls_right = fadu_data_ann %>% filter(groups != "lib", col>22) %>% 
+  mutate(rand = sample(32)) %>% arrange(drugs,rand) %>% 
+  mutate(comp_ctrl = paste0(groups, rep(6:10,c(3,3,3,3,4))))
+fadu_data_controls = bind_rows(fadu_data_controls_left,fadu_data_controls_right)
+fadu_data_controls_summary = fadu_data_controls %>% group_by(comp_ctrl) %>% 
+  summarise(comp_mean = mean(signal),comp_sd = sd(signal) )
+fadu_data_dmso = fadu_data_ann %>% filter(groups == "dmso", col==3 | col == 4, row < 11) %>% 
+  mutate(rand = sample(20))
+fadu_data_dmso %>% slice(2,4,8)
+sample(1:32,3,T)
+sample(32,3)
 
 
 pl <- plot_ly(
