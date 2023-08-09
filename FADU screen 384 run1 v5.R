@@ -71,7 +71,17 @@ fadu_data_dmso = fadu_data_ann %>% filter(groups == "dmso", col==3 | col == 4, r
 fadu_data_dmso %>% slice(2,4,8)
 sample(1:32,3,T)
 sample(32,3)
-
+dmso_contr = tibble()
+for (i in 1:20) {
+  dmso_slice = fadu_data_dmso %>% slice_sample(n=4)
+  # contr_slice = fadu_data_controls %>% 
+  dmso_contr = bind_rows(dmso_contr,dmso_slice)
+  fadu_data_controls_summary$dmso_mean[i]=mean(dmso_slice$signal)
+  fadu_data_controls_summary$dmso_sd[i]=sd(dmso_slice$signal)
+  fadu_data_controls_summary$pval[i]=wilcox.test(dmso_slice$signal,
+                                                 filter(fadu_data_controls,comp_ctrl ==fadu_data_controls_summary$comp_ctrl[i])$signal)$p.value
+  
+}
 
 pl <- plot_ly(
           fadu_data_ann_dmso_matching, x= ~row, y= ~col, z= ~signal,
@@ -289,7 +299,7 @@ for (i in 1:nrow(fadu_data_all_drugs_vs_ctrl)) {
   fadu_data_all_drugs_vs_ctrl$ctrl_avg[i] = mean(control)
   fadu_data_all_drugs_vs_ctrl$ctrl_sd[i] = sd(control)
   
-  drug = fadu_data_all_ann %>% filter(plate == fadu_data_all_drugs_vs_ctrl$plate[i],drugs ==  drugs[i]) %>% 
+  drug = fadu_data_all_ann %>% filter(plate == fadu_data_all_drugs_vs_ctrl$plate[i],drugs ==  fadu_data_all_drugs_vs_ctrl$drugs[i]) %>% 
     pull(signal)
   fadu_data_all_drugs_vs_ctrl$p.val[i] =wilcox.test(drug,control)$p.value
   
