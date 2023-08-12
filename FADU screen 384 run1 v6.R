@@ -54,7 +54,7 @@ fadu_data_ann_dmso_wells_matching = fadu_data_ann %>%
           filter(groups == "lib") %>% select(row,col, well,drugs) %>% arrange(drugs, row, col) %>% 
           mutate(col = col + 1) %>%  filter(row_number() %% 3 == 0) %>% select(-well)
 # these are coordinate of the wells,
-# which are the  in the rightmost bottom corner of 2x2 square
+# which are the  in the rightmost bottom corner of 2x2 square of the corresponding drug
 
 fadu_data_ann_dmso_matching = fadu_data_ann %>% select(-drugs) %>% 
           filter(group_code < 2) %>% left_join(fadu_data_ann_dmso_wells_matching) 
@@ -123,16 +123,6 @@ pl <- plot_ly(
 pl2 = pl %>% layout(scene = list(zaxis=list(
           range = c(0,450000))))
 pl2
-fadu_data_drugs = fadu_data_ann_dmso_matching %>% 
-  filter(!is.na(Avg)) %>% filter(drugs !="dmso"|drugs !="bckg") %>% 
-   mutate(dot_color = case_when(abs(signal-Avg) > 2*SD ~ "orange",
-                                                 abs(signal-Avg) > 3*SD ~ "red",
-                                                 TRUE ~ "gray") )
-# this adds an estimate of significance 
-# (> 2 SD between drug and dmso in the samer "corner" as drug)
-
-add_markers(pl2, x = fadu_data_drugs$row, y = fadu_data_drugs$col, z = fadu_data_drugs$Avg, 
-            marker = list(color = ~fadu_data_drugs$dot_color))
 #####
 
 # creating template for averaging neg controls surrounding the drugs
@@ -167,15 +157,15 @@ fadu_data_drugs_vs_ctrl %>% write_csv("fadu_data_drugs_vs_ctrl.csv")
 # importing all data
 #####
 # reading all CTB data (note the Excel file was manually purged of all comments!!!)
-fadu_data_all = read_excel("CBD screening  384 run 2_4 hours CTB.xlsx")
+fadu_data_all = read_excel("CBD screening  384 run 1_4 hours CTB IS.xlsx")
 colnames(fadu_data_all) = c("plate","well","signal")
 
 # visuzlizing unperturbed plate
 #####
-unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
+unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==6) ) 
 colnames(unperturbed) = c("row","col","plate","well","signal")
 matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "unperturbed plate run 2 heatmap.png"
+# image saved as "unperturbed plate run 1 heatmap.png"
 
 summary(unperturbed$signal)
 sd(unperturbed$signal)
@@ -200,14 +190,14 @@ fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_an
 fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 fadu_data_all_ann_summary %>% pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
-  write_csv("384plate run 2 CTB summary.csv")
+  write_csv("384plate run 1 CTB summary.csv")
 
 fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  
   ggplot(aes(x = as.factor(annotation),y = signal)) +
   geom_violin(trim = F)+ 
   geom_boxplot(width=0.1, color="red") +
   theme(axis.text.x = element_text(angle = 45))
-ggsave("384plate run 2 CTB summary.png")
+ggsave("384plate run 1 CTB summary.png")
 
 
 #####
@@ -261,7 +251,7 @@ fadu_data_all_drugs_vs_ctrl = fadu_data_all_drugs_vs_ctrl %>%
   select(-row_max, -row_min,-col_max, -col_min)
 
 
-fadu_data_all_drugs_vs_ctrl %>% write_csv("fadu_data_all_drugs_vs_ctrl.csv")
+fadu_data_all_drugs_vs_ctrl %>% write_csv("run1 fadu_data_all_drugs_vs_ctrl.csv")
 
 
 
@@ -269,44 +259,84 @@ fadu_data_all_drugs_vs_ctrl_plot = fadu_data_all_drugs_vs_ctrl %>% bind_rows(fad
   select(plate, drugs, drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval) %>% 
   pivot_wider(names_from = plate, values_from = c(drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval))
 
-fadu_data_all_drugs_vs_ctrl_plot %>% write_csv("fadu_data_all_drugs_vs_ctrl_plot.csv")
+fadu_data_all_drugs_vs_ctrl_plot %>% write_csv("run1 fadu_data_all_drugs_vs_ctrl_plot.csv")
 
+#  compare run 1. vs run 2
+run_comparison = fadu_data_all_drugs_vs_ctrl_plot %>% select(drugs, starts_with("drug_to"), starts_with("d_t_c")) 
+colnames(run_comparison)
+colnames(run_comparison)[2:9] = paste0(colnames(run_comparison)[2:9], "run1")
+qq = read_csv("run2 fadu_data_all_drugs_vs_ctrl_plot.csv") %>% select(drugs, starts_with("drug_to"), starts_with("d_t_c"))
+colnames(qq)[2:9] = paste0(colnames(qq)[2:9], "run2")
+run_comparison = run_comparison %>% left_join(qq)
 
-fadu_data_all_ann_calc %>% 
-  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
-  mutate(groups = "lib") %>% select(-drugs) %>% relocate(groups,)
-
+run_comparison   %>% 
+  ggplot(aes(x = drug_to_ctlr_1run1, y = drug_to_ctlr_1run2))+
+  geom_point(aes(alpha = 0.5)) + geom_smooth(method = 'lm',linetype = "dashed", size = 0.7) +
+  # geom_errorbar(aes(ymin = drug_to_ctlr_1run2 - 2*d_t_c_SD_1run1, ymax = drug_to_ctlr_1run2 + 2*d_t_c_SD_1run2), width = 0.1, alpha = 0.3) +
+  # geom_errorbarh(aes(xmin = drug_to_ctlr_1run1 - 2*d_t_c_SD_1run1, xmax = drug_to_ctlr_1run1 + 2*d_t_c_SD_1run1), height = 0.1, alpha = 0.3) +
+  coord_cartesian(xlim = c(0,1.5),ylim = c(0,1.5))
+ggsave("plate1 drugs run1 vs run2.png")
+run_comparison %>% select(drug_to_ctlr_1run1, drug_to_ctlr_1run2) %>% cor()
+run_comparison %>% select(-drugs, -starts_with("d_t_c")) %>% cor() %>% as.data.frame() %>% write.csv("correlation between runs.csv")
 
 fadu_data_all_no_drugs = fadu_data_all_ann  %>%   filter(group_code !=2) %>% 
   pivot_wider(names_from = plate, values_from = c(signal)) %>% 
-  select(-c(well:col, group_code))
+  select(-c(well:col, group_code,  drugs))
 
-colnames(fadu_data_all_no_drugs)  = c("groups",paste0("Avg_",1:4))
+colnames(fadu_data_all_no_drugs)  = c("groups",paste0("drug_avg_",1:4))
 
-fadu_data_all_for_plot = fadu_data_all_ann_calc %>% 
-  pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
+fadu_data_all_for_correl = fadu_data_all_drugs_vs_ctrl %>% 
+  select(plate,drugs,drug_avg,drug_sd) %>% pivot_wider(names_from = plate, values_from = c(drug_avg,drug_sd)) %>% 
   mutate(groups = "lib") %>% select(-drugs) %>% relocate(groups,) %>% 
   bind_rows(fadu_data_all_no_drugs)
 
 
-fadu_data_all_for_plot   %>% 
-  ggplot(aes(x = Avg_1, y = Avg_2, color = groups))+
-  geom_point() + geom_smooth(method = 'lm') +
-  geom_errorbar(aes(ymin = Avg_2 - SD_2, ymax = Avg_2 + SD_2), width = 0.1) +
-  geom_errorbarh(aes(xmin = Avg_1 - SD_1, xmax = Avg_1 + SD_1), height = 0.1) +
-  coord_cartesian(xlim = c(100000,600000),ylim = c(100000,600000))
+fadu_data_all_for_correl   %>% 
+  ggplot(aes(x = drug_avg_1, y = drug_avg_2, color = groups))+
+  geom_point(aes(alpha = 0.5)) + geom_smooth(method = 'lm',linetype = "dashed", size = 0.7) +
+  geom_errorbar(aes(ymin = drug_avg_2 - 2*drug_sd_2, ymax = drug_avg_2 + 2*drug_sd_2), width = 0.1, alpha = 0.3) +
+  geom_errorbarh(aes(xmin = drug_avg_1 - 2*drug_sd_1, xmax = drug_avg_1 + 2*drug_sd_1), height = 0.1, alpha = 0.3) +
+  coord_cartesian(xlim = c(0,500000),ylim = c(0,500000))
+# note errorbars are now close to 95% confidence intervals
+ggsave("run1 plate1 vs plate2.png", width = 2400, height = 2100, units = "px")
 
-ggsave("plate1 vs plate2a.png", width = 2400, height = 1200, units = "px")
+
+fadu_data_all_for_correl   %>% 
+  ggplot(aes(x = drug_avg_1, y = drug_avg_3, color = groups))+
+  geom_point(aes(alpha = 0.5)) + geom_smooth(method = 'lm',linetype = "dashed", size = 0.7) +
+  geom_errorbar(aes(ymin = drug_avg_3 - 2*drug_sd_3, ymax = drug_avg_3 + 2*drug_sd_3), width = 0.1, alpha = 0.3) +
+  geom_errorbarh(aes(xmin = drug_avg_1 - 2*drug_sd_1, xmax = drug_avg_1 + 2*drug_sd_1), height = 0.1, alpha = 0.3) +
+  coord_cartesian(xlim = c(0,500000),ylim = c(0,500000))
+# note errorbars are now close to 95% confidence intervals
+ggsave("run1 plate1 vs plate3.png", width = 2400, height = 2100, units = "px")
 
 
-fadu_data_all_for_plot   %>% 
-  ggplot(aes(x = Avg_1, y = Avg_3, color = groups))+
-  geom_point() + geom_smooth(method = 'lm') +
-  geom_errorbar(aes(ymin = Avg_3 - SD_3, ymax = Avg_3 + SD_3), width = 0.1) +
-  geom_errorbarh(aes(xmin = Avg_1 - SD_1, xmax = Avg_1 + SD_1), height = 0.1) +
-  coord_cartesian(xlim = c(100000,600000),ylim = c(100000,600000))
+fadu_data_all_for_correl   %>% 
+  ggplot(aes(x = drug_avg_4, y = drug_avg_3, color = groups))+
+  geom_point(aes(alpha = 0.5)) + geom_smooth(method = 'lm',linetype = "dashed", size = 0.7) +
+  geom_errorbar(aes(ymin = drug_avg_3 - 2*drug_sd_3, ymax = drug_avg_3 + 2*drug_sd_3), width = 0.1, alpha = 0.3) +
+  geom_errorbarh(aes(xmin = drug_avg_4 - 2*drug_sd_4, xmax = drug_avg_4 + 2*drug_sd_4), height = 0.1, alpha = 0.3) +
+  coord_cartesian(xlim = c(0,500000),ylim = c(0,500000))
+# note errorbars are now close to 95% confidence intervals
+ggsave("run1 plate3 vs plate4.png", width = 2400, height = 2100, units = "px")
 
-ggsave("plate1 vs plate3.png", width = 2400, height = 1200, units = "px")
+
+pl <- plot_ly(
+  (fadu_data_all_ann %>% filter(plate == 1, group_code <2)), x= ~row, y= ~col, z= ~signal,
+  type='mesh3d', intensity = ~signal,
+  colors=  colorRamp(gray.colors(5))
+)
+# surface plot for negative controls + drugs colored by significance
+pl1 = pl %>% layout(scene = list(zaxis=list(
+  range = c(0,450000))))
+pl1
+
+plate1_hits = fadu_data_ann_dmso_wells_matching %>% 
+  left_join( fadu_data_all_drugs_vs_ctrl %>% filter(plate ==1) %>%  select(drugs, drug_avg, ttest_color))
+add_markers(pl1, x = plate1_hits$row, y = plate1_hits$col, z = plate1_hits$drug_avg, 
+            marker = list(color = ~plate1_hits$ttest_color))
+
+
 
 fadu_data_all_for_plot = fadu_data_all_for_plot %>% 
   mutate(ratio_2_1 = Avg_2/Avg_1, ratio_3_1 = Avg_3/Avg_1)
@@ -322,49 +352,7 @@ fadu_data_all_for_plot %>% filter(ratio_3_1 > 1.25, groups == "lib") %>% nrow()
 fadu_data_all_for_plot %>% write_csv("fadu_data_all_for_plot.csv")
 fadu_data_all_ann_calc %>% left_join()
 
-fadu_data_annotated  = fadu_data %>% mutate( well_type = case_when(Well %in% fadu_dmso_wells ~ "dmso", 
-                                                        Well %in% fadu_staur_wells ~ "PC",
-                                                        Well %in% fadu_cbd_wells ~ "cbd",
-                                                        TRUE ~ "test_compounds"))
 
-fadu_data_summary = fadu_data_annotated%>% group_by(well_type,cbd,comp) %>% 
-  summarise(Avg = mean(Signal, na.rm=T), SD = sd(Signal, na.rm=T)) %>% arrange(-comp, desc(cbd),well_type)
-fadu_data_summary %>% write_csv("fadu_data_summary.csv")
-fadu_data_annotated = fadu_data_annotated %>% mutate(annot = paste(cbd,comp,well_type, sep  = "_"))
-fadu_data_annotated %>% ggplot(aes(x = as.factor(annot),y = Signal)) +
-  geom_violin(trim = F)+ 
-  geom_boxplot(width=0.1, color="red") +
-  theme(axis.text.x = element_text(angle = 90))
-ggsave("summary_violin run3.png",
-       width = 30, #note it was 20 for 2 concentrations
-       height = 10,
-       units =  "cm",
-       dpi = 300)
-
-# did not calculate
-# comp_matrix = as.data.frame(matrix(0, nrow = length(sort(unique(fadu_data_annotated$annot))), ncol  = length(sort(unique(fadu_data_annotated$annot)))))
-# # colnames(my_results) = rownames(my_results) = paste0("h-",unique(PTEN_variants$htsp_MTL))
-# colnames(comp_matrix) = rownames(comp_matrix) = sort(unique(fadu_data_annotated$annot))
-# 
-# comp_matrix_ks_test = comp_matrix_ttest = comp_matrix
-# 
-# for (i in 1:nrow(comp_matrix)) {
-#   for (j in 1:nrow(comp_matrix)) {
-#     comp_matrix_ttest[i,j] = t.test(filter(fadu_data_annotated, annot == colnames(comp_matrix)[i])$Signal, filter(fadu_data_annotated, annot == colnames(comp_matrix)[j])$Signal)$p.value
-#     comp_matrix_ks_test[i,j] = ks.test(filter(fadu_data_annotated, annot == colnames(comp_matrix)[i])$Signal, filter(fadu_data_annotated, annot == colnames(comp_matrix)[j])$Signal)$p.value
-#     
-#   }
-# }
-
-# diag(comp_matrix) = NA
-# comp_matrix[upper.tri(comp_matrix)] <- comp_matrix_ks_test[upper.tri(comp_matrix)]
-# comp_matrix[lower.tri(comp_matrix)] <- comp_matrix_ttest[lower.tri(comp_matrix)]
-# comp_matrix %>% write.csv("comp_matrix run2.csv")
-
-# - - - - - - - - - - - - - - - - - - -
-
-fadu_data_mean = fadu_data %>% group_by(Well,cbd,comp) %>% 
-  summarise(Avg = mean(Signal, na.rm=T), SD = sd(Signal, na.rm=T))
 
 # - - - - - - - - - - - - - - - - - - -
 fadu_2000 = matrix(filter(fadu_data_mean,comp == 2000, cbd == "control")$Avg,8,12, byrow = T)
