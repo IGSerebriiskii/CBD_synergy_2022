@@ -153,7 +153,7 @@ dmso_wells_around_drugs = read_csv("dmso_wells_around_drugs.csv")
 # importing all data
 #####
 # reading all image-based data (note the Excel file was manually purged of all comments!!!)
-fadu_data_all = read_excel("Golemis_FS_Nuclei count 0713202_raw data.xlsx") %>% select(1,2,5)
+fadu_data_all = read_excel("Golemis_FS_Nuclei count 0713202_raw data.xlsx") %>% select(1,2,4)
 colnames(fadu_data_all) = c("plate","well","signal")
 fadu_data_all = fadu_data_all %>% mutate(plate = rep(1:5, each = 384))
 tail(fadu_data_all)
@@ -162,7 +162,7 @@ tail(fadu_data_all)
 unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),fadu_data_all %>% filter(plate==5) ) 
 colnames(unperturbed) = c("row","col","plate","well","signal")
 matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "unperturbed plate run 2 set2 total area heatmap.png"
+# image saved as "unperturbed plate run 2 set2 nuc count heatmap.png"
 
 summary(unperturbed$signal)
 sd(unperturbed$signal)
@@ -187,14 +187,14 @@ fadu_data_all_ann = fadu_data_all %>% filter(plate<5) %>% left_join(fadu_data_an
 fadu_data_all_ann_summary  = fadu_data_all_ann %>% group_by(plate,groups) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 fadu_data_all_ann_summary %>% pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
-  write_csv("384plate run2 set2 total area summary.csv")
+  write_csv("384plate run2 set2 nuc count summary.csv")
 
 fadu_data_all_ann %>% mutate(annotation = paste(plate, groups)) %>%  
   ggplot(aes(x = as.factor(annotation),y = signal)) +
   geom_violin(trim = F)+ 
-  geom_boxplot(width=0.1, color="red") +
+  geom_boxplot(width=0.1, color="blue") +
   theme(axis.text.x = element_text(angle = 45))
-ggsave("384plate run2 set2 total area summary.png")
+ggsave("384plate run2 set2 nuc count summary.png")
 
 
 #####
@@ -248,7 +248,7 @@ fadu_data_all_drugs_vs_ctrl = fadu_data_all_drugs_vs_ctrl %>%
   select(-row_max, -row_min,-col_max, -col_min)
 
 
-fadu_data_all_drugs_vs_ctrl %>% write_csv("run2 set2 fadu_data_all_drugs_vs_ctrl total area.csv")
+fadu_data_all_drugs_vs_ctrl %>% write_csv("run2 set2 fadu_data_all_drugs_vs_ctrl nuc count.csv")
 
 
 
@@ -256,7 +256,7 @@ fadu_data_all_drugs_vs_ctrl_plot = fadu_data_all_drugs_vs_ctrl %>% bind_rows(fad
   select(plate, drugs, drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval) %>% 
   pivot_wider(names_from = plate, values_from = c(drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval))
 
-fadu_data_all_drugs_vs_ctrl_plot %>% write_csv("run2 set2 fadu_data_all_drugs_vs_ctrl_plot  total area.csv")
+fadu_data_all_drugs_vs_ctrl_plot %>% write_csv("run2 set2 fadu_data_all_drugs_vs_ctrl_plot  nuc count.csv")
 
 #  compare run 1. vs run 2
 run_comparison = fadu_data_all_drugs_vs_ctrl_plot %>% select(drugs, starts_with("drug_to"), starts_with("d_t_c")) 
