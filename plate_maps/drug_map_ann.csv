@@ -1,0 +1,385 @@
+row,col,well,drugs
+1,1,A01,DMSO + dmso
+1,2,A02,DMSO + dmso
+1,3,A03,dmso wellmate only/unpinned
+1,4,A04,dmso wellmate only/unpinned
+1,5,A05,Hydroxyurea
+1,6,A06,Hydroxyurea
+1,7,A07,Tazemetostat
+1,8,A08,Tazemetostat
+1,9,A09,Pemetrexed
+1,10,A10,Pemetrexed
+1,11,A11,Raloxifene (hydrochloride)
+1,12,A12,Raloxifene (hydrochloride)
+1,13,A13,Mifepristone
+1,14,A14,Mifepristone
+1,15,A15,Fulvestrant
+1,16,A16,Fulvestrant
+1,17,A17,Enzalutamide
+1,18,A18,Enzalutamide
+1,19,A19,Rucaparib
+1,20,A20,Rucaparib
+1,21,A21,5-Fluorouracil
+1,22,A22,5-Fluorouracil
+1,23,A23,STAUR + dmso
+1,24,A24,STAUR + dmso
+2,1,B01,DMSO + dmso
+2,2,B02,DMSO + dmso
+2,3,B03,dmso wellmate only/unpinned
+2,4,B04,dmso wellmate only/unpinned
+2,5,B05,Hydroxyurea
+2,6,B06,dmso wellmate only/unpinned
+2,7,B07,Tazemetostat
+2,8,B08,dmso wellmate only/unpinned
+2,9,B09,Pemetrexed
+2,10,B10,dmso wellmate only/unpinned
+2,11,B11,Raloxifene (hydrochloride)
+2,12,B12,dmso wellmate only/unpinned
+2,13,B13,Mifepristone
+2,14,B14,dmso wellmate only/unpinned
+2,15,B15,Fulvestrant
+2,16,B16,dmso wellmate only/unpinned
+2,17,B17,Enzalutamide
+2,18,B18,dmso wellmate only/unpinned
+2,19,B19,Rucaparib
+2,20,B20,dmso wellmate only/unpinned
+2,21,B21,5-Fluorouracil
+2,22,B22,dmso wellmate only/unpinned
+2,23,B23,STAUR + dmso
+2,24,B24,STAUR + dmso
+3,1,C01,DMSO + dmso
+3,2,C02,DMSO + dmso
+3,3,C03,dmso wellmate only/unpinned
+3,4,C04,dmso wellmate only/unpinned
+3,5,C05,Gemcitabine
+3,6,C06,Gemcitabine
+3,7,C07,Erlotinib
+3,8,C08,Erlotinib
+3,9,C09,Saracatinib
+3,10,C10,Saracatinib
+3,11,C11,Ipatasertib
+3,12,C12,Ipatasertib
+3,13,C13,Vorinostat
+3,14,C14,Vorinostat
+3,15,C15,Buparlisib
+3,16,C16,Buparlisib
+3,17,C17,Everolimus
+3,18,C18,Everolimus
+3,19,C19,Topotecan (Hydrochloride)
+3,20,C20,Topotecan (Hydrochloride)
+3,21,C21,Bortezomib
+3,22,C22,Bortezomib
+3,23,C23,STAUR + dmso
+3,24,C24,STAUR + dmso
+4,1,D01,DMSO + dmso
+4,2,D02,DMSO + dmso
+4,3,D03,dmso wellmate only/unpinned
+4,4,D04,dmso wellmate only/unpinned
+4,5,D05,Gemcitabine
+4,6,D06,dmso wellmate only/unpinned
+4,7,D07,Erlotinib
+4,8,D08,dmso wellmate only/unpinned
+4,9,D09,Saracatinib
+4,10,D10,dmso wellmate only/unpinned
+4,11,D11,Ipatasertib
+4,12,D12,dmso wellmate only/unpinned
+4,13,D13,Vorinostat
+4,14,D14,dmso wellmate only/unpinned
+4,15,D15,Buparlisib
+4,16,D16,dmso wellmate only/unpinned
+4,17,D17,Everolimus
+4,18,D18,dmso wellmate only/unpinned
+4,19,D19,Topotecan (Hydrochloride)
+4,20,D20,dmso wellmate only/unpinned
+4,21,D21,Bortezomib
+4,22,D22,dmso wellmate only/unpinned
+4,23,D23,STAUR + dmso
+4,24,D24,STAUR + dmso
+5,1,E01,DMSO + dmso
+5,2,E02,DMSO + dmso
+5,3,E03,dmso wellmate only/unpinned
+5,4,E04,dmso wellmate only/unpinned
+5,5,E05,FRAX597
+5,6,E06,FRAX597
+5,7,E07,Ganetespib
+5,8,E08,Ganetespib
+5,9,E09,Afatinib
+5,10,E10,Afatinib
+5,11,E11,Volasertib
+5,12,E12,Volasertib
+5,13,E13,PF-573228
+5,14,E14,PF-573228
+5,15,E15,ART558
+5,16,E16,ART558
+5,17,E17,Mirin
+5,18,E18,Mirin
+5,19,E19,Ferrostatin-1
+5,20,E20,Ferrostatin-1
+5,21,E21,Barasertib
+5,22,E22,Barasertib
+5,23,E23,STAUR + dmso
+5,24,E24,STAUR + dmso
+6,1,F01,DMSO + dmso
+6,2,F02,DMSO + dmso
+6,3,F03,dmso wellmate only/unpinned
+6,4,F04,dmso wellmate only/unpinned
+6,5,F05,FRAX597
+6,6,F06,dmso wellmate only/unpinned
+6,7,F07,Ganetespib
+6,8,F08,dmso wellmate only/unpinned
+6,9,F09,Afatinib
+6,10,F10,dmso wellmate only/unpinned
+6,11,F11,Volasertib
+6,12,F12,dmso wellmate only/unpinned
+6,13,F13,PF-573228
+6,14,F14,dmso wellmate only/unpinned
+6,15,F15,ART558
+6,16,F16,dmso wellmate only/unpinned
+6,17,F17,Mirin
+6,18,F18,dmso wellmate only/unpinned
+6,19,F19,Ferrostatin-1
+6,20,F20,dmso wellmate only/unpinned
+6,21,F21,Barasertib
+6,22,F22,dmso wellmate only/unpinned
+6,23,F23,STAUR + dmso
+6,24,F24,STAUR + dmso
+7,1,G01,DMSO + dmso
+7,2,G02,DMSO + dmso
+7,3,G03,dmso wellmate only/unpinned
+7,4,G04,dmso wellmate only/unpinned
+7,5,G05,Infigratinib
+7,6,G06,Infigratinib
+7,7,G07,Prexasertib
+7,8,G08,Prexasertib
+7,9,G09,Silmitasertib
+7,10,G10,Silmitasertib
+7,11,G11,Olaparib
+7,12,G12,Olaparib
+7,13,G13,T0070907
+7,14,G14,T0070907
+7,15,G15,Dabrafenib
+7,16,G16,Dabrafenib
+7,17,G17,Selumetinib
+7,18,G18,Selumetinib
+7,19,G19,Y-27632
+7,20,G20,Y-27632
+7,21,G21,IWR-1
+7,22,G22,IWR-1
+7,23,G23,STAUR + dmso
+7,24,G24,STAUR + dmso
+8,1,H01,DMSO + dmso
+8,2,H02,DMSO + dmso
+8,3,H03,dmso wellmate only/unpinned
+8,4,H04,dmso wellmate only/unpinned
+8,5,H05,Infigratinib
+8,6,H06,dmso wellmate only/unpinned
+8,7,H07,Prexasertib
+8,8,H08,dmso wellmate only/unpinned
+8,9,H09,Silmitasertib
+8,10,H10,dmso wellmate only/unpinned
+8,11,H11,Olaparib
+8,12,H12,dmso wellmate only/unpinned
+8,13,H13,T0070907
+8,14,H14,dmso wellmate only/unpinned
+8,15,H15,Dabrafenib
+8,16,H16,dmso wellmate only/unpinned
+8,17,H17,Selumetinib
+8,18,H18,dmso wellmate only/unpinned
+8,19,H19,Y-27632
+8,20,H20,dmso wellmate only/unpinned
+8,21,H21,IWR-1
+8,22,H22,dmso wellmate only/unpinned
+8,23,H23,STAUR + dmso
+8,24,H24,STAUR + dmso
+9,1,I01,STAUR + dmso
+9,2,I02,STAUR + dmso
+9,3,I03,dmso wellmate only/unpinned
+9,4,I04,dmso wellmate only/unpinned
+9,5,I05,Apoptozole
+9,6,I06,Apoptozole
+9,7,I07,Gefitinib
+9,8,I08,Gefitinib
+9,9,I09,Paclitaxel
+9,10,I10,Paclitaxel
+9,11,I11,SGI-1027
+9,12,I12,SGI-1027
+9,13,I13,PFK-015
+9,14,I14,PFK-015
+9,15,I15,Nedisertib
+9,16,I16,Nedisertib
+9,17,I17,Lapatinib
+9,18,I18,Lapatinib
+9,19,I19,Dinaciclib
+9,20,I20,Dinaciclib
+9,21,I21,TAK-580
+9,22,I22,TAK-580
+9,23,I23,DMSO + dmso
+9,24,I24,DMSO + dmso
+10,1,J01,STAUR + dmso
+10,2,J02,STAUR + dmso
+10,3,J03,dmso wellmate only/unpinned
+10,4,J04,dmso wellmate only/unpinned
+10,5,J05,Apoptozole
+10,6,J06,dmso wellmate only/unpinned
+10,7,J07,Gefitinib
+10,8,J08,dmso wellmate only/unpinned
+10,9,J09,Paclitaxel
+10,10,J10,dmso wellmate only/unpinned
+10,11,J11,SGI-1027
+10,12,J12,dmso wellmate only/unpinned
+10,13,J13,PFK-015
+10,14,J14,dmso wellmate only/unpinned
+10,15,J15,Nedisertib
+10,16,J16,dmso wellmate only/unpinned
+10,17,J17,Lapatinib
+10,18,J18,dmso wellmate only/unpinned
+10,19,J19,Dinaciclib
+10,20,J20,dmso wellmate only/unpinned
+10,21,J21,TAK-580
+10,22,J22,dmso wellmate only/unpinned
+10,23,J23,DMSO + dmso
+10,24,J24,DMSO + dmso
+11,1,K01,STAUR + dmso
+11,2,K02,STAUR + dmso
+11,3,K03,KU-55933
+11,4,K04,KU-55933
+11,5,K05,GSK2606414
+11,6,K06,GSK2606414
+11,7,K07,Tipifarnib
+11,8,K08,Tipifarnib
+11,9,K09,Axitinib
+11,10,K10,Axitinib
+11,11,K11,Laduviglusib
+11,12,K12,Laduviglusib
+11,13,K13,Berzosertib
+11,14,K14,Berzosertib
+11,15,K15,Ceritinib
+11,16,K16,Ceritinib
+11,17,K17,Navitoclax
+11,18,K18,Navitoclax
+11,19,K19,Ro-3306
+11,20,K20,Ro-3306
+11,21,K21,Empesertib
+11,22,K22,Empesertib
+11,23,K23,DMSO + dmso
+11,24,K24,DMSO + dmso
+12,1,L01,STAUR + dmso
+12,2,L02,STAUR + dmso
+12,3,L03,KU-55933
+12,4,L04,dmso wellmate only/unpinned
+12,5,L05,GSK2606414
+12,6,L06,dmso wellmate only/unpinned
+12,7,L07,Tipifarnib
+12,8,L08,dmso wellmate only/unpinned
+12,9,L09,Axitinib
+12,10,L10,dmso wellmate only/unpinned
+12,11,L11,Laduviglusib
+12,12,L12,dmso wellmate only/unpinned
+12,13,L13,Berzosertib
+12,14,L14,dmso wellmate only/unpinned
+12,15,L15,Ceritinib
+12,16,L16,dmso wellmate only/unpinned
+12,17,L17,Navitoclax
+12,18,L18,dmso wellmate only/unpinned
+12,19,L19,Ro-3306
+12,20,L20,dmso wellmate only/unpinned
+12,21,L21,Empesertib
+12,22,L22,dmso wellmate only/unpinned
+12,23,L23,DMSO + dmso
+12,24,L24,DMSO + dmso
+13,1,M01,STAUR + dmso
+13,2,M02,STAUR + dmso
+13,3,M03,SGX-523
+13,4,M04,SGX-523
+13,5,M05,Alisertib
+13,6,M06,Alisertib
+13,7,M07,Onvansertib
+13,8,M08,Onvansertib
+13,9,M09,AZD1390
+13,10,M10,AZD1390
+13,11,M11,Camptothecin
+13,12,M12,Camptothecin
+13,13,M13,Tomivosertib
+13,14,M14,Tomivosertib
+13,15,M15,FRAX1036
+13,16,M16,FRAX1036
+13,17,M17,Trametinib
+13,18,M18,Trametinib
+13,19,M19,Lonafarnib
+13,20,M20,Lonafarnib
+13,21,M21,Niclosamide
+13,22,M22,Niclosamide
+13,23,M23,DMSO + dmso
+13,24,M24,DMSO + dmso
+14,1,N01,STAUR + dmso
+14,2,N02,STAUR + dmso
+14,3,N03,SGX-523
+14,4,N04,dmso wellmate only/unpinned
+14,5,N05,Alisertib
+14,6,N06,dmso wellmate only/unpinned
+14,7,N07,Onvansertib
+14,8,N08,dmso wellmate only/unpinned
+14,9,N09,AZD1390
+14,10,N10,dmso wellmate only/unpinned
+14,11,N11,Camptothecin
+14,12,N12,dmso wellmate only/unpinned
+14,13,N13,Tomivosertib
+14,14,N14,dmso wellmate only/unpinned
+14,15,N15,FRAX1036
+14,16,N16,dmso wellmate only/unpinned
+14,17,N17,Trametinib
+14,18,N18,dmso wellmate only/unpinned
+14,19,N19,Lonafarnib
+14,20,N20,dmso wellmate only/unpinned
+14,21,N21,Niclosamide
+14,22,N22,dmso wellmate only/unpinned
+14,23,N23,DMSO + dmso
+14,24,N24,DMSO + dmso
+15,1,O01,STAUR + dmso
+15,2,O02,STAUR + dmso
+15,3,O03,BML-277
+15,4,O04,BML-277
+15,5,O05,Ceralasertib
+15,6,O06,Ceralasertib
+15,7,O07,ZN-c3
+15,8,O08,ZN-c3
+15,9,O09,(+)-JQ-1
+15,10,O10,(+)-JQ-1
+15,11,O11,Adavosertib
+15,12,O12,Adavosertib
+15,13,O13,Adapalene
+15,14,O14,Adapalene
+15,15,O15,LB-100
+15,16,O16,LB-100
+15,17,O17,Palbociclib (monohydrochloride)
+15,18,O18,Palbociclib (monohydrochloride)
+15,19,O19,Copanlisib (dihydrochloride)
+15,20,O20,Copanlisib (dihydrochloride)
+15,21,O21,Oxaliplatin
+15,22,O22,Oxaliplatin
+15,23,O23,DMSO + dmso
+15,24,O24,DMSO + dmso
+16,1,P01,STAUR + dmso
+16,2,P02,STAUR + dmso
+16,3,P03,BML-277
+16,4,P04,dmso wellmate only/unpinned
+16,5,P05,Ceralasertib
+16,6,P06,dmso wellmate only/unpinned
+16,7,P07,ZN-c3
+16,8,P08,dmso wellmate only/unpinned
+16,9,P09,(+)-JQ-1
+16,10,P10,dmso wellmate only/unpinned
+16,11,P11,Adavosertib
+16,12,P12,dmso wellmate only/unpinned
+16,13,P13,Adapalene
+16,14,P14,dmso wellmate only/unpinned
+16,15,P15,LB-100
+16,16,P16,dmso wellmate only/unpinned
+16,17,P17,Palbociclib (monohydrochloride)
+16,18,P18,dmso wellmate only/unpinned
+16,19,P19,Copanlisib (dihydrochloride)
+16,20,P20,dmso wellmate only/unpinned
+16,21,P21,Oxaliplatin
+16,22,P22,dmso wellmate only/unpinned
+16,23,P23,DMSO + dmso
+16,24,P24,DMSO + dmso

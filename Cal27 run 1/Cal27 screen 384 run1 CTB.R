@@ -1,4 +1,5 @@
 setwd("~/Work/Flavi CBD screen/CBD_synergy_2022/Cal27 run 1")
+setwd("~/Work/Flavi_screen/Cal27 run 1") # at home
 
 library(tidyverse)
 library(readxl)
@@ -10,10 +11,12 @@ library(plotly)
 
  # see the original version of this script for sources of some lines and for the playground with the visuals
 # this version gets all four plates
+
+# reading all data
 cal27_data = read_excel("Cal27_CTB  run 1.xlsx",
                        na = "NA")
-fadu_drug_map = read_excel("~/Work/Flavi CBD screen/CBD_synergy_2022/plate_maps/plate_map_1_drugs.xlsx",
-                       na = "NA")
+fadu_drug_map = read_excel("../plate_maps/plate_map_1_drugs.xlsx",
+                           na = "NA")
 
 
 # creating annotation template
