@@ -1,0 +1,1921 @@
+plate,well,signal,row,col,drugs,group_code,groups
+1,A01,528030.9375,1,1,DMSO + dmso,0,bckg
+1,A02,522930.875,1,2,DMSO + dmso,0,bckg
+1,A03,438516,1,3,dmso wellmate only/unpinned,1,dmso
+1,A04,505610.59375,1,4,dmso wellmate only/unpinned,1,dmso
+1,A05,484903.875,1,5,Hydroxyurea,2,lib
+1,A06,475673.03125,1,6,Hydroxyurea,2,lib
+1,A07,450391.75,1,7,Tazemetostat,2,lib
+1,A08,377706.6875,1,8,Tazemetostat,2,lib
+1,A09,348560.25,1,9,Pemetrexed,2,lib
+1,A10,318219.8125,1,10,Pemetrexed,2,lib
+1,A11,293846.46875,1,11,Raloxifene (hydrochloride),2,lib
+1,A12,328317.71875,1,12,Raloxifene (hydrochloride),2,lib
+1,A13,324055.53125,1,13,Mifepristone,2,lib
+1,A14,349144.125,1,14,Mifepristone,2,lib
+1,A15,317892.84375,1,15,Fulvestrant,2,lib
+1,A16,392163.125,1,16,Fulvestrant,2,lib
+1,A17,382666.59375,1,17,Enzalutamide,2,lib
+1,A18,418755.15625,1,18,Enzalutamide,2,lib
+1,A19,391888.71875,1,19,Rucaparib,2,lib
+1,A20,417473.5625,1,20,Rucaparib,2,lib
+1,A21,474254.21875,1,21,5-Fluorouracil,2,lib
+1,A22,416238.71875,1,22,5-Fluorouracil,2,lib
+1,A23,208094.53125,1,23,STAUR + dmso,10,staur
+1,A24,221605.125,1,24,STAUR + dmso,10,staur
+1,B01,539573.875,2,1,DMSO + dmso,0,bckg
+1,B02,592431,2,2,DMSO + dmso,0,bckg
+1,B03,661627.5,2,3,dmso wellmate only/unpinned,1,dmso
+1,B04,834141.4375,2,4,dmso wellmate only/unpinned,1,dmso
+1,B05,706138.25,2,5,Hydroxyurea,2,lib
+1,B06,609284.1875,2,6,dmso wellmate only/unpinned,1,dmso
+1,B07,567476.6875,2,7,Tazemetostat,2,lib
+1,B08,522542.59375,2,8,dmso wellmate only/unpinned,1,dmso
+1,B09,538511.25,2,9,Pemetrexed,2,lib
+1,B10,525657.5,2,10,dmso wellmate only/unpinned,1,dmso
+1,B11,545611,2,11,Raloxifene (hydrochloride),2,lib
+1,B12,610168.75,2,12,dmso wellmate only/unpinned,1,dmso
+1,B13,520697.59375,2,13,Mifepristone,2,lib
+1,B14,480539.5,2,14,dmso wellmate only/unpinned,1,dmso
+1,B15,602928.8125,2,15,Fulvestrant,2,lib
+1,B16,499328.21875,2,16,dmso wellmate only/unpinned,1,dmso
+1,B17,563766.25,2,17,Enzalutamide,2,lib
+1,B18,512958.5,2,18,dmso wellmate only/unpinned,1,dmso
+1,B19,525821,2,19,Rucaparib,2,lib
+1,B20,540908,2,20,dmso wellmate only/unpinned,1,dmso
+1,B21,487204.3125,2,21,5-Fluorouracil,2,lib
+1,B22,586755.8125,2,22,dmso wellmate only/unpinned,1,dmso
+1,B23,333047,2,23,STAUR + dmso,10,staur
+1,B24,249259.78125,2,24,STAUR + dmso,10,staur
+1,C01,590139.3125,3,1,DMSO + dmso,0,bckg
+1,C02,535685.375,3,2,DMSO + dmso,0,bckg
+1,C03,441595.875,3,3,dmso wellmate only/unpinned,1,dmso
+1,C04,525132.0625,3,4,dmso wellmate only/unpinned,1,dmso
+1,C05,316491.59375,3,5,Gemcitabine,2,lib
+1,C06,305523.71875,3,6,Gemcitabine,2,lib
+1,C07,397914.15625,3,7,Erlotinib,2,lib
+1,C08,354906.84375,3,8,Erlotinib,2,lib
+1,C09,419771.0625,3,9,Saracatinib,2,lib
+1,C10,331108.59375,3,10,Saracatinib,2,lib
+1,C11,286597.8125,3,11,Ipatasertib,2,lib
+1,C12,303596.96875,3,12,Ipatasertib,2,lib
+1,C13,317110.46875,3,13,Vorinostat,2,lib
+1,C14,335038,3,14,Vorinostat,2,lib
+1,C15,326802.59375,3,15,Buparlisib,2,lib
+1,C16,304761.78125,3,16,Buparlisib,2,lib
+1,C17,351213.90625,3,17,Everolimus,2,lib
+1,C18,382012.65625,3,18,Everolimus,2,lib
+1,C19,257752.0625,3,19,Topotecan (Hydrochloride),2,lib
+1,C20,264700.03125,3,20,Topotecan (Hydrochloride),2,lib
+1,C21,221208.09375,3,21,Bortezomib,2,lib
+1,C22,226938.703125,3,22,Bortezomib,2,lib
+1,C23,242303.0625,3,23,STAUR + dmso,10,staur
+1,C24,237258.484375,3,24,STAUR + dmso,10,staur
+1,D01,647036.75,4,1,DMSO + dmso,0,bckg
+1,D02,697453.3125,4,2,DMSO + dmso,0,bckg
+1,D03,673856.5,4,3,dmso wellmate only/unpinned,1,dmso
+1,D04,736966.1875,4,4,dmso wellmate only/unpinned,1,dmso
+1,D05,362929.125,4,5,Gemcitabine,2,lib
+1,D06,703286.0625,4,6,dmso wellmate only/unpinned,1,dmso
+1,D07,492199.25,4,7,Erlotinib,2,lib
+1,D08,706981.9375,4,8,dmso wellmate only/unpinned,1,dmso
+1,D09,662622.9375,4,9,Saracatinib,2,lib
+1,D10,634839.875,4,10,dmso wellmate only/unpinned,1,dmso
+1,D11,627903.5625,4,11,Ipatasertib,2,lib
+1,D12,689022.3125,4,12,dmso wellmate only/unpinned,1,dmso
+1,D13,639099.125,4,13,Vorinostat,2,lib
+1,D14,660255.375,4,14,dmso wellmate only/unpinned,1,dmso
+1,D15,676145.25,4,15,Buparlisib,2,lib
+1,D16,673520.75,4,16,dmso wellmate only/unpinned,1,dmso
+1,D17,630793.6875,4,17,Everolimus,2,lib
+1,D18,505450.03125,4,18,dmso wellmate only/unpinned,1,dmso
+1,D19,336392.5625,4,19,Topotecan (Hydrochloride),2,lib
+1,D20,605921.125,4,20,dmso wellmate only/unpinned,1,dmso
+1,D21,322394.4375,4,21,Bortezomib,2,lib
+1,D22,602447.125,4,22,dmso wellmate only/unpinned,1,dmso
+1,D23,256260.296875,4,23,STAUR + dmso,10,staur
+1,D24,258537.359375,4,24,STAUR + dmso,10,staur
+1,E01,532418.625,5,1,DMSO + dmso,0,bckg
+1,E02,537574.125,5,2,DMSO + dmso,0,bckg
+1,E03,599335.125,5,3,dmso wellmate only/unpinned,1,dmso
+1,E04,596789.5,5,4,dmso wellmate only/unpinned,1,dmso
+1,E05,530634.9375,5,5,FRAX597,2,lib
+1,E06,483890.875,5,6,FRAX597,2,lib
+1,E07,262936.78125,5,7,Ganetespib,2,lib
+1,E08,263325.03125,5,8,Ganetespib,2,lib
+1,E09,371544,5,9,Afatinib,2,lib
+1,E10,383343.875,5,10,Afatinib,2,lib
+1,E11,432052.625,5,11,Volasertib,2,lib
+1,E12,418401.90625,5,12,Volasertib,2,lib
+1,E13,425452.0625,5,13,PF-573228,2,lib
+1,E14,508529.90625,5,14,PF-573228,2,lib
+1,E15,528649.8125,5,15,ART558,2,lib
+1,E16,476855.34375,5,16,ART558,2,lib
+1,E17,460626.875,5,17,Mirin,2,lib
+1,E18,503441.53125,5,18,Mirin,2,lib
+1,E19,311698.0625,5,19,Ferrostatin-1,2,lib
+1,E20,328822.78125,5,20,Ferrostatin-1,2,lib
+1,E21,534053.4375,5,21,Barasertib,2,lib
+1,E22,548679.25,5,22,Barasertib,2,lib
+1,E23,292897.6875,5,23,STAUR + dmso,10,staur
+1,E24,254240.140625,5,24,STAUR + dmso,10,staur
+1,F01,608423,6,1,DMSO + dmso,0,bckg
+1,F02,618906.25,6,2,DMSO + dmso,0,bckg
+1,F03,653167.3125,6,3,dmso wellmate only/unpinned,1,dmso
+1,F04,765333.1875,6,4,dmso wellmate only/unpinned,1,dmso
+1,F05,792824.375,6,5,FRAX597,2,lib
+1,F06,671497.6875,6,6,dmso wellmate only/unpinned,1,dmso
+1,F07,358824.5625,6,7,Ganetespib,2,lib
+1,F08,735807.25,6,8,dmso wellmate only/unpinned,1,dmso
+1,F09,506909.6875,6,9,Afatinib,2,lib
+1,F10,588939.5,6,10,dmso wellmate only/unpinned,1,dmso
+1,F11,598526.5,6,11,Volasertib,2,lib
+1,F12,820181.25,6,12,dmso wellmate only/unpinned,1,dmso
+1,F13,713401.5,6,13,PF-573228,2,lib
+1,F14,774345.125,6,14,dmso wellmate only/unpinned,1,dmso
+1,F15,708689.75,6,15,ART558,2,lib
+1,F16,603790,6,16,dmso wellmate only/unpinned,1,dmso
+1,F17,676965.5625,6,17,Mirin,2,lib
+1,F18,647410.4375,6,18,dmso wellmate only/unpinned,1,dmso
+1,F19,301728.625,6,19,Ferrostatin-1,2,lib
+1,F20,411109.46875,6,20,dmso wellmate only/unpinned,1,dmso
+1,F21,541526.875,6,21,Barasertib,2,lib
+1,F22,643267.9375,6,22,dmso wellmate only/unpinned,1,dmso
+1,F23,270527,6,23,STAUR + dmso,10,staur
+1,F24,256917.140625,6,24,STAUR + dmso,10,staur
+1,G01,436291.46875,7,1,DMSO + dmso,0,bckg
+1,G02,401566.21875,7,2,DMSO + dmso,0,bckg
+1,G03,493536.3125,7,3,dmso wellmate only/unpinned,1,dmso
+1,G04,495244.09375,7,4,dmso wellmate only/unpinned,1,dmso
+1,G05,581825.125,7,5,Infigratinib,2,lib
+1,G06,557110.1875,7,6,Infigratinib,2,lib
+1,G07,378293.46875,7,7,Prexasertib,2,lib
+1,G08,401242.1875,7,8,Prexasertib,2,lib
+1,G09,457672.53125,7,9,Silmitasertib,2,lib
+1,G10,488056.75,7,10,Silmitasertib,2,lib
+1,G11,510138.4375,7,11,Olaparib,2,lib
+1,G12,453106.71875,7,12,Olaparib,2,lib
+1,G13,552608.625,7,13,T0070907,2,lib
+1,G14,433877.1875,7,14,T0070907,2,lib
+1,G15,484778.34375,7,15,Dabrafenib,2,lib
+1,G16,425454.96875,7,16,Dabrafenib,2,lib
+1,G17,389115.34375,7,17,Selumetinib,2,lib
+1,G18,386625.1875,7,18,Selumetinib,2,lib
+1,G19,508719.65625,7,19,Y-27632,2,lib
+1,G20,670061.375,7,20,Y-27632,2,lib
+1,G21,597945.5625,7,21,IWR-1,2,lib
+1,G22,670186.875,7,22,IWR-1,2,lib
+1,G23,247797.203125,7,23,STAUR + dmso,10,staur
+1,G24,256975.53125,7,24,STAUR + dmso,10,staur
+1,H01,598599.5,8,1,DMSO + dmso,0,bckg
+1,H02,552056.875,8,2,DMSO + dmso,0,bckg
+1,H03,579650.25,8,3,dmso wellmate only/unpinned,1,dmso
+1,H04,780113.6875,8,4,dmso wellmate only/unpinned,1,dmso
+1,H05,736102.125,8,5,Infigratinib,2,lib
+1,H06,738732.375,8,6,dmso wellmate only/unpinned,1,dmso
+1,H07,532056.625,8,7,Prexasertib,2,lib
+1,H08,570066.125,8,8,dmso wellmate only/unpinned,1,dmso
+1,H09,790564.8125,8,9,Silmitasertib,2,lib
+1,H10,756706.625,8,10,dmso wellmate only/unpinned,1,dmso
+1,H11,859460.625,8,11,Olaparib,2,lib
+1,H12,661064.0625,8,12,dmso wellmate only/unpinned,1,dmso
+1,H13,686324.875,8,13,T0070907,2,lib
+1,H14,736145.875,8,14,dmso wellmate only/unpinned,1,dmso
+1,H15,681090.5625,8,15,Dabrafenib,2,lib
+1,H16,564434.75,8,16,dmso wellmate only/unpinned,1,dmso
+1,H17,499506.28125,8,17,Selumetinib,2,lib
+1,H18,579276.5625,8,18,dmso wellmate only/unpinned,1,dmso
+1,H19,685939.5,8,19,Y-27632,2,lib
+1,H20,678746.3125,8,20,dmso wellmate only/unpinned,1,dmso
+1,H21,642292.875,8,21,IWR-1,2,lib
+1,H22,590060.5,8,22,dmso wellmate only/unpinned,1,dmso
+1,H23,271668.4375,8,23,STAUR + dmso,10,staur
+1,H24,268950.5625,8,24,STAUR + dmso,10,staur
+1,I01,226451.1875,9,1,STAUR + dmso,10,staur
+1,I02,267271.9375,9,2,STAUR + dmso,10,staur
+1,I03,455442.15625,9,3,dmso wellmate only/unpinned,1,dmso
+1,I04,527117.1875,9,4,dmso wellmate only/unpinned,1,dmso
+1,I05,487020.375,9,5,Apoptozole,2,lib
+1,I06,581623.6875,9,6,Apoptozole,2,lib
+1,I07,502767.15625,9,7,Gefitinib,2,lib
+1,I08,429609.15625,9,8,Gefitinib,2,lib
+1,I09,354410.5625,9,9,Paclitaxel,2,lib
+1,I10,387337.5,9,10,Paclitaxel,2,lib
+1,I11,448923.34375,9,11,SGI-1027,2,lib
+1,I12,458265.15625,9,12,SGI-1027,2,lib
+1,I13,381028.84375,9,13,PFK-015,2,lib
+1,I14,507169.5,9,14,PFK-015,2,lib
+1,I15,454706.5,9,15,Nedisertib,2,lib
+1,I16,429629.59375,9,16,Nedisertib,2,lib
+1,I17,374837,9,17,Lapatinib,2,lib
+1,I18,434986.53125,9,18,Lapatinib,2,lib
+1,I19,288950.78125,9,19,Dinaciclib,2,lib
+1,I20,313621.90625,9,20,Dinaciclib,2,lib
+1,I21,559725.875,9,21,TAK-580,2,lib
+1,I22,544329.4375,9,22,TAK-580,2,lib
+1,I23,565704.6875,9,23,DMSO + dmso,0,bckg
+1,I24,623110.0625,9,24,DMSO + dmso,0,bckg
+1,J01,288918.65625,10,1,STAUR + dmso,10,staur
+1,J02,259716.765625,10,2,STAUR + dmso,10,staur
+1,J03,684167.5,10,3,dmso wellmate only/unpinned,1,dmso
+1,J04,625492.1875,10,4,dmso wellmate only/unpinned,1,dmso
+1,J05,792643.375,10,5,Apoptozole,2,lib
+1,J06,797124.5,10,6,dmso wellmate only/unpinned,1,dmso
+1,J07,614474.6875,10,7,Gefitinib,2,lib
+1,J08,695570.3125,10,8,dmso wellmate only/unpinned,1,dmso
+1,J09,450870.53125,10,9,Paclitaxel,2,lib
+1,J10,792433.1875,10,10,dmso wellmate only/unpinned,1,dmso
+1,J11,755068.875,10,11,SGI-1027,2,lib
+1,J12,758487.375,10,12,dmso wellmate only/unpinned,1,dmso
+1,J13,654664.9375,10,13,PFK-015,2,lib
+1,J14,798747.625,10,14,dmso wellmate only/unpinned,1,dmso
+1,J15,817130.5625,10,15,Nedisertib,2,lib
+1,J16,749206.875,10,16,dmso wellmate only/unpinned,1,dmso
+1,J17,560753.5,10,17,Lapatinib,2,lib
+1,J18,743385.8125,10,18,dmso wellmate only/unpinned,1,dmso
+1,J19,342701.1875,10,19,Dinaciclib,2,lib
+1,J20,718621.25,10,20,dmso wellmate only/unpinned,1,dmso
+1,J21,663189.3125,10,21,TAK-580,2,lib
+1,J22,665948.0625,10,22,dmso wellmate only/unpinned,1,dmso
+1,J23,602400.4375,10,23,DMSO + dmso,0,bckg
+1,J24,549266,10,24,DMSO + dmso,0,bckg
+1,K01,223315.84375,11,1,STAUR + dmso,10,staur
+1,K02,234342.09375,11,2,STAUR + dmso,10,staur
+1,K03,505429.59375,11,3,KU-55933,2,lib
+1,K04,558701.25,11,4,KU-55933,2,lib
+1,K05,496032.3125,11,5,GSK2606414,2,lib
+1,K06,574045.125,11,6,GSK2606414,2,lib
+1,K07,444920.96875,11,7,Tipifarnib,2,lib
+1,K08,436679.75,11,8,Tipifarnib,2,lib
+1,K09,489834.59375,11,9,Axitinib,2,lib
+1,K10,450012.25,11,10,Axitinib,2,lib
+1,K11,482603.46875,11,11,Laduviglusib,2,lib
+1,K12,426374.5625,11,12,Laduviglusib,2,lib
+1,K13,508404.375,11,13,Berzosertib,2,lib
+1,K14,501360.0625,11,14,Berzosertib,2,lib
+1,K15,462115.71875,11,15,Ceritinib,2,lib
+1,K16,517968.03125,11,16,Ceritinib,2,lib
+1,K17,473769.625,11,17,Navitoclax,2,lib
+1,K18,494280.71875,11,18,Navitoclax,2,lib
+1,K19,631304.5625,11,19,Ro-3306,2,lib
+1,K20,606157.5625,11,20,Ro-3306,2,lib
+1,K21,445580.71875,11,21,Empesertib,2,lib
+1,K22,448596.375,11,22,Empesertib,2,lib
+1,K23,668175.5,11,23,DMSO + dmso,0,bckg
+1,K24,564396.8125,11,24,DMSO + dmso,0,bckg
+1,L01,239421.703125,12,1,STAUR + dmso,10,staur
+1,L02,265987.4375,12,2,STAUR + dmso,10,staur
+1,L03,657890.75,12,3,KU-55933,2,lib
+1,L04,682567.6875,12,4,dmso wellmate only/unpinned,1,dmso
+1,L05,763675,12,5,GSK2606414,2,lib
+1,L06,790699.125,12,6,dmso wellmate only/unpinned,1,dmso
+1,L07,664053.4375,12,7,Tipifarnib,2,lib
+1,L08,731448.6875,12,8,dmso wellmate only/unpinned,1,dmso
+1,L09,786431.0625,12,9,Axitinib,2,lib
+1,L10,751197.875,12,10,dmso wellmate only/unpinned,1,dmso
+1,L11,766830.8125,12,11,Laduviglusib,2,lib
+1,L12,751154.0625,12,12,dmso wellmate only/unpinned,1,dmso
+1,L13,871748,12,13,Berzosertib,2,lib
+1,L14,744530.125,12,14,dmso wellmate only/unpinned,1,dmso
+1,L15,675835.75,12,15,Ceritinib,2,lib
+1,L16,615770.875,12,16,dmso wellmate only/unpinned,1,dmso
+1,L17,669591.375,12,17,Navitoclax,2,lib
+1,L18,678448.5625,12,18,dmso wellmate only/unpinned,1,dmso
+1,L19,733284.9375,12,19,Ro-3306,2,lib
+1,L20,739176.125,12,20,dmso wellmate only/unpinned,1,dmso
+1,L21,599822.6875,12,21,Empesertib,2,lib
+1,L22,556660.625,12,22,dmso wellmate only/unpinned,1,dmso
+1,L23,621384.75,12,23,DMSO + dmso,0,bckg
+1,L24,532544.1875,12,24,DMSO + dmso,0,bckg
+1,M01,224731.703125,13,1,STAUR + dmso,10,staur
+1,M02,233521.765625,13,2,STAUR + dmso,10,staur
+1,M03,436703.09375,13,3,SGX-523,2,lib
+1,M04,613374.125,13,4,SGX-523,2,lib
+1,M05,612022.5,13,5,Alisertib,2,lib
+1,M06,515904.09375,13,6,Alisertib,2,lib
+1,M07,437672.3125,13,7,Onvansertib,2,lib
+1,M08,446392.3125,13,8,Onvansertib,2,lib
+1,M09,473489.375,13,9,AZD1390,2,lib
+1,M10,474858.53125,13,10,AZD1390,2,lib
+1,M11,334293.5625,13,11,Camptothecin,2,lib
+1,M12,303048.15625,13,12,Camptothecin,2,lib
+1,M13,515600.46875,13,13,Tomivosertib,2,lib
+1,M14,508950.28125,13,14,Tomivosertib,2,lib
+1,M15,521623.03125,13,15,FRAX1036,2,lib
+1,M16,567298.625,13,16,FRAX1036,2,lib
+1,M17,455030.5625,13,17,Trametinib,2,lib
+1,M18,418369.8125,13,18,Trametinib,2,lib
+1,M19,700448.5,13,19,Lonafarnib,2,lib
+1,M20,637300.8125,13,20,Lonafarnib,2,lib
+1,M21,650099.125,13,21,Niclosamide,2,lib
+1,M22,607223.125,13,22,Niclosamide,2,lib
+1,M23,586177.8125,13,23,DMSO + dmso,0,bckg
+1,M24,625503.875,13,24,DMSO + dmso,0,bckg
+1,N01,318292.8125,14,1,STAUR + dmso,10,staur
+1,N02,294491.625,14,2,STAUR + dmso,10,staur
+1,N03,706129.5,14,3,SGX-523,2,lib
+1,N04,807111.5,14,4,dmso wellmate only/unpinned,1,dmso
+1,N05,896515.5,14,5,Alisertib,2,lib
+1,N06,855172.125,14,6,dmso wellmate only/unpinned,1,dmso
+1,N07,644911.5,14,7,Onvansertib,2,lib
+1,N08,679047,14,8,dmso wellmate only/unpinned,1,dmso
+1,N09,826849,14,9,AZD1390,2,lib
+1,N10,740986.125,14,10,dmso wellmate only/unpinned,1,dmso
+1,N11,420579.71875,14,11,Camptothecin,2,lib
+1,N12,701263,14,12,dmso wellmate only/unpinned,1,dmso
+1,N13,711898.0625,14,13,Tomivosertib,2,lib
+1,N14,718326.375,14,14,dmso wellmate only/unpinned,1,dmso
+1,N15,775436.9375,14,15,FRAX1036,2,lib
+1,N16,707749.6875,14,16,dmso wellmate only/unpinned,1,dmso
+1,N17,498233.46875,14,17,Trametinib,2,lib
+1,N18,751869.3125,14,18,dmso wellmate only/unpinned,1,dmso
+1,N19,674770.25,14,19,Lonafarnib,2,lib
+1,N20,710406.3125,14,20,dmso wellmate only/unpinned,1,dmso
+1,N21,690665.875,14,21,Niclosamide,2,lib
+1,N22,670189.8125,14,22,dmso wellmate only/unpinned,1,dmso
+1,N23,649340.0625,14,23,DMSO + dmso,0,bckg
+1,N24,573969.25,14,24,DMSO + dmso,0,bckg
+1,O01,325167.78125,15,1,STAUR + dmso,10,staur
+1,O02,255153.875,15,2,STAUR + dmso,10,staur
+1,O03,513872.25,15,3,BML-277,2,lib
+1,O04,583509.5625,15,4,BML-277,2,lib
+1,O05,625355,15,5,Ceralasertib,2,lib
+1,O06,619428.8125,15,6,Ceralasertib,2,lib
+1,O07,488170.59375,15,7,ZN-c3,2,lib
+1,O08,382380.5,15,8,ZN-c3,2,lib
+1,O09,378296.375,15,9,(+)-JQ-1,2,lib
+1,O10,342963.9375,15,10,(+)-JQ-1,2,lib
+1,O11,500154.375,15,11,Adavosertib,2,lib
+1,O12,440620.8125,15,12,Adavosertib,2,lib
+1,O13,821760.625,15,13,Adapalene,2,lib
+1,O14,528944.6875,15,14,Adapalene,2,lib
+1,O15,518919.71875,15,15,LB-100,2,lib
+1,O16,422369.25,15,16,LB-100,2,lib
+1,O17,365944.75,15,17,Palbociclib (monohydrochloride),2,lib
+1,O18,411526.9375,15,18,Palbociclib (monohydrochloride),2,lib
+1,O19,389197.09375,15,19,Copanlisib (dihydrochloride),2,lib
+1,O20,380827.4375,15,20,Copanlisib (dihydrochloride),2,lib
+1,O21,575005.5625,15,21,Oxaliplatin,2,lib
+1,O22,635210.625,15,22,Oxaliplatin,2,lib
+1,O23,635706.875,15,23,DMSO + dmso,0,bckg
+1,O24,575887.25,15,24,DMSO + dmso,0,bckg
+1,P01,285640.28125,16,1,STAUR + dmso,10,staur
+1,P02,284735.28125,16,2,STAUR + dmso,10,staur
+1,P03,691894.9375,16,3,BML-277,2,lib
+1,P04,757290.5,16,4,dmso wellmate only/unpinned,1,dmso
+1,P05,732660.25,16,5,Ceralasertib,2,lib
+1,P06,645282.25,16,6,dmso wellmate only/unpinned,1,dmso
+1,P07,653322,16,7,ZN-c3,2,lib
+1,P08,589643.0625,16,8,dmso wellmate only/unpinned,1,dmso
+1,P09,553396.8125,16,9,(+)-JQ-1,2,lib
+1,P10,582578.3125,16,10,dmso wellmate only/unpinned,1,dmso
+1,P11,675827,16,11,Adavosertib,2,lib
+1,P12,615420.5625,16,12,dmso wellmate only/unpinned,1,dmso
+1,P13,597662.375,16,13,Adapalene,2,lib
+1,P14,705571.9375,16,14,dmso wellmate only/unpinned,1,dmso
+1,P15,621574.5,16,15,LB-100,2,lib
+1,P16,609710.375,16,16,dmso wellmate only/unpinned,1,dmso
+1,P17,458846.09375,16,17,Palbociclib (monohydrochloride),2,lib
+1,P18,483625.21875,16,18,dmso wellmate only/unpinned,1,dmso
+1,P19,431442.5,16,19,Copanlisib (dihydrochloride),2,lib
+1,P20,587062.375,16,20,dmso wellmate only/unpinned,1,dmso
+1,P21,569418,16,21,Oxaliplatin,2,lib
+1,P22,538768.125,16,22,dmso wellmate only/unpinned,1,dmso
+1,P23,590434.1875,16,23,DMSO + dmso,0,bckg
+1,P24,564589.5,16,24,DMSO + dmso,0,bckg
+2,A01,583278.9375,1,1,DMSO + dmso,0,bckg
+2,A02,583903.6875,1,2,DMSO + dmso,0,bckg
+2,A03,570153.6875,1,3,dmso wellmate only/unpinned,1,dmso
+2,A04,575939.75,1,4,dmso wellmate only/unpinned,1,dmso
+2,A05,481318.96875,1,5,Hydroxyurea,2,lib
+2,A06,439511.46875,1,6,Hydroxyurea,2,lib
+2,A07,374422.4375,1,7,Tazemetostat,2,lib
+2,A08,512380.46875,1,8,Tazemetostat,2,lib
+2,A09,417596.1875,1,9,Pemetrexed,2,lib
+2,A10,381285.75,1,10,Pemetrexed,2,lib
+2,A11,349182.0625,1,11,Raloxifene (hydrochloride),2,lib
+2,A12,331905.5625,1,12,Raloxifene (hydrochloride),2,lib
+2,A13,355312.625,1,13,Mifepristone,2,lib
+2,A14,411786.75,1,14,Mifepristone,2,lib
+2,A15,353371.28125,1,15,Fulvestrant,2,lib
+2,A16,381458,1,16,Fulvestrant,2,lib
+2,A17,358833.3125,1,17,Enzalutamide,2,lib
+2,A18,396034.125,1,18,Enzalutamide,2,lib
+2,A19,378483.21875,1,19,Rucaparib,2,lib
+2,A20,409518.4375,1,20,Rucaparib,2,lib
+2,A21,363813.65625,1,21,5-Fluorouracil,2,lib
+2,A22,437648.9375,1,22,5-Fluorouracil,2,lib
+2,A23,219961.546875,1,23,STAUR + dmso,10,staur
+2,A24,222504.265625,1,24,STAUR + dmso,10,staur
+2,B01,528112.625,2,1,DMSO + dmso,0,bckg
+2,B02,592270.4375,2,2,DMSO + dmso,0,bckg
+2,B03,501614.03125,2,3,dmso wellmate only/unpinned,1,dmso
+2,B04,642135.1875,2,4,dmso wellmate only/unpinned,1,dmso
+2,B05,606989.625,2,5,Hydroxyurea,2,lib
+2,B06,475290.59375,2,6,dmso wellmate only/unpinned,1,dmso
+2,B07,592571.125,2,7,Tazemetostat,2,lib
+2,B08,490403.875,2,8,dmso wellmate only/unpinned,1,dmso
+2,B09,590367,2,9,Pemetrexed,2,lib
+2,B10,606239.3125,2,10,dmso wellmate only/unpinned,1,dmso
+2,B11,572725.625,2,11,Raloxifene (hydrochloride),2,lib
+2,B12,535702.875,2,12,dmso wellmate only/unpinned,1,dmso
+2,B13,538552.125,2,13,Mifepristone,2,lib
+2,B14,533379.125,2,14,dmso wellmate only/unpinned,1,dmso
+2,B15,510987.96875,2,15,Fulvestrant,2,lib
+2,B16,562884.625,2,16,dmso wellmate only/unpinned,1,dmso
+2,B17,568495.5,2,17,Enzalutamide,2,lib
+2,B18,541836.375,2,18,dmso wellmate only/unpinned,1,dmso
+2,B19,530156.1875,2,19,Rucaparib,2,lib
+2,B20,497147.5,2,20,dmso wellmate only/unpinned,1,dmso
+2,B21,490041.875,2,21,5-Fluorouracil,2,lib
+2,B22,544519.1875,2,22,dmso wellmate only/unpinned,1,dmso
+2,B23,266793.1875,2,23,STAUR + dmso,10,staur
+2,B24,227081.75,2,24,STAUR + dmso,10,staur
+2,C01,549855.6875,3,1,DMSO + dmso,0,bckg
+2,C02,457564.5,3,2,DMSO + dmso,0,bckg
+2,C03,474730.09375,3,3,dmso wellmate only/unpinned,1,dmso
+2,C04,556295.6875,3,4,dmso wellmate only/unpinned,1,dmso
+2,C05,291078.96875,3,5,Gemcitabine,2,lib
+2,C06,280102.34375,3,6,Gemcitabine,2,lib
+2,C07,355458.59375,3,7,Erlotinib,2,lib
+2,C08,321521.5625,3,8,Erlotinib,2,lib
+2,C09,387045.5625,3,9,Saracatinib,2,lib
+2,C10,429250.09375,3,10,Saracatinib,2,lib
+2,C11,349660.84375,3,11,Ipatasertib,2,lib
+2,C12,303278.78125,3,12,Ipatasertib,2,lib
+2,C13,288731.8125,3,13,Vorinostat,2,lib
+2,C14,276543.6875,3,14,Vorinostat,2,lib
+2,C15,304548.65625,3,15,Buparlisib,2,lib
+2,C16,252687.0625,3,16,Buparlisib,2,lib
+2,C17,461876.34375,3,17,Everolimus,2,lib
+2,C18,452575.40625,3,18,Everolimus,2,lib
+2,C19,265205.0625,3,19,Topotecan (Hydrochloride),2,lib
+2,C20,238697.703125,3,20,Topotecan (Hydrochloride),2,lib
+2,C21,231110.40625,3,21,Bortezomib,2,lib
+2,C22,220165.90625,3,22,Bortezomib,2,lib
+2,C23,220308.953125,3,23,STAUR + dmso,10,staur
+2,C24,208398.140625,3,24,STAUR + dmso,10,staur
+2,D01,535224.125,4,1,DMSO + dmso,0,bckg
+2,D02,550895,4,2,DMSO + dmso,0,bckg
+2,D03,653269.5,4,3,dmso wellmate only/unpinned,1,dmso
+2,D04,620068.125,4,4,dmso wellmate only/unpinned,1,dmso
+2,D05,320333.40625,4,5,Gemcitabine,2,lib
+2,D06,646981.25,4,6,dmso wellmate only/unpinned,1,dmso
+2,D07,384727.625,4,7,Erlotinib,2,lib
+2,D08,619090.125,4,8,dmso wellmate only/unpinned,1,dmso
+2,D09,477205.65625,4,9,Saracatinib,2,lib
+2,D10,546644.4375,4,10,dmso wellmate only/unpinned,1,dmso
+2,D11,522063.84375,4,11,Ipatasertib,2,lib
+2,D12,709883.75,4,12,dmso wellmate only/unpinned,1,dmso
+2,D13,386814.9375,4,13,Vorinostat,2,lib
+2,D14,671418.875,4,14,dmso wellmate only/unpinned,1,dmso
+2,D15,355695.0625,4,15,Buparlisib,2,lib
+2,D16,669798.625,4,16,dmso wellmate only/unpinned,1,dmso
+2,D17,584105.125,4,17,Everolimus,2,lib
+2,D18,638839.3125,4,18,dmso wellmate only/unpinned,1,dmso
+2,D19,341562.65625,4,19,Topotecan (Hydrochloride),2,lib
+2,D20,612080.875,4,20,dmso wellmate only/unpinned,1,dmso
+2,D21,260175.09375,4,21,Bortezomib,2,lib
+2,D22,662433.1875,4,22,dmso wellmate only/unpinned,1,dmso
+2,D23,217815.859375,4,23,STAUR + dmso,10,staur
+2,D24,209822.765625,4,24,STAUR + dmso,10,staur
+2,E01,419365.28125,5,1,DMSO + dmso,0,bckg
+2,E02,470374.46875,5,2,DMSO + dmso,0,bckg
+2,E03,545649,5,3,dmso wellmate only/unpinned,1,dmso
+2,E04,565780.5625,5,4,dmso wellmate only/unpinned,1,dmso
+2,E05,611409.4375,5,5,FRAX597,2,lib
+2,E06,491714.65625,5,6,FRAX597,2,lib
+2,E07,285526.40625,5,7,Ganetespib,2,lib
+2,E08,301600.15625,5,8,Ganetespib,2,lib
+2,E09,348703.28125,5,9,Afatinib,2,lib
+2,E10,408245.625,5,10,Afatinib,2,lib
+2,E11,426818.3125,5,11,Volasertib,2,lib
+2,E12,389237.96875,5,12,Volasertib,2,lib
+2,E13,547365.5,5,13,PF-573228,2,lib
+2,E14,497614.59375,5,14,PF-573228,2,lib
+2,E15,500250.71875,5,15,ART558,2,lib
+2,E16,548247.1875,5,16,ART558,2,lib
+2,E17,554217.1875,5,17,Mirin,2,lib
+2,E18,490961.46875,5,18,Mirin,2,lib
+2,E19,325103.5625,5,19,Ferrostatin-1,2,lib
+2,E20,324478.8125,5,20,Ferrostatin-1,2,lib
+2,E21,463794.34375,5,21,Barasertib,2,lib
+2,E22,515366.9375,5,22,Barasertib,2,lib
+2,E23,255545.0625,5,23,STAUR + dmso,10,staur
+2,E24,236423.5625,5,24,STAUR + dmso,10,staur
+2,F01,507659.9375,6,1,DMSO + dmso,0,bckg
+2,F02,609961.4375,6,2,DMSO + dmso,0,bckg
+2,F03,647763.625,6,3,dmso wellmate only/unpinned,1,dmso
+2,F04,713144.625,6,4,dmso wellmate only/unpinned,1,dmso
+2,F05,731842.8125,6,5,FRAX597,2,lib
+2,F06,691789.8125,6,6,dmso wellmate only/unpinned,1,dmso
+2,F07,352244.4375,6,7,Ganetespib,2,lib
+2,F08,700074.8125,6,8,dmso wellmate only/unpinned,1,dmso
+2,F09,452952,6,9,Afatinib,2,lib
+2,F10,749697.3125,6,10,dmso wellmate only/unpinned,1,dmso
+2,F11,618596.8125,6,11,Volasertib,2,lib
+2,F12,728979,6,12,dmso wellmate only/unpinned,1,dmso
+2,F13,737906.25,6,13,PF-573228,2,lib
+2,F14,749942.5625,6,14,dmso wellmate only/unpinned,1,dmso
+2,F15,749279.875,6,15,ART558,2,lib
+2,F16,710391.6875,6,16,dmso wellmate only/unpinned,1,dmso
+2,F17,691381.125,6,17,Mirin,2,lib
+2,F18,676653.1875,6,18,dmso wellmate only/unpinned,1,dmso
+2,F19,354191.59375,6,19,Ferrostatin-1,2,lib
+2,F20,481847.375,6,20,dmso wellmate only/unpinned,1,dmso
+2,F21,555866.5625,6,21,Barasertib,2,lib
+2,F22,691851.125,6,22,dmso wellmate only/unpinned,1,dmso
+2,F23,257807.53125,6,23,STAUR + dmso,10,staur
+2,F24,229423.046875,6,24,STAUR + dmso,10,staur
+2,G01,471530.5,7,1,DMSO + dmso,0,bckg
+2,G02,533714.8125,7,2,DMSO + dmso,0,bckg
+2,G03,523091.4375,7,3,dmso wellmate only/unpinned,1,dmso
+2,G04,578327.75,7,4,dmso wellmate only/unpinned,1,dmso
+2,G05,644607.875,7,5,Infigratinib,2,lib
+2,G06,559901.0625,7,6,Infigratinib,2,lib
+2,G07,419149.25,7,7,Prexasertib,2,lib
+2,G08,423210.03125,7,8,Prexasertib,2,lib
+2,G09,633675.0625,7,9,Silmitasertib,2,lib
+2,G10,503286.8125,7,10,Silmitasertib,2,lib
+2,G11,479179.125,7,11,Olaparib,2,lib
+2,G12,461756.65625,7,12,Olaparib,2,lib
+2,G13,596885.875,7,13,T0070907,2,lib
+2,G14,564688.75,7,14,T0070907,2,lib
+2,G15,465905,7,15,Dabrafenib,2,lib
+2,G16,448707.3125,7,16,Dabrafenib,2,lib
+2,G17,382219.9375,7,17,Selumetinib,2,lib
+2,G18,413313.5625,7,18,Selumetinib,2,lib
+2,G19,548127.5,7,19,Y-27632,2,lib
+2,G20,591155.25,7,20,Y-27632,2,lib
+2,G21,578844.5,7,21,IWR-1,2,lib
+2,G22,543266.8125,7,22,IWR-1,2,lib
+2,G23,286799.25,7,23,STAUR + dmso,10,staur
+2,G24,246428.046875,7,24,STAUR + dmso,10,staur
+2,H01,574833.375,8,1,DMSO + dmso,0,bckg
+2,H02,568819.5625,8,2,DMSO + dmso,0,bckg
+2,H03,570679.1875,8,3,dmso wellmate only/unpinned,1,dmso
+2,H04,689483.5625,8,4,dmso wellmate only/unpinned,1,dmso
+2,H05,861927.4375,8,5,Infigratinib,2,lib
+2,H06,737266.875,8,6,dmso wellmate only/unpinned,1,dmso
+2,H07,578435.8125,8,7,Prexasertib,2,lib
+2,H08,687200.6875,8,8,dmso wellmate only/unpinned,1,dmso
+2,H09,757818.875,8,9,Silmitasertib,2,lib
+2,H10,850019.5625,8,10,dmso wellmate only/unpinned,1,dmso
+2,H11,717319.25,8,11,Olaparib,2,lib
+2,H12,745715.375,8,12,dmso wellmate only/unpinned,1,dmso
+2,H13,744425.0625,8,13,T0070907,2,lib
+2,H14,771968.8125,8,14,dmso wellmate only/unpinned,1,dmso
+2,H15,581115.6875,8,15,Dabrafenib,2,lib
+2,H16,814841.8125,8,16,dmso wellmate only/unpinned,1,dmso
+2,H17,498864.03125,8,17,Selumetinib,2,lib
+2,H18,601072.125,8,18,dmso wellmate only/unpinned,1,dmso
+2,H19,673272.625,8,19,Y-27632,2,lib
+2,H20,752993.25,8,20,dmso wellmate only/unpinned,1,dmso
+2,H21,605410.25,8,21,IWR-1,2,lib
+2,H22,694528.125,8,22,dmso wellmate only/unpinned,1,dmso
+2,H23,279673.1875,8,23,STAUR + dmso,10,staur
+2,H24,266329,8,24,STAUR + dmso,10,staur
+2,I01,237027.859375,9,1,STAUR + dmso,10,staur
+2,I02,305354.40625,9,2,STAUR + dmso,10,staur
+2,I03,548831,9,3,dmso wellmate only/unpinned,1,dmso
+2,I04,528903.8125,9,4,dmso wellmate only/unpinned,1,dmso
+2,I05,560327.3125,9,5,Apoptozole,2,lib
+2,I06,506369.59375,9,6,Apoptozole,2,lib
+2,I07,419210.5625,9,7,Gefitinib,2,lib
+2,I08,404841.6875,9,8,Gefitinib,2,lib
+2,I09,371926.4375,9,9,Paclitaxel,2,lib
+2,I10,378617.5,9,10,Paclitaxel,2,lib
+2,I11,478271.21875,9,11,SGI-1027,2,lib
+2,I12,434939.84375,9,12,SGI-1027,2,lib
+2,I13,551181.0625,9,13,PFK-015,2,lib
+2,I14,548641.25,9,14,PFK-015,2,lib
+2,I15,502078.21875,9,15,Nedisertib,2,lib
+2,I16,474368.09375,9,16,Nedisertib,2,lib
+2,I17,403729.4375,9,17,Lapatinib,2,lib
+2,I18,401548.71875,9,18,Lapatinib,2,lib
+2,I19,326426,9,19,Dinaciclib,2,lib
+2,I20,298578.6875,9,20,Dinaciclib,2,lib
+2,I21,527645.5625,9,21,TAK-580,2,lib
+2,I22,440258.8125,9,22,TAK-580,2,lib
+2,I23,614874.6875,9,23,DMSO + dmso,0,bckg
+2,I24,582721.3125,9,24,DMSO + dmso,0,bckg
+2,J01,263403.875,10,1,STAUR + dmso,10,staur
+2,J02,283602.59375,10,2,STAUR + dmso,10,staur
+2,J03,642327.875,10,3,dmso wellmate only/unpinned,1,dmso
+2,J04,722270.375,10,4,dmso wellmate only/unpinned,1,dmso
+2,J05,597928.0625,10,5,Apoptozole,2,lib
+2,J06,800735.6875,10,6,dmso wellmate only/unpinned,1,dmso
+2,J07,451758,10,7,Gefitinib,2,lib
+2,J08,746740.0625,10,8,dmso wellmate only/unpinned,1,dmso
+2,J09,495051.4375,10,9,Paclitaxel,2,lib
+2,J10,799670.1875,10,10,dmso wellmate only/unpinned,1,dmso
+2,J11,760843.3125,10,11,SGI-1027,2,lib
+2,J12,755220.6875,10,12,dmso wellmate only/unpinned,1,dmso
+2,J13,789186.875,10,13,PFK-015,2,lib
+2,J14,746991.125,10,14,dmso wellmate only/unpinned,1,dmso
+2,J15,743213.5625,10,15,Nedisertib,2,lib
+2,J16,682296.25,10,16,dmso wellmate only/unpinned,1,dmso
+2,J17,453188.46875,10,17,Lapatinib,2,lib
+2,J18,639504.9375,10,18,dmso wellmate only/unpinned,1,dmso
+2,J19,331321.6875,10,19,Dinaciclib,2,lib
+2,J20,706319.25,10,20,dmso wellmate only/unpinned,1,dmso
+2,J21,538123,10,21,TAK-580,2,lib
+2,J22,708932.0625,10,22,dmso wellmate only/unpinned,1,dmso
+2,J23,606995.4375,10,23,DMSO + dmso,0,bckg
+2,J24,537740.5625,10,24,DMSO + dmso,0,bckg
+2,K01,287152.46875,11,1,STAUR + dmso,10,staur
+2,K02,238420.375,11,2,STAUR + dmso,10,staur
+2,K03,517500.9375,11,3,KU-55933,2,lib
+2,K04,511060.9375,11,4,KU-55933,2,lib
+2,K05,578727.6875,11,5,GSK2606414,2,lib
+2,K06,533332.375,11,6,GSK2606414,2,lib
+2,K07,408555.0625,11,7,Tipifarnib,2,lib
+2,K08,476633.46875,11,8,Tipifarnib,2,lib
+2,K09,548051.5625,11,9,Axitinib,2,lib
+2,K10,556339.5,11,10,Axitinib,2,lib
+2,K11,452248.4375,11,11,Laduviglusib,2,lib
+2,K12,467939.75,11,12,Laduviglusib,2,lib
+2,K13,424199.6875,11,13,Berzosertib,2,lib
+2,K14,493708.53125,11,14,Berzosertib,2,lib
+2,K15,552529.8125,11,15,Ceritinib,2,lib
+2,K16,499115.09375,11,16,Ceritinib,2,lib
+2,K17,484825.0625,11,17,Navitoclax,2,lib
+2,K18,508775.125,11,18,Navitoclax,2,lib
+2,K19,537130.4375,11,19,Ro-3306,2,lib
+2,K20,542192.5,11,20,Ro-3306,2,lib
+2,K21,367290.5625,11,21,Empesertib,2,lib
+2,K22,436440.34375,11,22,Empesertib,2,lib
+2,K23,627056.9375,11,23,DMSO + dmso,0,bckg
+2,K24,645147.9375,11,24,DMSO + dmso,0,bckg
+2,L01,235355.09375,12,1,STAUR + dmso,10,staur
+2,L02,277930.375,12,2,STAUR + dmso,10,staur
+2,L03,661160.375,12,3,KU-55933,2,lib
+2,L04,696387.75,12,4,dmso wellmate only/unpinned,1,dmso
+2,L05,757667.0625,12,5,GSK2606414,2,lib
+2,L06,888256.75,12,6,dmso wellmate only/unpinned,1,dmso
+2,L07,628040.75,12,7,Tipifarnib,2,lib
+2,L08,771113.4375,12,8,dmso wellmate only/unpinned,1,dmso
+2,L09,687551,12,9,Axitinib,2,lib
+2,L10,723972.375,12,10,dmso wellmate only/unpinned,1,dmso
+2,L11,739678.25,12,11,Laduviglusib,2,lib
+2,L12,726681.5,12,12,dmso wellmate only/unpinned,1,dmso
+2,L13,735328.5,12,13,Berzosertib,2,lib
+2,L14,825964.4375,12,14,dmso wellmate only/unpinned,1,dmso
+2,L15,714887.4375,12,15,Ceritinib,2,lib
+2,L16,732847.0625,12,16,dmso wellmate only/unpinned,1,dmso
+2,L17,665956.8125,12,17,Navitoclax,2,lib
+2,L18,707921.9375,12,18,dmso wellmate only/unpinned,1,dmso
+2,L19,675681.0625,12,19,Ro-3306,2,lib
+2,L20,736070,12,20,dmso wellmate only/unpinned,1,dmso
+2,L21,502548.21875,12,21,Empesertib,2,lib
+2,L22,639020.3125,12,22,dmso wellmate only/unpinned,1,dmso
+2,L23,638308,12,23,DMSO + dmso,0,bckg
+2,L24,609438.875,12,24,DMSO + dmso,0,bckg
+2,M01,238864.109375,13,1,STAUR + dmso,10,staur
+2,M02,252228.71875,13,2,STAUR + dmso,10,staur
+2,M03,534567.25,13,3,SGX-523,2,lib
+2,M04,644888.125,13,4,SGX-523,2,lib
+2,M05,565547,13,5,Alisertib,2,lib
+2,M06,559057.375,13,6,Alisertib,2,lib
+2,M07,416145.28125,13,7,Onvansertib,2,lib
+2,M08,393903.03125,13,8,Onvansertib,2,lib
+2,M09,542423.125,13,9,AZD1390,2,lib
+2,M10,543628.8125,13,10,AZD1390,2,lib
+2,M11,354305.46875,13,11,Camptothecin,2,lib
+2,M12,288469.09375,13,12,Camptothecin,2,lib
+2,M13,528060.125,13,13,Tomivosertib,2,lib
+2,M14,524670.8125,13,14,Tomivosertib,2,lib
+2,M15,512053.5,13,15,FRAX1036,2,lib
+2,M16,509884.46875,13,16,FRAX1036,2,lib
+2,M17,391348.625,13,17,Trametinib,2,lib
+2,M18,438603.5625,13,18,Trametinib,2,lib
+2,M19,547458.9375,13,19,Lonafarnib,2,lib
+2,M20,611281,13,20,Lonafarnib,2,lib
+2,M21,570985.6875,13,21,Niclosamide,2,lib
+2,M22,610956.9375,13,22,Niclosamide,2,lib
+2,M23,579104.3125,13,23,DMSO + dmso,0,bckg
+2,M24,548150.8125,13,24,DMSO + dmso,0,bckg
+2,N01,256079.296875,14,1,STAUR + dmso,10,staur
+2,N02,319308.71875,14,2,STAUR + dmso,10,staur
+2,N03,695830.1875,14,3,SGX-523,2,lib
+2,N04,782805.25,14,4,dmso wellmate only/unpinned,1,dmso
+2,N05,640964.5625,14,5,Alisertib,2,lib
+2,N06,689413.5,14,6,dmso wellmate only/unpinned,1,dmso
+2,N07,528048.4375,14,7,Onvansertib,2,lib
+2,N08,689069,14,8,dmso wellmate only/unpinned,1,dmso
+2,N09,782927.875,14,9,AZD1390,2,lib
+2,N10,720562.5625,14,10,dmso wellmate only/unpinned,1,dmso
+2,N11,379411.5625,14,11,Camptothecin,2,lib
+2,N12,701368.125,14,12,dmso wellmate only/unpinned,1,dmso
+2,N13,682848,14,13,Tomivosertib,2,lib
+2,N14,725986.6875,14,14,dmso wellmate only/unpinned,1,dmso
+2,N15,700979.8125,14,15,FRAX1036,2,lib
+2,N16,714589.6875,14,16,dmso wellmate only/unpinned,1,dmso
+2,N17,480697.15625,14,17,Trametinib,2,lib
+2,N18,707843.125,14,18,dmso wellmate only/unpinned,1,dmso
+2,N19,700839.6875,14,19,Lonafarnib,2,lib
+2,N20,752517.375,14,20,dmso wellmate only/unpinned,1,dmso
+2,N21,687346.625,14,21,Niclosamide,2,lib
+2,N22,647801.625,14,22,dmso wellmate only/unpinned,1,dmso
+2,N23,683510.625,14,23,DMSO + dmso,0,bckg
+2,N24,634378.625,14,24,DMSO + dmso,0,bckg
+2,O01,268209.0625,15,1,STAUR + dmso,10,staur
+2,O02,425875.34375,15,2,STAUR + dmso,10,staur
+2,O03,572436.625,15,3,BML-277,2,lib
+2,O04,663011.25,15,4,BML-277,2,lib
+2,O05,563544.375,15,5,Ceralasertib,2,lib
+2,O06,572950.375,15,6,Ceralasertib,2,lib
+2,O07,489814.1875,15,7,ZN-c3,2,lib
+2,O08,457684.21875,15,8,ZN-c3,2,lib
+2,O09,347763.28125,15,9,(+)-JQ-1,2,lib
+2,O10,403691.5,15,10,(+)-JQ-1,2,lib
+2,O11,467869.6875,15,11,Adavosertib,2,lib
+2,O12,428853.0625,15,12,Adavosertib,2,lib
+2,O13,506959.3125,15,13,Adapalene,2,lib
+2,O14,505601.8125,15,14,Adapalene,2,lib
+2,O15,526591.6875,15,15,LB-100,2,lib
+2,O16,473407.625,15,16,LB-100,2,lib
+2,O17,391412.84375,15,17,Palbociclib (monohydrochloride),2,lib
+2,O18,369491.71875,15,18,Palbociclib (monohydrochloride),2,lib
+2,O19,437584.71875,15,19,Copanlisib (dihydrochloride),2,lib
+2,O20,387319.96875,15,20,Copanlisib (dihydrochloride),2,lib
+2,O21,602114.3125,15,21,Oxaliplatin,2,lib
+2,O22,617186.75,15,22,Oxaliplatin,2,lib
+2,O23,671979.375,15,23,DMSO + dmso,0,bckg
+2,O24,612769.8125,15,24,DMSO + dmso,0,bckg
+2,P01,247951.9375,16,1,STAUR + dmso,10,staur
+2,P02,294865.3125,16,2,STAUR + dmso,10,staur
+2,P03,672963.1875,16,3,BML-277,2,lib
+2,P04,665159.875,16,4,dmso wellmate only/unpinned,1,dmso
+2,P05,644911.5,16,5,Ceralasertib,2,lib
+2,P06,630317.8125,16,6,dmso wellmate only/unpinned,1,dmso
+2,P07,589275.1875,16,7,ZN-c3,2,lib
+2,P08,595484.5625,16,8,dmso wellmate only/unpinned,1,dmso
+2,P09,502539.46875,16,9,(+)-JQ-1,2,lib
+2,P10,753098.3125,16,10,dmso wellmate only/unpinned,1,dmso
+2,P11,566971.625,16,11,Adavosertib,2,lib
+2,P12,628919.5,16,12,dmso wellmate only/unpinned,1,dmso
+2,P13,625746.1875,16,13,Adapalene,2,lib
+2,P14,725580.875,16,14,dmso wellmate only/unpinned,1,dmso
+2,P15,575449.3125,16,15,LB-100,2,lib
+2,P16,637978.125,16,16,dmso wellmate only/unpinned,1,dmso
+2,P17,482755.28125,16,17,Palbociclib (monohydrochloride),2,lib
+2,P18,740232.9375,16,18,dmso wellmate only/unpinned,1,dmso
+2,P19,439006.4375,16,19,Copanlisib (dihydrochloride),2,lib
+2,P20,585217.375,16,20,dmso wellmate only/unpinned,1,dmso
+2,P21,653789.125,16,21,Oxaliplatin,2,lib
+2,P22,701382.6875,16,22,dmso wellmate only/unpinned,1,dmso
+2,P23,587836,16,23,DMSO + dmso,0,bckg
+2,P24,602091,16,24,DMSO + dmso,0,bckg
+3,A01,418895.28125,1,1,DMSO + dmso,0,bckg
+3,A02,411074.4375,1,2,DMSO + dmso,0,bckg
+3,A03,295709,1,3,dmso wellmate only/unpinned,1,dmso
+3,A04,321924.4375,1,4,dmso wellmate only/unpinned,1,dmso
+3,A05,282069.96875,1,5,Hydroxyurea,2,lib
+3,A06,312503.8125,1,6,Hydroxyurea,2,lib
+3,A07,305614.21875,1,7,Tazemetostat,2,lib
+3,A08,341051.78125,1,8,Tazemetostat,2,lib
+3,A09,290387.09375,1,9,Pemetrexed,2,lib
+3,A10,226313.96875,1,10,Pemetrexed,2,lib
+3,A11,224355.109375,1,11,Raloxifene (hydrochloride),2,lib
+3,A12,244863.296875,1,12,Raloxifene (hydrochloride),2,lib
+3,A13,298237.125,1,13,Mifepristone,2,lib
+3,A14,297656.15625,1,14,Mifepristone,2,lib
+3,A15,250410,1,15,Fulvestrant,2,lib
+3,A16,281532.8125,1,16,Fulvestrant,2,lib
+3,A17,274646.125,1,17,Enzalutamide,2,lib
+3,A18,304913.59375,1,18,Enzalutamide,2,lib
+3,A19,307958.4375,1,19,Rucaparib,2,lib
+3,A20,320438.5,1,20,Rucaparib,2,lib
+3,A21,322893.625,1,21,5-Fluorouracil,2,lib
+3,A22,369812.84375,1,22,5-Fluorouracil,2,lib
+3,A23,211177.328125,1,23,STAUR + dmso,10,staur
+3,A24,232704.359375,1,24,STAUR + dmso,10,staur
+3,B01,599951.125,2,1,DMSO + dmso,0,bckg
+3,B02,634381.5,2,2,DMSO + dmso,0,bckg
+3,B03,404246.15625,2,3,dmso wellmate only/unpinned,1,dmso
+3,B04,377283.375,2,4,dmso wellmate only/unpinned,1,dmso
+3,B05,457418.53125,2,5,Hydroxyurea,2,lib
+3,B06,382908.90625,2,6,dmso wellmate only/unpinned,1,dmso
+3,B07,319945.125,2,7,Tazemetostat,2,lib
+3,B08,357324.03125,2,8,dmso wellmate only/unpinned,1,dmso
+3,B09,322905.3125,2,9,Pemetrexed,2,lib
+3,B10,398229.46875,2,10,dmso wellmate only/unpinned,1,dmso
+3,B11,394387.625,2,11,Raloxifene (hydrochloride),2,lib
+3,B12,373123.34375,2,12,dmso wellmate only/unpinned,1,dmso
+3,B13,404068.09375,2,13,Mifepristone,2,lib
+3,B14,411296.3125,2,14,dmso wellmate only/unpinned,1,dmso
+3,B15,398714.0625,2,15,Fulvestrant,2,lib
+3,B16,366791.375,2,16,dmso wellmate only/unpinned,1,dmso
+3,B17,363034.21875,2,17,Enzalutamide,2,lib
+3,B18,352530.5,2,18,dmso wellmate only/unpinned,1,dmso
+3,B19,356810.21875,2,19,Rucaparib,2,lib
+3,B20,410420.5,2,20,dmso wellmate only/unpinned,1,dmso
+3,B21,351356.9375,2,21,5-Fluorouracil,2,lib
+3,B22,362894.09375,2,22,dmso wellmate only/unpinned,1,dmso
+3,B23,217415.90625,2,23,STAUR + dmso,10,staur
+3,B24,188196.5,2,24,STAUR + dmso,10,staur
+3,C01,405702.90625,3,1,DMSO + dmso,0,bckg
+3,C02,446065.34375,3,2,DMSO + dmso,0,bckg
+3,C03,338996.5625,3,3,dmso wellmate only/unpinned,1,dmso
+3,C04,335689,3,4,dmso wellmate only/unpinned,1,dmso
+3,C05,273282.8125,3,5,Gemcitabine,2,lib
+3,C06,295017.125,3,6,Gemcitabine,2,lib
+3,C07,306843.25,3,7,Erlotinib,2,lib
+3,C08,251148.578125,3,8,Erlotinib,2,lib
+3,C09,298018.15625,3,9,Saracatinib,2,lib
+3,C10,274470.96875,3,10,Saracatinib,2,lib
+3,C11,239760.34375,3,11,Ipatasertib,2,lib
+3,C12,262198.1875,3,12,Ipatasertib,2,lib
+3,C13,278762.375,3,13,Vorinostat,2,lib
+3,C14,262478.4375,3,14,Vorinostat,2,lib
+3,C15,332685.03125,3,15,Buparlisib,2,lib
+3,C16,294801.09375,3,16,Buparlisib,2,lib
+3,C17,284828.71875,3,17,Everolimus,2,lib
+3,C18,283479.96875,3,18,Everolimus,2,lib
+3,C19,272053.78125,3,19,Topotecan (Hydrochloride),2,lib
+3,C20,230517.78125,3,20,Topotecan (Hydrochloride),2,lib
+3,C21,256817.890625,3,21,Bortezomib,2,lib
+3,C22,288258.90625,3,22,Bortezomib,2,lib
+3,C23,239450.890625,3,23,STAUR + dmso,10,staur
+3,C24,211264.90625,3,24,STAUR + dmso,10,staur
+3,D01,589412.4375,4,1,DMSO + dmso,0,bckg
+3,D02,638205.8125,4,2,DMSO + dmso,0,bckg
+3,D03,490561.53125,4,3,dmso wellmate only/unpinned,1,dmso
+3,D04,509280.15625,4,4,dmso wellmate only/unpinned,1,dmso
+3,D05,345711,4,5,Gemcitabine,2,lib
+3,D06,490584.875,4,6,dmso wellmate only/unpinned,1,dmso
+3,D07,393278.3125,4,7,Erlotinib,2,lib
+3,D08,429793.09375,4,8,dmso wellmate only/unpinned,1,dmso
+3,D09,483587.28125,4,9,Saracatinib,2,lib
+3,D10,479876.84375,4,10,dmso wellmate only/unpinned,1,dmso
+3,D11,380322.375,4,11,Ipatasertib,2,lib
+3,D12,381720.75,4,12,dmso wellmate only/unpinned,1,dmso
+3,D13,433004.3125,4,13,Vorinostat,2,lib
+3,D14,510690.1875,4,14,dmso wellmate only/unpinned,1,dmso
+3,D15,451217.9375,4,15,Buparlisib,2,lib
+3,D16,391284.40625,4,16,dmso wellmate only/unpinned,1,dmso
+3,D17,423137.03125,4,17,Everolimus,2,lib
+3,D18,468377.65625,4,18,dmso wellmate only/unpinned,1,dmso
+3,D19,293931.125,4,19,Topotecan (Hydrochloride),2,lib
+3,D20,393593.59375,4,20,dmso wellmate only/unpinned,1,dmso
+3,D21,328332.3125,4,21,Bortezomib,2,lib
+3,D22,422605.71875,4,22,dmso wellmate only/unpinned,1,dmso
+3,D23,252494.390625,4,23,STAUR + dmso,10,staur
+3,D24,251528.09375,4,24,STAUR + dmso,10,staur
+3,E01,421992.65625,5,1,DMSO + dmso,0,bckg
+3,E02,520989.53125,5,2,DMSO + dmso,0,bckg
+3,E03,375861.6875,5,3,dmso wellmate only/unpinned,1,dmso
+3,E04,390726.8125,5,4,dmso wellmate only/unpinned,1,dmso
+3,E05,415888.375,5,5,FRAX597,2,lib
+3,E06,353450.09375,5,6,FRAX597,2,lib
+3,E07,271002.84375,5,7,Ganetespib,2,lib
+3,E08,257757.90625,5,8,Ganetespib,2,lib
+3,E09,329047.5625,5,9,Afatinib,2,lib
+3,E10,333038.25,5,10,Afatinib,2,lib
+3,E11,323284.8125,5,11,Volasertib,2,lib
+3,E12,289736.0625,5,12,Volasertib,2,lib
+3,E13,345319.8125,5,13,PF-573228,2,lib
+3,E14,349891.46875,5,14,PF-573228,2,lib
+3,E15,364286.59375,5,15,ART558,2,lib
+3,E16,372627.0625,5,16,ART558,2,lib
+3,E17,359893.03125,5,17,Mirin,2,lib
+3,E18,345894.90625,5,18,Mirin,2,lib
+3,E19,264913.15625,5,19,Ferrostatin-1,2,lib
+3,E20,250646.453125,5,20,Ferrostatin-1,2,lib
+3,E21,355636.65625,5,21,Barasertib,2,lib
+3,E22,389249.65625,5,22,Barasertib,2,lib
+3,E23,275641.625,5,23,STAUR + dmso,10,staur
+3,E24,237725.578125,5,24,STAUR + dmso,10,staur
+3,F01,683998.1875,6,1,DMSO + dmso,0,bckg
+3,F02,675596.375,6,2,DMSO + dmso,0,bckg
+3,F03,432043.875,6,3,dmso wellmate only/unpinned,1,dmso
+3,F04,531534.0625,6,4,dmso wellmate only/unpinned,1,dmso
+3,F05,454286.125,6,5,FRAX597,2,lib
+3,F06,478393.8125,6,6,dmso wellmate only/unpinned,1,dmso
+3,F07,329292.78125,6,7,Ganetespib,2,lib
+3,F08,453384.0625,6,8,dmso wellmate only/unpinned,1,dmso
+3,F09,399213.25,6,9,Afatinib,2,lib
+3,F10,404327.90625,6,10,dmso wellmate only/unpinned,1,dmso
+3,F11,464611.75,6,11,Volasertib,2,lib
+3,F12,488085.9375,6,12,dmso wellmate only/unpinned,1,dmso
+3,F13,465324.0625,6,13,PF-573228,2,lib
+3,F14,542262.5625,6,14,dmso wellmate only/unpinned,1,dmso
+3,F15,497240.90625,6,15,ART558,2,lib
+3,F16,441998.71875,6,16,dmso wellmate only/unpinned,1,dmso
+3,F17,424687.1875,6,17,Mirin,2,lib
+3,F18,428009.375,6,18,dmso wellmate only/unpinned,1,dmso
+3,F19,282980.78125,6,19,Ferrostatin-1,2,lib
+3,F20,265613.78125,6,20,dmso wellmate only/unpinned,1,dmso
+3,F21,453039.5625,6,21,Barasertib,2,lib
+3,F22,444836.3125,6,22,dmso wellmate only/unpinned,1,dmso
+3,F23,257378.390625,6,23,STAUR + dmso,10,staur
+3,F24,246425.125,6,24,STAUR + dmso,10,staur
+3,G01,497454.03125,7,1,DMSO + dmso,0,bckg
+3,G02,529858.375,7,2,DMSO + dmso,0,bckg
+3,G03,400950.25,7,3,dmso wellmate only/unpinned,1,dmso
+3,G04,384429.84375,7,4,dmso wellmate only/unpinned,1,dmso
+3,G05,467954.34375,7,5,Infigratinib,2,lib
+3,G06,455112.28125,7,6,Infigratinib,2,lib
+3,G07,328913.25,7,7,Prexasertib,2,lib
+3,G08,269055.65625,7,8,Prexasertib,2,lib
+3,G09,349380.5625,7,9,Silmitasertib,2,lib
+3,G10,302400.0625,7,10,Silmitasertib,2,lib
+3,G11,332722.96875,7,11,Olaparib,2,lib
+3,G12,307946.75,7,12,Olaparib,2,lib
+3,G13,400456.90625,7,13,T0070907,2,lib
+3,G14,341711.53125,7,14,T0070907,2,lib
+3,G15,346070.0625,7,15,Dabrafenib,2,lib
+3,G16,365139.03125,7,16,Dabrafenib,2,lib
+3,G17,342733.3125,7,17,Selumetinib,2,lib
+3,G18,326028.96875,7,18,Selumetinib,2,lib
+3,G19,391354.46875,7,19,Y-27632,2,lib
+3,G20,436527.9375,7,20,Y-27632,2,lib
+3,G21,368224.75,7,21,IWR-1,2,lib
+3,G22,384634.21875,7,22,IWR-1,2,lib
+3,G23,251458.03125,7,23,STAUR + dmso,10,staur
+3,G24,234669.046875,7,24,STAUR + dmso,10,staur
+3,H01,557241.5625,8,1,DMSO + dmso,0,bckg
+3,H02,683452.25,8,2,DMSO + dmso,0,bckg
+3,H03,477620.1875,8,3,dmso wellmate only/unpinned,1,dmso
+3,H04,445680,8,4,dmso wellmate only/unpinned,1,dmso
+3,H05,528474.625,8,5,Infigratinib,2,lib
+3,H06,502805.125,8,6,dmso wellmate only/unpinned,1,dmso
+3,H07,400886.03125,8,7,Prexasertib,2,lib
+3,H08,405647.4375,8,8,dmso wellmate only/unpinned,1,dmso
+3,H09,465204.34375,8,9,Silmitasertib,2,lib
+3,H10,569094,8,10,dmso wellmate only/unpinned,1,dmso
+3,H11,553642.0625,8,11,Olaparib,2,lib
+3,H12,563007.1875,8,12,dmso wellmate only/unpinned,1,dmso
+3,H13,513916.03125,8,13,T0070907,2,lib
+3,H14,577527.875,8,14,dmso wellmate only/unpinned,1,dmso
+3,H15,456280,8,15,Dabrafenib,2,lib
+3,H16,437970.0625,8,16,dmso wellmate only/unpinned,1,dmso
+3,H17,354503.96875,8,17,Selumetinib,2,lib
+3,H18,442667.25,8,18,dmso wellmate only/unpinned,1,dmso
+3,H19,445052.34375,8,19,Y-27632,2,lib
+3,H20,455742.875,8,20,dmso wellmate only/unpinned,1,dmso
+3,H21,469997.875,8,21,IWR-1,2,lib
+3,H22,444404.25,8,22,dmso wellmate only/unpinned,1,dmso
+3,H23,259696.328125,8,23,STAUR + dmso,10,staur
+3,H24,254765.609375,8,24,STAUR + dmso,10,staur
+3,I01,232724.796875,9,1,STAUR + dmso,10,staur
+3,I02,238353.234375,9,2,STAUR + dmso,10,staur
+3,I03,336126.875,9,3,dmso wellmate only/unpinned,1,dmso
+3,I04,396180.09375,9,4,dmso wellmate only/unpinned,1,dmso
+3,I05,374793.21875,9,5,Apoptozole,2,lib
+3,I06,386321.5625,9,6,Apoptozole,2,lib
+3,I07,334436.59375,9,7,Gefitinib,2,lib
+3,I08,361554.125,9,8,Gefitinib,2,lib
+3,I09,283996.6875,9,9,Paclitaxel,2,lib
+3,I10,349027.34375,9,10,Paclitaxel,2,lib
+3,I11,332795.9375,9,11,SGI-1027,2,lib
+3,I12,325100.65625,9,12,SGI-1027,2,lib
+3,I13,308676.59375,9,13,PFK-015,2,lib
+3,I14,366370.96875,9,14,PFK-015,2,lib
+3,I15,374148.03125,9,15,Nedisertib,2,lib
+3,I16,391564.65625,9,16,Nedisertib,2,lib
+3,I17,307432.96875,9,17,Lapatinib,2,lib
+3,I18,324224.84375,9,18,Lapatinib,2,lib
+3,I19,362152.5625,9,19,Dinaciclib,2,lib
+3,I20,327097.4375,9,20,Dinaciclib,2,lib
+3,I21,409317,9,21,TAK-580,2,lib
+3,I22,391389.5,9,22,TAK-580,2,lib
+3,I23,588081.1875,9,23,DMSO + dmso,0,bckg
+3,I24,624450,9,24,DMSO + dmso,0,bckg
+3,J01,302575.21875,10,1,STAUR + dmso,10,staur
+3,J02,309210.8125,10,2,STAUR + dmso,10,staur
+3,J03,513542.34375,10,3,dmso wellmate only/unpinned,1,dmso
+3,J04,484611.96875,10,4,dmso wellmate only/unpinned,1,dmso
+3,J05,519526.9375,10,5,Apoptozole,2,lib
+3,J06,525999.0625,10,6,dmso wellmate only/unpinned,1,dmso
+3,J07,502627.03125,10,7,Gefitinib,2,lib
+3,J08,503654.65625,10,8,dmso wellmate only/unpinned,1,dmso
+3,J09,423960.28125,10,9,Paclitaxel,2,lib
+3,J10,471635.59375,10,10,dmso wellmate only/unpinned,1,dmso
+3,J11,474397.28125,10,11,SGI-1027,2,lib
+3,J12,523800.8125,10,12,dmso wellmate only/unpinned,1,dmso
+3,J13,568419.625,10,13,PFK-015,2,lib
+3,J14,479509,10,14,dmso wellmate only/unpinned,1,dmso
+3,J15,498093.34375,10,15,Nedisertib,2,lib
+3,J16,532153,10,16,dmso wellmate only/unpinned,1,dmso
+3,J17,328329.40625,10,17,Lapatinib,2,lib
+3,J18,446847.71875,10,18,dmso wellmate only/unpinned,1,dmso
+3,J19,350498.6875,10,19,Dinaciclib,2,lib
+3,J20,535746.6875,10,20,dmso wellmate only/unpinned,1,dmso
+3,J21,464862.8125,10,21,TAK-580,2,lib
+3,J22,473118.625,10,22,dmso wellmate only/unpinned,1,dmso
+3,J23,586834.625,10,23,DMSO + dmso,0,bckg
+3,J24,547137.8125,10,24,DMSO + dmso,0,bckg
+3,K01,215057.09375,11,1,STAUR + dmso,10,staur
+3,K02,252260.84375,11,2,STAUR + dmso,10,staur
+3,K03,310451.53125,11,3,KU-55933,2,lib
+3,K04,355992.8125,11,4,KU-55933,2,lib
+3,K05,429384.375,11,5,GSK2606414,2,lib
+3,K06,341162.71875,11,6,GSK2606414,2,lib
+3,K07,305739.75,11,7,Tipifarnib,2,lib
+3,K08,380620.15625,11,8,Tipifarnib,2,lib
+3,K09,296844.59375,11,9,Axitinib,2,lib
+3,K10,315469.8125,11,10,Axitinib,2,lib
+3,K11,304831.84375,11,11,Laduviglusib,2,lib
+3,K12,310063.25,11,12,Laduviglusib,2,lib
+3,K13,320937.6875,11,13,Berzosertib,2,lib
+3,K14,387133.15625,11,14,Berzosertib,2,lib
+3,K15,324724.0625,11,15,Ceritinib,2,lib
+3,K16,381747,11,16,Ceritinib,2,lib
+3,K17,344677.5625,11,17,Navitoclax,2,lib
+3,K18,321366.84375,11,18,Navitoclax,2,lib
+3,K19,395158.34375,11,19,Ro-3306,2,lib
+3,K20,365988.5625,11,20,Ro-3306,2,lib
+3,K21,366391.40625,11,21,Empesertib,2,lib
+3,K22,363326.125,11,22,Empesertib,2,lib
+3,K23,583675.9375,11,23,DMSO + dmso,0,bckg
+3,K24,505499.65625,11,24,DMSO + dmso,0,bckg
+3,L01,289222.28125,12,1,STAUR + dmso,10,staur
+3,L02,304866.875,12,2,STAUR + dmso,10,staur
+3,L03,447034.53125,12,3,KU-55933,2,lib
+3,L04,503006.5625,12,4,dmso wellmate only/unpinned,1,dmso
+3,L05,536917.3125,12,5,GSK2606414,2,lib
+3,L06,499923.75,12,6,dmso wellmate only/unpinned,1,dmso
+3,L07,483902.5625,12,7,Tipifarnib,2,lib
+3,L08,471413.75,12,8,dmso wellmate only/unpinned,1,dmso
+3,L09,491235.875,12,9,Axitinib,2,lib
+3,L10,512295.8125,12,10,dmso wellmate only/unpinned,1,dmso
+3,L11,500986.375,12,11,Laduviglusib,2,lib
+3,L12,541500.625,12,12,dmso wellmate only/unpinned,1,dmso
+3,L13,563249.5,12,13,Berzosertib,2,lib
+3,L14,511174.78125,12,14,dmso wellmate only/unpinned,1,dmso
+3,L15,502749.65625,12,15,Ceritinib,2,lib
+3,L16,517340.375,12,16,dmso wellmate only/unpinned,1,dmso
+3,L17,442664.34375,12,17,Navitoclax,2,lib
+3,L18,446193.78125,12,18,dmso wellmate only/unpinned,1,dmso
+3,L19,501479.75,12,19,Ro-3306,2,lib
+3,L20,449028.4375,12,20,dmso wellmate only/unpinned,1,dmso
+3,L21,448316.125,12,21,Empesertib,2,lib
+3,L22,430610.5,12,22,dmso wellmate only/unpinned,1,dmso
+3,L23,573011.6875,12,23,DMSO + dmso,0,bckg
+3,L24,619974.6875,12,24,DMSO + dmso,0,bckg
+3,M01,236975.3125,13,1,STAUR + dmso,10,staur
+3,M02,223470.5625,13,2,STAUR + dmso,10,staur
+3,M03,425092.96875,13,3,SGX-523,2,lib
+3,M04,441654.25,13,4,SGX-523,2,lib
+3,M05,376635.28125,13,5,Alisertib,2,lib
+3,M06,409165.21875,13,6,Alisertib,2,lib
+3,M07,295262.34375,13,7,Onvansertib,2,lib
+3,M08,329739.4375,13,8,Onvansertib,2,lib
+3,M09,331923.0625,13,9,AZD1390,2,lib
+3,M10,293005.71875,13,10,AZD1390,2,lib
+3,M11,299647.15625,13,11,Camptothecin,2,lib
+3,M12,241952.734375,13,12,Camptothecin,2,lib
+3,M13,331701.21875,13,13,Tomivosertib,2,lib
+3,M14,357397,13,14,Tomivosertib,2,lib
+3,M15,347833.34375,13,15,FRAX1036,2,lib
+3,M16,345179.6875,13,16,FRAX1036,2,lib
+3,M17,318818.28125,13,17,Trametinib,2,lib
+3,M18,363212.28125,13,18,Trametinib,2,lib
+3,M19,483131.875,13,19,Lonafarnib,2,lib
+3,M20,477085.96875,13,20,Lonafarnib,2,lib
+3,M21,372078.25,13,21,Niclosamide,2,lib
+3,M22,403936.71875,13,22,Niclosamide,2,lib
+3,M23,647398.75,13,23,DMSO + dmso,0,bckg
+3,M24,583862.8125,13,24,DMSO + dmso,0,bckg
+3,N01,259710.921875,14,1,STAUR + dmso,10,staur
+3,N02,307266.5625,14,2,STAUR + dmso,10,staur
+3,N03,465087.59375,14,3,SGX-523,2,lib
+3,N04,457403.9375,14,4,dmso wellmate only/unpinned,1,dmso
+3,N05,466185.25,14,5,Alisertib,2,lib
+3,N06,477809.96875,14,6,dmso wellmate only/unpinned,1,dmso
+3,N07,374475,14,7,Onvansertib,2,lib
+3,N08,503260.53125,14,8,dmso wellmate only/unpinned,1,dmso
+3,N09,493466.25,14,9,AZD1390,2,lib
+3,N10,411947.3125,14,10,dmso wellmate only/unpinned,1,dmso
+3,N11,391155.96875,14,11,Camptothecin,2,lib
+3,N12,462477.71875,14,12,dmso wellmate only/unpinned,1,dmso
+3,N13,443572.25,14,13,Tomivosertib,2,lib
+3,N14,517273.25,14,14,dmso wellmate only/unpinned,1,dmso
+3,N15,514549.53125,14,15,FRAX1036,2,lib
+3,N16,448091.34375,14,16,dmso wellmate only/unpinned,1,dmso
+3,N17,356941.59375,14,17,Trametinib,2,lib
+3,N18,435185.0625,14,18,dmso wellmate only/unpinned,1,dmso
+3,N19,560773.9375,14,19,Lonafarnib,2,lib
+3,N20,463531.59375,14,20,dmso wellmate only/unpinned,1,dmso
+3,N21,452563.71875,14,21,Niclosamide,2,lib
+3,N22,435404,14,22,dmso wellmate only/unpinned,1,dmso
+3,N23,633114.5625,14,23,DMSO + dmso,0,bckg
+3,N24,594675.9375,14,24,DMSO + dmso,0,bckg
+3,O01,224941.90625,15,1,STAUR + dmso,10,staur
+3,O02,258508.171875,15,2,STAUR + dmso,10,staur
+3,O03,392700.28125,15,3,BML-277,2,lib
+3,O04,304992.40625,15,4,BML-277,2,lib
+3,O05,472969.71875,15,5,Ceralasertib,2,lib
+3,O06,353925.9375,15,6,Ceralasertib,2,lib
+3,O07,315551.5625,15,7,ZN-c3,2,lib
+3,O08,310979.90625,15,8,ZN-c3,2,lib
+3,O09,295320.71875,15,9,(+)-JQ-1,2,lib
+3,O10,296275.34375,15,10,(+)-JQ-1,2,lib
+3,O11,289245.625,15,11,Adavosertib,2,lib
+3,O12,275387.65625,15,12,Adavosertib,2,lib
+3,O13,267876.25,15,13,Adapalene,2,lib
+3,O14,325923.875,15,14,Adapalene,2,lib
+3,O15,358620.21875,15,15,LB-100,2,lib
+3,O16,357318.1875,15,16,LB-100,2,lib
+3,O17,362771.46875,15,17,Palbociclib (monohydrochloride),2,lib
+3,O18,339577.53125,15,18,Palbociclib (monohydrochloride),2,lib
+3,O19,331692.4375,15,19,Copanlisib (dihydrochloride),2,lib
+3,O20,304776.375,15,20,Copanlisib (dihydrochloride),2,lib
+3,O21,408187.25,15,21,Oxaliplatin,2,lib
+3,O22,401029.0625,15,22,Oxaliplatin,2,lib
+3,O23,583001.625,15,23,DMSO + dmso,0,bckg
+3,O24,565602.5,15,24,DMSO + dmso,0,bckg
+3,P01,260712.25,16,1,STAUR + dmso,10,staur
+3,P02,332314.28125,16,2,STAUR + dmso,10,staur
+3,P03,505657.28125,16,3,BML-277,2,lib
+3,P04,398302.4375,16,4,dmso wellmate only/unpinned,1,dmso
+3,P05,492438.625,16,5,Ceralasertib,2,lib
+3,P06,486894.875,16,6,dmso wellmate only/unpinned,1,dmso
+3,P07,423370.59375,16,7,ZN-c3,2,lib
+3,P08,476875.78125,16,8,dmso wellmate only/unpinned,1,dmso
+3,P09,388347.59375,16,9,(+)-JQ-1,2,lib
+3,P10,429509.90625,16,10,dmso wellmate only/unpinned,1,dmso
+3,P11,466839.1875,16,11,Adavosertib,2,lib
+3,P12,440063.21875,16,12,dmso wellmate only/unpinned,1,dmso
+3,P13,416723.3125,16,13,Adapalene,2,lib
+3,P14,421268.6875,16,14,dmso wellmate only/unpinned,1,dmso
+3,P15,480078.25,16,15,LB-100,2,lib
+3,P16,459724.8125,16,16,dmso wellmate only/unpinned,1,dmso
+3,P17,404035.96875,16,17,Palbociclib (monohydrochloride),2,lib
+3,P18,437231.5,16,18,dmso wellmate only/unpinned,1,dmso
+3,P19,354322.96875,16,19,Copanlisib (dihydrochloride),2,lib
+3,P20,473903.90625,16,20,dmso wellmate only/unpinned,1,dmso
+3,P21,439251.65625,16,21,Oxaliplatin,2,lib
+3,P22,401183.8125,16,22,dmso wellmate only/unpinned,1,dmso
+3,P23,585018.8125,16,23,DMSO + dmso,0,bckg
+3,P24,595770.6875,16,24,DMSO + dmso,0,bckg
+4,A01,579174.375,1,1,DMSO + dmso,0,bckg
+4,A02,563156.125,1,2,DMSO + dmso,0,bckg
+4,A03,395406.46875,1,3,dmso wellmate only/unpinned,1,dmso
+4,A04,388175.34375,1,4,dmso wellmate only/unpinned,1,dmso
+4,A05,370872.5625,1,5,Hydroxyurea,2,lib
+4,A06,340377.40625,1,6,Hydroxyurea,2,lib
+4,A07,321930.28125,1,7,Tazemetostat,2,lib
+4,A08,325891.78125,1,8,Tazemetostat,2,lib
+4,A09,289263.15625,1,9,Pemetrexed,2,lib
+4,A10,304078.65625,1,10,Pemetrexed,2,lib
+4,A11,302408.8125,1,11,Raloxifene (hydrochloride),2,lib
+4,A12,263643.25,1,12,Raloxifene (hydrochloride),2,lib
+4,A13,264376,1,13,Mifepristone,2,lib
+4,A14,351748.125,1,14,Mifepristone,2,lib
+4,A15,316459.46875,1,15,Fulvestrant,2,lib
+4,A16,271866.9375,1,16,Fulvestrant,2,lib
+4,A17,347065.5625,1,17,Enzalutamide,2,lib
+4,A18,338795.15625,1,18,Enzalutamide,2,lib
+4,A19,367045.34375,1,19,Rucaparib,2,lib
+4,A20,325118.15625,1,20,Rucaparib,2,lib
+4,A21,271449.5,1,21,5-Fluorouracil,2,lib
+4,A22,298520.28125,1,22,5-Fluorouracil,2,lib
+4,A23,219062.40625,1,23,STAUR + dmso,10,staur
+4,A24,212806.3125,1,24,STAUR + dmso,10,staur
+4,B01,629234.75,2,1,DMSO + dmso,0,bckg
+4,B02,563862.5625,2,2,DMSO + dmso,0,bckg
+4,B03,429512.8125,2,3,dmso wellmate only/unpinned,1,dmso
+4,B04,405338,2,4,dmso wellmate only/unpinned,1,dmso
+4,B05,368589.65625,2,5,Hydroxyurea,2,lib
+4,B06,392192.3125,2,6,dmso wellmate only/unpinned,1,dmso
+4,B07,376436.78125,2,7,Tazemetostat,2,lib
+4,B08,434627.46875,2,8,dmso wellmate only/unpinned,1,dmso
+4,B09,355595.78125,2,9,Pemetrexed,2,lib
+4,B10,379166.34375,2,10,dmso wellmate only/unpinned,1,dmso
+4,B11,372250.46875,2,11,Raloxifene (hydrochloride),2,lib
+4,B12,363755.28125,2,12,dmso wellmate only/unpinned,1,dmso
+4,B13,337116.53125,2,13,Mifepristone,2,lib
+4,B14,335166.4375,2,14,dmso wellmate only/unpinned,1,dmso
+4,B15,381627.3125,2,15,Fulvestrant,2,lib
+4,B16,356944.53125,2,16,dmso wellmate only/unpinned,1,dmso
+4,B17,414767.375,2,17,Enzalutamide,2,lib
+4,B18,351648.875,2,18,dmso wellmate only/unpinned,1,dmso
+4,B19,424941.1875,2,19,Rucaparib,2,lib
+4,B20,394451.875,2,20,dmso wellmate only/unpinned,1,dmso
+4,B21,382526.46875,2,21,5-Fluorouracil,2,lib
+4,B22,422197.03125,2,22,dmso wellmate only/unpinned,1,dmso
+4,B23,233991.765625,2,23,STAUR + dmso,10,staur
+4,B24,209962.90625,2,24,STAUR + dmso,10,staur
+4,C01,496776.75,3,1,DMSO + dmso,0,bckg
+4,C02,587234.625,3,2,DMSO + dmso,0,bckg
+4,C03,522452.09375,3,3,dmso wellmate only/unpinned,1,dmso
+4,C04,363874.96875,3,4,dmso wellmate only/unpinned,1,dmso
+4,C05,266110.0625,3,5,Gemcitabine,2,lib
+4,C06,230958.609375,3,6,Gemcitabine,2,lib
+4,C07,358310.75,3,7,Erlotinib,2,lib
+4,C08,335899.1875,3,8,Erlotinib,2,lib
+4,C09,303413.0625,3,9,Saracatinib,2,lib
+4,C10,315548.65625,3,10,Saracatinib,2,lib
+4,C11,261760.28125,3,11,Ipatasertib,2,lib
+4,C12,318727.78125,3,12,Ipatasertib,2,lib
+4,C13,267312.8125,3,13,Vorinostat,2,lib
+4,C14,283804.03125,3,14,Vorinostat,2,lib
+4,C15,250550.125,3,15,Buparlisib,2,lib
+4,C16,262501.78125,3,16,Buparlisib,2,lib
+4,C17,369386.625,3,17,Everolimus,2,lib
+4,C18,307120.59375,3,18,Everolimus,2,lib
+4,C19,258271.703125,3,19,Topotecan (Hydrochloride),2,lib
+4,C20,313668.59375,3,20,Topotecan (Hydrochloride),2,lib
+4,C21,299489.5,3,21,Bortezomib,2,lib
+4,C22,465020.4375,3,22,Bortezomib,2,lib
+4,C23,244559.6875,3,23,STAUR + dmso,10,staur
+4,C24,233831.203125,3,24,STAUR + dmso,10,staur
+4,D01,545549.6875,4,1,DMSO + dmso,0,bckg
+4,D02,580450.125,4,2,DMSO + dmso,0,bckg
+4,D03,482591.78125,4,3,dmso wellmate only/unpinned,1,dmso
+4,D04,474727.15625,4,4,dmso wellmate only/unpinned,1,dmso
+4,D05,310390.21875,4,5,Gemcitabine,2,lib
+4,D06,481990.40625,4,6,dmso wellmate only/unpinned,1,dmso
+4,D07,356214.6875,4,7,Erlotinib,2,lib
+4,D08,423887.3125,4,8,dmso wellmate only/unpinned,1,dmso
+4,D09,339819.8125,4,9,Saracatinib,2,lib
+4,D10,440019.4375,4,10,dmso wellmate only/unpinned,1,dmso
+4,D11,384441.53125,4,11,Ipatasertib,2,lib
+4,D12,405559.84375,4,12,dmso wellmate only/unpinned,1,dmso
+4,D13,344989.9375,4,13,Vorinostat,2,lib
+4,D14,439196.1875,4,14,dmso wellmate only/unpinned,1,dmso
+4,D15,346715.25,4,15,Buparlisib,2,lib
+4,D16,472526,4,16,dmso wellmate only/unpinned,1,dmso
+4,D17,405959.8125,4,17,Everolimus,2,lib
+4,D18,418410.6875,4,18,dmso wellmate only/unpinned,1,dmso
+4,D19,254029.9375,4,19,Topotecan (Hydrochloride),2,lib
+4,D20,426141.03125,4,20,dmso wellmate only/unpinned,1,dmso
+4,D21,333768.09375,4,21,Bortezomib,2,lib
+4,D22,463009.03125,4,22,dmso wellmate only/unpinned,1,dmso
+4,D23,275483.96875,4,23,STAUR + dmso,10,staur
+4,D24,232999.203125,4,24,STAUR + dmso,10,staur
+4,E01,533735.25,5,1,DMSO + dmso,0,bckg
+4,E02,548690.875,5,2,DMSO + dmso,0,bckg
+4,E03,414352.8125,5,3,dmso wellmate only/unpinned,1,dmso
+4,E04,447697.21875,5,4,dmso wellmate only/unpinned,1,dmso
+4,E05,396968.3125,5,5,FRAX597,2,lib
+4,E06,383294.25,5,6,FRAX597,2,lib
+4,E07,245350.828125,5,7,Ganetespib,2,lib
+4,E08,276289.71875,5,8,Ganetespib,2,lib
+4,E09,346537.15625,5,9,Afatinib,2,lib
+4,E10,359875.5,5,10,Afatinib,2,lib
+4,E11,342672,5,11,Volasertib,2,lib
+4,E12,323226.4375,5,12,Volasertib,2,lib
+4,E13,345208.875,5,13,PF-573228,2,lib
+4,E14,375558.0625,5,14,PF-573228,2,lib
+4,E15,365997.3125,5,15,ART558,2,lib
+4,E16,360433.09375,5,16,ART558,2,lib
+4,E17,358126.84375,5,17,Mirin,2,lib
+4,E18,369272.78125,5,18,Mirin,2,lib
+4,E19,344575.375,5,19,Ferrostatin-1,2,lib
+4,E20,313709.46875,5,20,Ferrostatin-1,2,lib
+4,E21,383609.53125,5,21,Barasertib,2,lib
+4,E22,351488.3125,5,22,Barasertib,2,lib
+4,E23,260145.90625,5,23,STAUR + dmso,10,staur
+4,E24,244355.34375,5,24,STAUR + dmso,10,staur
+4,F01,530144.5,6,1,DMSO + dmso,0,bckg
+4,F02,566653.4375,6,2,DMSO + dmso,0,bckg
+4,F03,441391.5,6,3,dmso wellmate only/unpinned,1,dmso
+4,F04,509738.5,6,4,dmso wellmate only/unpinned,1,dmso
+4,F05,476829.0625,6,5,FRAX597,2,lib
+4,F06,460428.34375,6,6,dmso wellmate only/unpinned,1,dmso
+4,F07,322157.96875,6,7,Ganetespib,2,lib
+4,F08,502615.375,6,8,dmso wellmate only/unpinned,1,dmso
+4,F09,346543,6,9,Afatinib,2,lib
+4,F10,443668.5625,6,10,dmso wellmate only/unpinned,1,dmso
+4,F11,390052.46875,6,11,Volasertib,2,lib
+4,F12,484066.03125,6,12,dmso wellmate only/unpinned,1,dmso
+4,F13,446590.8125,6,13,PF-573228,2,lib
+4,F14,516759.4375,6,14,dmso wellmate only/unpinned,1,dmso
+4,F15,432184,6,15,ART558,2,lib
+4,F16,476653.90625,6,16,dmso wellmate only/unpinned,1,dmso
+4,F17,379432,6,17,Mirin,2,lib
+4,F18,400763.40625,6,18,dmso wellmate only/unpinned,1,dmso
+4,F19,367235.09375,6,19,Ferrostatin-1,2,lib
+4,F20,380059.65625,6,20,dmso wellmate only/unpinned,1,dmso
+4,F21,374863.28125,6,21,Barasertib,2,lib
+4,F22,426625.625,6,22,dmso wellmate only/unpinned,1,dmso
+4,F23,285208.21875,6,23,STAUR + dmso,10,staur
+4,F24,280537.3125,6,24,STAUR + dmso,10,staur
+4,G01,572138.8125,7,1,DMSO + dmso,0,bckg
+4,G02,472131.875,7,2,DMSO + dmso,0,bckg
+4,G03,412110.78125,7,3,dmso wellmate only/unpinned,1,dmso
+4,G04,462197.46875,7,4,dmso wellmate only/unpinned,1,dmso
+4,G05,408759.40625,7,5,Infigratinib,2,lib
+4,G06,490666.625,7,6,Infigratinib,2,lib
+4,G07,325687.4375,7,7,Prexasertib,2,lib
+4,G08,332793.03125,7,8,Prexasertib,2,lib
+4,G09,427921.8125,7,9,Silmitasertib,2,lib
+4,G10,390951.59375,7,10,Silmitasertib,2,lib
+4,G11,376565.21875,7,11,Olaparib,2,lib
+4,G12,371827.1875,7,12,Olaparib,2,lib
+4,G13,399207.4375,7,13,T0070907,2,lib
+4,G14,419365.28125,7,14,T0070907,2,lib
+4,G15,364663.1875,7,15,Dabrafenib,2,lib
+4,G16,341866.25,7,16,Dabrafenib,2,lib
+4,G17,345340.25,7,17,Selumetinib,2,lib
+4,G18,345909.5,7,18,Selumetinib,2,lib
+4,G19,428164.09375,7,19,Y-27632,2,lib
+4,G20,411261.28125,7,20,Y-27632,2,lib
+4,G21,399303.75,7,21,IWR-1,2,lib
+4,G22,394673.71875,7,22,IWR-1,2,lib
+4,G23,244472.109375,7,23,STAUR + dmso,10,staur
+4,G24,276999.09375,7,24,STAUR + dmso,10,staur
+4,H01,660935.625,8,1,DMSO + dmso,0,bckg
+4,H02,626210.375,8,2,DMSO + dmso,0,bckg
+4,H03,522148.5,8,3,dmso wellmate only/unpinned,1,dmso
+4,H04,500139.78125,8,4,dmso wellmate only/unpinned,1,dmso
+4,H05,496160.75,8,5,Infigratinib,2,lib
+4,H06,507043.96875,8,6,dmso wellmate only/unpinned,1,dmso
+4,H07,364126.03125,8,7,Prexasertib,2,lib
+4,H08,468535.28125,8,8,dmso wellmate only/unpinned,1,dmso
+4,H09,450736.25,8,9,Silmitasertib,2,lib
+4,H10,476569.25,8,10,dmso wellmate only/unpinned,1,dmso
+4,H11,516899.5625,8,11,Olaparib,2,lib
+4,H12,528752,8,12,dmso wellmate only/unpinned,1,dmso
+4,H13,490100.28125,8,13,T0070907,2,lib
+4,H14,458075.40625,8,14,dmso wellmate only/unpinned,1,dmso
+4,H15,472123.125,8,15,Dabrafenib,2,lib
+4,H16,490395.125,8,16,dmso wellmate only/unpinned,1,dmso
+4,H17,323433.71875,8,17,Selumetinib,2,lib
+4,H18,426050.53125,8,18,dmso wellmate only/unpinned,1,dmso
+4,H19,453349.03125,8,19,Y-27632,2,lib
+4,H20,500498.875,8,20,dmso wellmate only/unpinned,1,dmso
+4,H21,393549.78125,8,21,IWR-1,2,lib
+4,H22,494990.125,8,22,dmso wellmate only/unpinned,1,dmso
+4,H23,273957.1875,8,23,STAUR + dmso,10,staur
+4,H24,255288.171875,8,24,STAUR + dmso,10,staur
+4,I01,255775.6875,9,1,STAUR + dmso,10,staur
+4,I02,257480.578125,9,2,STAUR + dmso,10,staur
+4,I03,382395.09375,9,3,dmso wellmate only/unpinned,1,dmso
+4,I04,412840.625,9,4,dmso wellmate only/unpinned,1,dmso
+4,I05,421767.875,9,5,Apoptozole,2,lib
+4,I06,450742.0625,9,6,Apoptozole,2,lib
+4,I07,352451.6875,9,7,Gefitinib,2,lib
+4,I08,350989.125,9,8,Gefitinib,2,lib
+4,I09,339469.5,9,9,Paclitaxel,2,lib
+4,I10,341396.25,9,10,Paclitaxel,2,lib
+4,I11,413695.96875,9,11,SGI-1027,2,lib
+4,I12,383408.09375,9,12,SGI-1027,2,lib
+4,I13,445367.625,9,13,PFK-015,2,lib
+4,I14,402990.84375,9,14,PFK-015,2,lib
+4,I15,400620.375,9,15,Nedisertib,2,lib
+4,I16,426681.09375,9,16,Nedisertib,2,lib
+4,I17,295755.6875,9,17,Lapatinib,2,lib
+4,I18,341492.59375,9,18,Lapatinib,2,lib
+4,I19,341092.65625,9,19,Dinaciclib,2,lib
+4,I20,365176.96875,9,20,Dinaciclib,2,lib
+4,I21,455894.65625,9,21,TAK-580,2,lib
+4,I22,403968.8125,9,22,TAK-580,2,lib
+4,I23,692531.3125,9,23,DMSO + dmso,0,bckg
+4,I24,665448.875,9,24,DMSO + dmso,0,bckg
+4,J01,273098.90625,10,1,STAUR + dmso,10,staur
+4,J02,273241.9375,10,2,STAUR + dmso,10,staur
+4,J03,504845.71875,10,3,dmso wellmate only/unpinned,1,dmso
+4,J04,461458.875,10,4,dmso wellmate only/unpinned,1,dmso
+4,J05,475562.09375,10,5,Apoptozole,2,lib
+4,J06,622797.6875,10,6,dmso wellmate only/unpinned,1,dmso
+4,J07,428064.84375,10,7,Gefitinib,2,lib
+4,J08,471282.375,10,8,dmso wellmate only/unpinned,1,dmso
+4,J09,424047.875,10,9,Paclitaxel,2,lib
+4,J10,444170.6875,10,10,dmso wellmate only/unpinned,1,dmso
+4,J11,524393.4375,10,11,SGI-1027,2,lib
+4,J12,498761.875,10,12,dmso wellmate only/unpinned,1,dmso
+4,J13,507306.6875,10,13,PFK-015,2,lib
+4,J14,486509.5,10,14,dmso wellmate only/unpinned,1,dmso
+4,J15,470427,10,15,Nedisertib,2,lib
+4,J16,498408.625,10,16,dmso wellmate only/unpinned,1,dmso
+4,J17,352022.5625,10,17,Lapatinib,2,lib
+4,J18,420363.6875,10,18,dmso wellmate only/unpinned,1,dmso
+4,J19,374565.5,10,19,Dinaciclib,2,lib
+4,J20,487750.21875,10,20,dmso wellmate only/unpinned,1,dmso
+4,J21,404336.65625,10,21,TAK-580,2,lib
+4,J22,460553.875,10,22,dmso wellmate only/unpinned,1,dmso
+4,J23,653771.625,10,23,DMSO + dmso,0,bckg
+4,J24,561316.9375,10,24,DMSO + dmso,0,bckg
+4,K01,273478.40625,11,1,STAUR + dmso,10,staur
+4,K02,287461.9375,11,2,STAUR + dmso,10,staur
+4,K03,373593.375,11,3,KU-55933,2,lib
+4,K04,350037.40625,11,4,KU-55933,2,lib
+4,K05,455013.03125,11,5,GSK2606414,2,lib
+4,K06,457655,11,6,GSK2606414,2,lib
+4,K07,337773.375,11,7,Tipifarnib,2,lib
+4,K08,392370.40625,11,8,Tipifarnib,2,lib
+4,K09,440705.46875,11,9,Axitinib,2,lib
+4,K10,440612.0625,11,10,Axitinib,2,lib
+4,K11,384461.96875,11,11,Laduviglusib,2,lib
+4,K12,407609.21875,11,12,Laduviglusib,2,lib
+4,K13,469084.125,11,13,Berzosertib,2,lib
+4,K14,459062.125,11,14,Berzosertib,2,lib
+4,K15,390980.8125,11,15,Ceritinib,2,lib
+4,K16,384969.9375,11,16,Ceritinib,2,lib
+4,K17,327754.3125,11,17,Navitoclax,2,lib
+4,K18,406423.96875,11,18,Navitoclax,2,lib
+4,K19,410913.875,11,19,Ro-3306,2,lib
+4,K20,382266.65625,11,20,Ro-3306,2,lib
+4,K21,345821.9375,11,21,Empesertib,2,lib
+4,K22,325488.90625,11,22,Empesertib,2,lib
+4,K23,535711.625,11,23,DMSO + dmso,0,bckg
+4,K24,618681.4375,11,24,DMSO + dmso,0,bckg
+4,L01,279582.6875,12,1,STAUR + dmso,10,staur
+4,L02,288267.65625,12,2,STAUR + dmso,10,staur
+4,L03,426555.5625,12,3,KU-55933,2,lib
+4,L04,478890.09375,12,4,dmso wellmate only/unpinned,1,dmso
+4,L05,538245.5625,12,5,GSK2606414,2,lib
+4,L06,529519.75,12,6,dmso wellmate only/unpinned,1,dmso
+4,L07,423639.15625,12,7,Tipifarnib,2,lib
+4,L08,545567.25,12,8,dmso wellmate only/unpinned,1,dmso
+4,L09,547251.6875,12,9,Axitinib,2,lib
+4,L10,469773.09375,12,10,dmso wellmate only/unpinned,1,dmso
+4,L11,478560.21875,12,11,Laduviglusib,2,lib
+4,L12,547161.1875,12,12,dmso wellmate only/unpinned,1,dmso
+4,L13,497381.03125,12,13,Berzosertib,2,lib
+4,L14,497961.96875,12,14,dmso wellmate only/unpinned,1,dmso
+4,L15,448669.375,12,15,Ceritinib,2,lib
+4,L16,541582.375,12,16,dmso wellmate only/unpinned,1,dmso
+4,L17,491895.65625,12,17,Navitoclax,2,lib
+4,L18,518633.65625,12,18,dmso wellmate only/unpinned,1,dmso
+4,L19,383846,12,19,Ro-3306,2,lib
+4,L20,540727,12,20,dmso wellmate only/unpinned,1,dmso
+4,L21,638754.625,12,21,Empesertib,2,lib
+4,L22,494517.1875,12,22,dmso wellmate only/unpinned,1,dmso
+4,L23,681978,12,23,DMSO + dmso,0,bckg
+4,L24,581518.5625,12,24,DMSO + dmso,0,bckg
+4,M01,274176.125,13,1,STAUR + dmso,10,staur
+4,M02,275130.75,13,2,STAUR + dmso,10,staur
+4,M03,401612.9375,13,3,SGX-523,2,lib
+4,M04,459537.96875,13,4,SGX-523,2,lib
+4,M05,385329,13,5,Alisertib,2,lib
+4,M06,410712.4375,13,6,Alisertib,2,lib
+4,M07,370586.46875,13,7,Onvansertib,2,lib
+4,M08,343451.4375,13,8,Onvansertib,2,lib
+4,M09,442673.09375,13,9,AZD1390,2,lib
+4,M10,410160.6875,13,10,AZD1390,2,lib
+4,M11,302957.65625,13,11,Camptothecin,2,lib
+4,M12,310530.34375,13,12,Camptothecin,2,lib
+4,M13,428508.59375,13,13,Tomivosertib,2,lib
+4,M14,408178.46875,13,14,Tomivosertib,2,lib
+4,M15,425527.96875,13,15,FRAX1036,2,lib
+4,M16,399347.5625,13,16,FRAX1036,2,lib
+4,M17,343606.1875,13,17,Trametinib,2,lib
+4,M18,384240.09375,13,18,Trametinib,2,lib
+4,M19,383621.21875,13,19,Lonafarnib,2,lib
+4,M20,451670.40625,13,20,Lonafarnib,2,lib
+4,M21,330650.25,13,21,Niclosamide,2,lib
+4,M22,337960.21875,13,22,Niclosamide,2,lib
+4,M23,619169,13,23,DMSO + dmso,0,bckg
+4,M24,559431.0625,13,24,DMSO + dmso,0,bckg
+4,N01,251352.9375,14,1,STAUR + dmso,10,staur
+4,N02,292308,14,2,STAUR + dmso,10,staur
+4,N03,519287.5625,14,3,SGX-523,2,lib
+4,N04,407112.9375,14,4,dmso wellmate only/unpinned,1,dmso
+4,N05,441152.125,14,5,Alisertib,2,lib
+4,N06,544452.0625,14,6,dmso wellmate only/unpinned,1,dmso
+4,N07,362718.90625,14,7,Onvansertib,2,lib
+4,N08,436761.46875,14,8,dmso wellmate only/unpinned,1,dmso
+4,N09,442585.5,14,9,AZD1390,2,lib
+4,N10,532223.0625,14,10,dmso wellmate only/unpinned,1,dmso
+4,N11,334684.75,14,11,Camptothecin,2,lib
+4,N12,472473.4375,14,12,dmso wellmate only/unpinned,1,dmso
+4,N13,498823.1875,14,13,Tomivosertib,2,lib
+4,N14,506413.40625,14,14,dmso wellmate only/unpinned,1,dmso
+4,N15,432668.59375,14,15,FRAX1036,2,lib
+4,N16,504918.71875,14,16,dmso wellmate only/unpinned,1,dmso
+4,N17,369450.84375,14,17,Trametinib,2,lib
+4,N18,457336.8125,14,18,dmso wellmate only/unpinned,1,dmso
+4,N19,498379.4375,14,19,Lonafarnib,2,lib
+4,N20,412256.75,14,20,dmso wellmate only/unpinned,1,dmso
+4,N21,389961.96875,14,21,Niclosamide,2,lib
+4,N22,463823.53125,14,22,dmso wellmate only/unpinned,1,dmso
+4,N23,620135.25,14,23,DMSO + dmso,0,bckg
+4,N24,624096.75,14,24,DMSO + dmso,0,bckg
+4,O01,385387.40625,15,1,STAUR + dmso,10,staur
+4,O02,250731.125,15,2,STAUR + dmso,10,staur
+4,O03,442495,15,3,BML-277,2,lib
+4,O04,431559.25,15,4,BML-277,2,lib
+4,O05,422293.375,15,5,Ceralasertib,2,lib
+4,O06,402774.8125,15,6,Ceralasertib,2,lib
+4,O07,306157.21875,15,7,ZN-c3,2,lib
+4,O08,307225.6875,15,8,ZN-c3,2,lib
+4,O09,298099.90625,15,9,(+)-JQ-1,2,lib
+4,O10,340377.40625,15,10,(+)-JQ-1,2,lib
+4,O11,394542.375,15,11,Adavosertib,2,lib
+4,O12,322756.4375,15,12,Adavosertib,2,lib
+4,O13,345970.8125,15,13,Adapalene,2,lib
+4,O14,344911.09375,15,14,Adapalene,2,lib
+4,O15,392881.28125,15,15,LB-100,2,lib
+4,O16,372545.34375,15,16,LB-100,2,lib
+4,O17,374080.90625,15,17,Palbociclib (monohydrochloride),2,lib
+4,O18,374912.90625,15,18,Palbociclib (monohydrochloride),2,lib
+4,O19,319159.84375,15,19,Copanlisib (dihydrochloride),2,lib
+4,O20,278893.75,15,20,Copanlisib (dihydrochloride),2,lib
+4,O21,442792.78125,15,21,Oxaliplatin,2,lib
+4,O22,497369.34375,15,22,Oxaliplatin,2,lib
+4,O23,625903.8125,15,23,DMSO + dmso,0,bckg
+4,O24,599980.3125,15,24,DMSO + dmso,0,bckg
+4,P01,295860.78125,16,1,STAUR + dmso,10,staur
+4,P02,325500.59375,16,2,STAUR + dmso,10,staur
+4,P03,447180.5,16,3,BML-277,2,lib
+4,P04,476791.125,16,4,dmso wellmate only/unpinned,1,dmso
+4,P05,439981.46875,16,5,Ceralasertib,2,lib
+4,P06,462033.96875,16,6,dmso wellmate only/unpinned,1,dmso
+4,P07,383358.46875,16,7,ZN-c3,2,lib
+4,P08,450196.15625,16,8,dmso wellmate only/unpinned,1,dmso
+4,P09,354746.28125,16,9,(+)-JQ-1,2,lib
+4,P10,451720.03125,16,10,dmso wellmate only/unpinned,1,dmso
+4,P11,423887.3125,16,11,Adavosertib,2,lib
+4,P12,543590.875,16,12,dmso wellmate only/unpinned,1,dmso
+4,P13,434995.28125,16,13,Adapalene,2,lib
+4,P14,516274.84375,16,14,dmso wellmate only/unpinned,1,dmso
+4,P15,507184.09375,16,15,LB-100,2,lib
+4,P16,432014.6875,16,16,dmso wellmate only/unpinned,1,dmso
+4,P17,431582.625,16,17,Palbociclib (monohydrochloride),2,lib
+4,P18,546264.9375,16,18,dmso wellmate only/unpinned,1,dmso
+4,P19,326431.84375,16,19,Copanlisib (dihydrochloride),2,lib
+4,P20,442824.90625,16,20,dmso wellmate only/unpinned,1,dmso
+4,P21,459958.34375,16,21,Oxaliplatin,2,lib
+4,P22,419736.03125,16,22,dmso wellmate only/unpinned,1,dmso
+4,P23,607430.4375,16,23,DMSO + dmso,0,bckg
+4,P24,641530.9375,16,24,DMSO + dmso,0,bckg
+5,A01,652615.5625,1,1,DMSO + dmso,0,bckg
+5,A02,701978.25,1,2,DMSO + dmso,0,bckg
+5,A03,675689.8125,1,3,dmso wellmate only/unpinned,1,dmso
+5,A04,612334.875,1,4,dmso wellmate only/unpinned,1,dmso
+5,A05,636979.6875,1,5,Hydroxyurea,2,lib
+5,A06,474557.84375,1,6,Hydroxyurea,2,lib
+5,A07,562791.1875,1,7,Tazemetostat,2,lib
+5,A08,504679.3125,1,8,Tazemetostat,2,lib
+5,A09,570133.25,1,9,Pemetrexed,2,lib
+5,A10,487834.875,1,10,Pemetrexed,2,lib
+5,A11,513910.1875,1,11,Raloxifene (hydrochloride),2,lib
+5,A12,495238.25,1,12,Raloxifene (hydrochloride),2,lib
+5,A13,495101.0625,1,13,Mifepristone,2,lib
+5,A14,432064.3125,1,14,Mifepristone,2,lib
+5,A15,418460.3125,1,15,Fulvestrant,2,lib
+5,A16,509034.9375,1,16,Fulvestrant,2,lib
+5,A17,554795.1875,1,17,Enzalutamide,2,lib
+5,A18,444605.6875,1,18,Enzalutamide,2,lib
+5,A19,523914.6875,1,19,Rucaparib,2,lib
+5,A20,524805.0625,1,20,Rucaparib,2,lib
+5,A21,578625.5625,1,21,5-Fluorouracil,2,lib
+5,A22,559521.5625,1,22,5-Fluorouracil,2,lib
+5,A23,535194.9375,1,23,STAUR + dmso,10,staur
+5,A24,521541.28125,1,24,STAUR + dmso,10,staur
+5,B01,586390.9375,2,1,DMSO + dmso,0,bckg
+5,B02,635525.875,2,2,DMSO + dmso,0,bckg
+5,B03,639864,2,3,dmso wellmate only/unpinned,1,dmso
+5,B04,673307.625,2,4,dmso wellmate only/unpinned,1,dmso
+5,B05,641031.6875,2,5,Hydroxyurea,2,lib
+5,B06,766112.625,2,6,dmso wellmate only/unpinned,1,dmso
+5,B07,722343.375,2,7,Tazemetostat,2,lib
+5,B08,678320.125,2,8,dmso wellmate only/unpinned,1,dmso
+5,B09,678317.1875,2,9,Pemetrexed,2,lib
+5,B10,599919,2,10,dmso wellmate only/unpinned,1,dmso
+5,B11,654133.625,2,11,Raloxifene (hydrochloride),2,lib
+5,B12,636795.8125,2,12,dmso wellmate only/unpinned,1,dmso
+5,B13,657733.125,2,13,Mifepristone,2,lib
+5,B14,715786.5625,2,14,dmso wellmate only/unpinned,1,dmso
+5,B15,627658.3125,2,15,Fulvestrant,2,lib
+5,B16,638270.0625,2,16,dmso wellmate only/unpinned,1,dmso
+5,B17,646047.125,2,17,Enzalutamide,2,lib
+5,B18,629882.875,2,18,dmso wellmate only/unpinned,1,dmso
+5,B19,660707.875,2,19,Rucaparib,2,lib
+5,B20,657248.5,2,20,dmso wellmate only/unpinned,1,dmso
+5,B21,604044,2,21,5-Fluorouracil,2,lib
+5,B22,728535.25,2,22,dmso wellmate only/unpinned,1,dmso
+5,B23,645603.375,2,23,STAUR + dmso,10,staur
+5,B24,557556.875,2,24,STAUR + dmso,10,staur
+5,C01,677231.1875,3,1,DMSO + dmso,0,bckg
+5,C02,792488.625,3,2,DMSO + dmso,0,bckg
+5,C03,645255.9375,3,3,dmso wellmate only/unpinned,1,dmso
+5,C04,724722.625,3,4,dmso wellmate only/unpinned,1,dmso
+5,C05,721917.125,3,5,Gemcitabine,2,lib
+5,C06,634769.8125,3,6,Gemcitabine,2,lib
+5,C07,611964.125,3,7,Erlotinib,2,lib
+5,C08,618938.375,3,8,Erlotinib,2,lib
+5,C09,571949.0625,3,9,Saracatinib,2,lib
+5,C10,594492,3,10,Saracatinib,2,lib
+5,C11,525438.5625,3,11,Ipatasertib,2,lib
+5,C12,506311.21875,3,12,Ipatasertib,2,lib
+5,C13,534935.0625,3,13,Vorinostat,2,lib
+5,C14,552474.3125,3,14,Vorinostat,2,lib
+5,C15,525187.5,3,15,Buparlisib,2,lib
+5,C16,540163.5625,3,16,Buparlisib,2,lib
+5,C17,577875.25,3,17,Everolimus,2,lib
+5,C18,529216.125,3,18,Everolimus,2,lib
+5,C19,618497.5625,3,19,Topotecan (Hydrochloride),2,lib
+5,C20,645933.25,3,20,Topotecan (Hydrochloride),2,lib
+5,C21,572305.25,3,21,Bortezomib,2,lib
+5,C22,673491.5625,3,22,Bortezomib,2,lib
+5,C23,649223.3125,3,23,STAUR + dmso,10,staur
+5,C24,581509.8125,3,24,STAUR + dmso,10,staur
+5,D01,677044.375,4,1,DMSO + dmso,0,bckg
+5,D02,694513.5625,4,2,DMSO + dmso,0,bckg
+5,D03,749706.125,4,3,dmso wellmate only/unpinned,1,dmso
+5,D04,835834.625,4,4,dmso wellmate only/unpinned,1,dmso
+5,D05,721870.4375,4,5,Gemcitabine,2,lib
+5,D06,716049.3125,4,6,dmso wellmate only/unpinned,1,dmso
+5,D07,786331.8125,4,7,Erlotinib,2,lib
+5,D08,731238.5,4,8,dmso wellmate only/unpinned,1,dmso
+5,D09,751700,4,9,Saracatinib,2,lib
+5,D10,784504.3125,4,10,dmso wellmate only/unpinned,1,dmso
+5,D11,781798.125,4,11,Ipatasertib,2,lib
+5,D12,887413.0625,4,12,dmso wellmate only/unpinned,1,dmso
+5,D13,855061.25,4,13,Vorinostat,2,lib
+5,D14,765359.4375,4,14,dmso wellmate only/unpinned,1,dmso
+5,D15,728990.625,4,15,Buparlisib,2,lib
+5,D16,767300.8125,4,16,dmso wellmate only/unpinned,1,dmso
+5,D17,764346.4375,4,17,Everolimus,2,lib
+5,D18,845421.625,4,18,dmso wellmate only/unpinned,1,dmso
+5,D19,746640.8125,4,19,Topotecan (Hydrochloride),2,lib
+5,D20,759979.1875,4,20,dmso wellmate only/unpinned,1,dmso
+5,D21,660996.875,4,21,Bortezomib,2,lib
+5,D22,659700.75,4,22,dmso wellmate only/unpinned,1,dmso
+5,D23,605573.75,4,23,STAUR + dmso,10,staur
+5,D24,560452.8125,4,24,STAUR + dmso,10,staur
+5,E01,646584.25,5,1,DMSO + dmso,0,bckg
+5,E02,751980.25,5,2,DMSO + dmso,0,bckg
+5,E03,731527.5,5,3,dmso wellmate only/unpinned,1,dmso
+5,E04,774254.625,5,4,dmso wellmate only/unpinned,1,dmso
+5,E05,748491.6875,5,5,FRAX597,2,lib
+5,E06,738349.9375,5,6,FRAX597,2,lib
+5,E07,595942.9375,5,7,Ganetespib,2,lib
+5,E08,589888.25,5,8,Ganetespib,2,lib
+5,E09,732143.5,5,9,Afatinib,2,lib
+5,E10,708856.125,5,10,Afatinib,2,lib
+5,E11,630942.5625,5,11,Volasertib,2,lib
+5,E12,662246.375,5,12,Volasertib,2,lib
+5,E13,675441.6875,5,13,PF-573228,2,lib
+5,E14,724489.0625,5,14,PF-573228,2,lib
+5,E15,696708.875,5,15,ART558,2,lib
+5,E16,713664.25,5,16,ART558,2,lib
+5,E17,599595,5,17,Mirin,2,lib
+5,E18,597253.6875,5,18,Mirin,2,lib
+5,E19,731842.8125,5,19,Ferrostatin-1,2,lib
+5,E20,674606.75,5,20,Ferrostatin-1,2,lib
+5,E21,706619.9375,5,21,Barasertib,2,lib
+5,E22,661160.375,5,22,Barasertib,2,lib
+5,E23,667784.3125,5,23,STAUR + dmso,10,staur
+5,E24,608025.9375,5,24,STAUR + dmso,10,staur
+5,F01,685183.4375,6,1,DMSO + dmso,0,bckg
+5,F02,765248.5,6,2,DMSO + dmso,0,bckg
+5,F03,776636.75,6,3,dmso wellmate only/unpinned,1,dmso
+5,F04,847371.75,6,4,dmso wellmate only/unpinned,1,dmso
+5,F05,749180.625,6,5,FRAX597,2,lib
+5,F06,746833.5,6,6,dmso wellmate only/unpinned,1,dmso
+5,F07,896638.0625,6,7,Ganetespib,2,lib
+5,F08,816818.1875,6,8,dmso wellmate only/unpinned,1,dmso
+5,F09,754301.125,6,9,Afatinib,2,lib
+5,F10,863944.6875,6,10,dmso wellmate only/unpinned,1,dmso
+5,F11,782119.25,6,11,Volasertib,2,lib
+5,F12,862444.1875,6,12,dmso wellmate only/unpinned,1,dmso
+5,F13,857028.8125,6,13,PF-573228,2,lib
+5,F14,816826.9375,6,14,dmso wellmate only/unpinned,1,dmso
+5,F15,831864.375,6,15,ART558,2,lib
+5,F16,802595.3125,6,16,dmso wellmate only/unpinned,1,dmso
+5,F17,721841.25,6,17,Mirin,2,lib
+5,F18,759112.125,6,18,dmso wellmate only/unpinned,1,dmso
+5,F19,743706.9375,6,19,Ferrostatin-1,2,lib
+5,F20,757512.375,6,20,dmso wellmate only/unpinned,1,dmso
+5,F21,806174.375,6,21,Barasertib,2,lib
+5,F22,706882.6875,6,22,dmso wellmate only/unpinned,1,dmso
+5,F23,649848.0625,6,23,STAUR + dmso,10,staur
+5,F24,589111.6875,6,24,STAUR + dmso,10,staur
+5,G01,635806.125,7,1,DMSO + dmso,0,bckg
+5,G02,620847.5625,7,2,DMSO + dmso,0,bckg
+5,G03,721269.0625,7,3,dmso wellmate only/unpinned,1,dmso
+5,G04,740507.3125,7,4,dmso wellmate only/unpinned,1,dmso
+5,G05,797323,7,5,Infigratinib,2,lib
+5,G06,697774.4375,7,6,Infigratinib,2,lib
+5,G07,591788.75,7,7,Prexasertib,2,lib
+5,G08,721712.8125,7,8,Prexasertib,2,lib
+5,G09,689851.375,7,9,Silmitasertib,2,lib
+5,G10,662447.8125,7,10,Silmitasertib,2,lib
+5,G11,657925.8125,7,11,Olaparib,2,lib
+5,G12,609967.3125,7,12,Olaparib,2,lib
+5,G13,735818.9375,7,13,T0070907,2,lib
+5,G14,736861.125,7,14,T0070907,2,lib
+5,G15,656509.9375,7,15,Dabrafenib,2,lib
+5,G16,619525.125,7,16,Dabrafenib,2,lib
+5,G17,643253.3125,7,17,Selumetinib,2,lib
+5,G18,705431.8125,7,18,Selumetinib,2,lib
+5,G19,730415.25,7,19,Y-27632,2,lib
+5,G20,748045,7,20,Y-27632,2,lib
+5,G21,822490.4375,7,21,IWR-1,2,lib
+5,G22,699928.875,7,22,IWR-1,2,lib
+5,G23,703540.0625,7,23,STAUR + dmso,10,staur
+5,G24,583816.0625,7,24,STAUR + dmso,10,staur
+5,H01,621831.375,8,1,DMSO + dmso,0,bckg
+5,H02,709901.25,8,2,DMSO + dmso,0,bckg
+5,H03,793910.375,8,3,dmso wellmate only/unpinned,1,dmso
+5,H04,772932.1875,8,4,dmso wellmate only/unpinned,1,dmso
+5,H05,852436.75,8,5,Infigratinib,2,lib
+5,H06,770383.625,8,6,dmso wellmate only/unpinned,1,dmso
+5,H07,772430.0625,8,7,Prexasertib,2,lib
+5,H08,830725.8125,8,8,dmso wellmate only/unpinned,1,dmso
+5,H09,774234.1875,8,9,Silmitasertib,2,lib
+5,H10,831082,8,10,dmso wellmate only/unpinned,1,dmso
+5,H11,858371.75,8,11,Olaparib,2,lib
+5,H12,870358.4375,8,12,dmso wellmate only/unpinned,1,dmso
+5,H13,823211.5,8,13,T0070907,2,lib
+5,H14,870562.75,8,14,dmso wellmate only/unpinned,1,dmso
+5,H15,733778.3125,8,15,Dabrafenib,2,lib
+5,H16,796134.875,8,16,dmso wellmate only/unpinned,1,dmso
+5,H17,799363.625,8,17,Selumetinib,2,lib
+5,H18,686082.5625,8,18,dmso wellmate only/unpinned,1,dmso
+5,H19,799489.1875,8,19,Y-27632,2,lib
+5,H20,727495.9375,8,20,dmso wellmate only/unpinned,1,dmso
+5,H21,755789.9375,8,21,IWR-1,2,lib
+5,H22,672180.8125,8,22,dmso wellmate only/unpinned,1,dmso
+5,H23,665720.375,8,23,STAUR + dmso,10,staur
+5,H24,598552.75,8,24,STAUR + dmso,10,staur
+5,I01,627585.375,9,1,STAUR + dmso,10,staur
+5,I02,641323.625,9,2,STAUR + dmso,10,staur
+5,I03,648181.125,9,3,dmso wellmate only/unpinned,1,dmso
+5,I04,644064.875,9,4,dmso wellmate only/unpinned,1,dmso
+5,I05,694110.6875,9,5,Apoptozole,2,lib
+5,I06,737462.5,9,6,Apoptozole,2,lib
+5,I07,634013.6875,9,7,Gefitinib,2,lib
+5,I08,698915.875,9,8,Gefitinib,2,lib
+5,I09,766556.375,9,9,Paclitaxel,2,lib
+5,I10,623504.1875,9,10,Paclitaxel,2,lib
+5,I11,674615.5,9,11,SGI-1027,2,lib
+5,I12,667428.125,9,12,SGI-1027,2,lib
+5,I13,620885.5625,9,13,PFK-015,2,lib
+5,I14,664748.25,9,14,PFK-015,2,lib
+5,I15,678723,9,15,Nedisertib,2,lib
+5,I16,648543.125,9,16,Nedisertib,2,lib
+5,I17,639005.6875,9,17,Lapatinib,2,lib
+5,I18,671623.1875,9,18,Lapatinib,2,lib
+5,I19,728249.125,9,19,Dinaciclib,2,lib
+5,I20,698063.4375,9,20,Dinaciclib,2,lib
+5,I21,719529.125,9,21,TAK-580,2,lib
+5,I22,613152.25,9,22,TAK-580,2,lib
+5,I23,653485.5,9,23,DMSO + dmso,0,bckg
+5,I24,626546.0625,9,24,DMSO + dmso,0,bckg
+5,J01,675281.125,10,1,STAUR + dmso,10,staur
+5,J02,733553.5625,10,2,STAUR + dmso,10,staur
+5,J03,815017,10,3,dmso wellmate only/unpinned,1,dmso
+5,J04,847345.5,10,4,dmso wellmate only/unpinned,1,dmso
+5,J05,801684.5,10,5,Apoptozole,2,lib
+5,J06,850982.9375,10,6,dmso wellmate only/unpinned,1,dmso
+5,J07,759193.875,10,7,Gefitinib,2,lib
+5,J08,724556.1875,10,8,dmso wellmate only/unpinned,1,dmso
+5,J09,909433.4375,10,9,Paclitaxel,2,lib
+5,J10,838990.375,10,10,dmso wellmate only/unpinned,1,dmso
+5,J11,861191.75,10,11,SGI-1027,2,lib
+5,J12,880844.625,10,12,dmso wellmate only/unpinned,1,dmso
+5,J13,878004.125,10,13,PFK-015,2,lib
+5,J14,909299.125,10,14,dmso wellmate only/unpinned,1,dmso
+5,J15,838499.9375,10,15,Nedisertib,2,lib
+5,J16,773037.25,10,16,dmso wellmate only/unpinned,1,dmso
+5,J17,787733.0625,10,17,Lapatinib,2,lib
+5,J18,730552.5,10,18,dmso wellmate only/unpinned,1,dmso
+5,J19,873715.625,10,19,Dinaciclib,2,lib
+5,J20,753393.1875,10,20,dmso wellmate only/unpinned,1,dmso
+5,J21,786396.0625,10,21,TAK-580,2,lib
+5,J22,646785.6875,10,22,dmso wellmate only/unpinned,1,dmso
+5,J23,708441.625,10,23,DMSO + dmso,0,bckg
+5,J24,679029.5,10,24,DMSO + dmso,0,bckg
+5,K01,567231.4375,11,1,STAUR + dmso,10,staur
+5,K02,698247.375,11,2,STAUR + dmso,10,staur
+5,K03,706161.625,11,3,KU-55933,2,lib
+5,K04,649705,11,4,KU-55933,2,lib
+5,K05,816178.875,11,5,GSK2606414,2,lib
+5,K06,644882.3125,11,6,GSK2606414,2,lib
+5,K07,698901.25,11,7,Tipifarnib,2,lib
+5,K08,639102.0625,11,8,Tipifarnib,2,lib
+5,K09,700734.625,11,9,Axitinib,2,lib
+5,K10,710120.1875,11,10,Axitinib,2,lib
+5,K11,653254.875,11,11,Laduviglusib,2,lib
+5,K12,678410.625,11,12,Laduviglusib,2,lib
+5,K13,668263.0625,11,13,Berzosertib,2,lib
+5,K14,702687.625,11,14,Berzosertib,2,lib
+5,K15,637403,11,15,Ceritinib,2,lib
+5,K16,640964.5625,11,16,Ceritinib,2,lib
+5,K17,560432.375,11,17,Navitoclax,2,lib
+5,K18,593143.3125,11,18,Navitoclax,2,lib
+5,K19,681274.4375,11,19,Ro-3306,2,lib
+5,K20,724649.625,11,20,Ro-3306,2,lib
+5,K21,720793.1875,11,21,Empesertib,2,lib
+5,K22,637899.3125,11,22,Empesertib,2,lib
+5,K23,669807.375,11,23,DMSO + dmso,0,bckg
+5,K24,627074.5,11,24,DMSO + dmso,0,bckg
+5,L01,661948.625,12,1,STAUR + dmso,10,staur
+5,L02,721204.8125,12,2,STAUR + dmso,10,staur
+5,L03,686663.5,12,3,KU-55933,2,lib
+5,L04,811834.9375,12,4,dmso wellmate only/unpinned,1,dmso
+5,L05,803520.75,12,5,GSK2606414,2,lib
+5,L06,835606.9375,12,6,dmso wellmate only/unpinned,1,dmso
+5,L07,775772.625,12,7,Tipifarnib,2,lib
+5,L08,899163.3125,12,8,dmso wellmate only/unpinned,1,dmso
+5,L09,802096.125,12,9,Axitinib,2,lib
+5,L10,810165.0625,12,10,dmso wellmate only/unpinned,1,dmso
+5,L11,884960.8125,12,11,Laduviglusib,2,lib
+5,L12,867733.9375,12,12,dmso wellmate only/unpinned,1,dmso
+5,L13,769321,12,13,Berzosertib,2,lib
+5,L14,819168.25,12,14,dmso wellmate only/unpinned,1,dmso
+5,L15,795711.5625,12,15,Ceritinib,2,lib
+5,L16,820359.3125,12,16,dmso wellmate only/unpinned,1,dmso
+5,L17,782063.75,12,17,Navitoclax,2,lib
+5,L18,736496.1875,12,18,dmso wellmate only/unpinned,1,dmso
+5,L19,798572.5,12,19,Ro-3306,2,lib
+5,L20,838047.4375,12,20,dmso wellmate only/unpinned,1,dmso
+5,L21,798844,12,21,Empesertib,2,lib
+5,L22,663040.4375,12,22,dmso wellmate only/unpinned,1,dmso
+5,L23,722165.3125,12,23,DMSO + dmso,0,bckg
+5,L24,661212.9375,12,24,DMSO + dmso,0,bckg
+5,M01,687183.125,13,1,STAUR + dmso,10,staur
+5,M02,705093.125,13,2,STAUR + dmso,10,staur
+5,M03,721645.625,13,3,SGX-523,2,lib
+5,M04,752987.4375,13,4,SGX-523,2,lib
+5,M05,809657.125,13,5,Alisertib,2,lib
+5,M06,842992.75,13,6,Alisertib,2,lib
+5,M07,650072.8125,13,7,Onvansertib,2,lib
+5,M08,652539.625,13,8,Onvansertib,2,lib
+5,M09,737500.4375,13,9,AZD1390,2,lib
+5,M10,752599.125,13,10,AZD1390,2,lib
+5,M11,666467.6875,13,11,Camptothecin,2,lib
+5,M12,728006.8125,13,12,Camptothecin,2,lib
+5,M13,689661.625,13,13,Tomivosertib,2,lib
+5,M14,739616.9375,13,14,Tomivosertib,2,lib
+5,M15,713232.1875,13,15,FRAX1036,2,lib
+5,M16,753267.6875,13,16,FRAX1036,2,lib
+5,M17,638086.125,13,17,Trametinib,2,lib
+5,M18,695669.625,13,18,Trametinib,2,lib
+5,M19,708987.5,13,19,Lonafarnib,2,lib
+5,M20,755792.875,13,20,Lonafarnib,2,lib
+5,M21,725849.4375,13,21,Niclosamide,2,lib
+5,M22,634918.6875,13,22,Niclosamide,2,lib
+5,M23,665083.9375,13,23,DMSO + dmso,0,bckg
+5,M24,673844.8125,13,24,DMSO + dmso,0,bckg
+5,N01,666928.9375,14,1,STAUR + dmso,10,staur
+5,N02,765736.0625,14,2,STAUR + dmso,10,staur
+5,N03,796648.6875,14,3,SGX-523,2,lib
+5,N04,837551.1875,14,4,dmso wellmate only/unpinned,1,dmso
+5,N05,884630.9375,14,5,Alisertib,2,lib
+5,N06,883553.75,14,6,dmso wellmate only/unpinned,1,dmso
+5,N07,914191.9375,14,7,Onvansertib,2,lib
+5,N08,740373.0625,14,8,dmso wellmate only/unpinned,1,dmso
+5,N09,796383,14,9,AZD1390,2,lib
+5,N10,785032.6875,14,10,dmso wellmate only/unpinned,1,dmso
+5,N11,846037.625,14,11,Camptothecin,2,lib
+5,N12,794035.875,14,12,dmso wellmate only/unpinned,1,dmso
+5,N13,850708.5,14,13,Tomivosertib,2,lib
+5,N14,818207.8125,14,14,dmso wellmate only/unpinned,1,dmso
+5,N15,817936.3125,14,15,FRAX1036,2,lib
+5,N16,750943.875,14,16,dmso wellmate only/unpinned,1,dmso
+5,N17,741514.5,14,17,Trametinib,2,lib
+5,N18,786355.1875,14,18,dmso wellmate only/unpinned,1,dmso
+5,N19,790357.5625,14,19,Lonafarnib,2,lib
+5,N20,806545.125,14,20,dmso wellmate only/unpinned,1,dmso
+5,N21,656238.4375,14,21,Niclosamide,2,lib
+5,N22,761360,14,22,dmso wellmate only/unpinned,1,dmso
+5,N23,693681.5625,14,23,DMSO + dmso,0,bckg
+5,N24,647098.0625,14,24,DMSO + dmso,0,bckg
+5,O01,737669.75,15,1,STAUR + dmso,10,staur
+5,O02,651468.25,15,2,STAUR + dmso,10,staur
+5,O03,765248.5,15,3,BML-277,2,lib
+5,O04,763123.25,15,4,BML-277,2,lib
+5,O05,689860.1875,15,5,Ceralasertib,2,lib
+5,O06,673660.875,15,6,Ceralasertib,2,lib
+5,O07,532582.125,15,7,ZN-c3,2,lib
+5,O08,563868.4375,15,8,ZN-c3,2,lib
+5,O09,602073.5,15,9,(+)-JQ-1,2,lib
+5,O10,640080,15,10,(+)-JQ-1,2,lib
+5,O11,590545.125,15,11,Adavosertib,2,lib
+5,O12,634915.75,15,12,Adavosertib,2,lib
+5,O13,708327.75,15,13,Adapalene,2,lib
+5,O14,687495.5,15,14,Adapalene,2,lib
+5,O15,644561.1875,15,15,LB-100,2,lib
+5,O16,528407.5,15,16,LB-100,2,lib
+5,O17,621638.6875,15,17,Palbociclib (monohydrochloride),2,lib
+5,O18,594296.4375,15,18,Palbociclib (monohydrochloride),2,lib
+5,O19,732610.625,15,19,Copanlisib (dihydrochloride),2,lib
+5,O20,706453.5625,15,20,Copanlisib (dihydrochloride),2,lib
+5,O21,776499.5625,15,21,Oxaliplatin,2,lib
+5,O22,774955.25,15,22,Oxaliplatin,2,lib
+5,O23,634813.5625,15,23,DMSO + dmso,0,bckg
+5,O24,646201.8125,15,24,DMSO + dmso,0,bckg
+5,P01,658787,16,1,STAUR + dmso,10,staur
+5,P02,718781.8125,16,2,STAUR + dmso,10,staur
+5,P03,776806.0625,16,3,BML-277,2,lib
+5,P04,743677.6875,16,4,dmso wellmate only/unpinned,1,dmso
+5,P05,753258.875,16,5,Ceralasertib,2,lib
+5,P06,730718.875,16,6,dmso wellmate only/unpinned,1,dmso
+5,P07,742413.625,16,7,ZN-c3,2,lib
+5,P08,746004.4375,16,8,dmso wellmate only/unpinned,1,dmso
+5,P09,667355.1875,16,9,(+)-JQ-1,2,lib
+5,P10,698457.5625,16,10,dmso wellmate only/unpinned,1,dmso
+5,P11,690263,16,11,Adavosertib,2,lib
+5,P12,828083.8125,16,12,dmso wellmate only/unpinned,1,dmso
+5,P13,702264.3125,16,13,Adapalene,2,lib
+5,P14,761012.625,16,14,dmso wellmate only/unpinned,1,dmso
+5,P15,796663.25,16,15,LB-100,2,lib
+5,P16,808661.625,16,16,dmso wellmate only/unpinned,1,dmso
+5,P17,751568.625,16,17,Palbociclib (monohydrochloride),2,lib
+5,P18,713325.625,16,18,dmso wellmate only/unpinned,1,dmso
+5,P19,684917.75,16,19,Copanlisib (dihydrochloride),2,lib
+5,P20,741333.5,16,20,dmso wellmate only/unpinned,1,dmso
+5,P21,741099.9375,16,21,Oxaliplatin,2,lib
+5,P22,780516.5625,16,22,dmso wellmate only/unpinned,1,dmso
+5,P23,669827.8125,16,23,DMSO + dmso,0,bckg
+5,P24,626721.25,16,24,DMSO + dmso,0,bckg

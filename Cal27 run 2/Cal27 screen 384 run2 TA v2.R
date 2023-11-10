@@ -1,5 +1,5 @@
-setwd("~/Work/Flavi CBD screen/CBD_synergy_2022/Cal27 run 1")
-setwd("~/Work/Flavi_screen/Cal27 run 1") # at home
+setwd("~/Work/Flavi CBD screen/CBD_synergy_2022/Cal27 run 2")
+setwd("~/Work/Flavi_screen/Cal27 run 2") # at home
 
 library(tidyverse)
 library(readxl)
@@ -13,8 +13,8 @@ library(plotly)
 # this version gets all four plates
 
 # reading all data
-cal27_data = read_excel("Cal27_CTB  run 1.xlsx",
-                       na = "NA")
+cal27_data = read_excel("Cal27_TA  run 2.xlsx",
+                       na = "NA") %>% filter(plate <6)
 drug_map = read_excel("../plate_maps/plate_map_1_drugs.xlsx",
                            na = "NA")
 drug_map_ann = bind_cols(row = rep(1:16,each=24),col = rep(1:24,16),drug_map) 
@@ -37,7 +37,7 @@ cal27_data_ann = cal27_data %>%  left_join(drug_map_ann) %>%
                                     drugs == "dmso wellmate only/unpinned" ~ "dmso",
                                          TRUE ~ "lib"))
 
-cal27_data_ann %>% write_csv("cal27_data_ann_plate.csv")
+cal27_data_ann %>% write_csv("cal27_data_ann_plate TA run2.csv")
 
 # creating a non-redundant list of drugs (NOT including staurosporin, which is a positive control)
 drug_list = cal27_data_ann %>% filter(groups == "lib") %>% pull(drugs) %>% unique()
@@ -178,9 +178,9 @@ cal27_data_drugs_vs_ctrl = cal27_data_ann_dmso_wells_matching %>% select(row, co
 
 # visuzlizing unperturbed plate
 #####
-unperturbed = bind_cols(rep(1:16,each=24),rep(1:24,16),cal27_data_ann %>% filter(plate==5) ) 
+unperturbed = cal27_data_ann %>% filter(plate==5) 
 matrix(unperturbed$signal,16,24, byrow = T) %>% pheatmap(cluster_rows = F,cluster_cols = F)
-# image saved as "unperturbed plate run 1 CTB.png"
+# image saved as "unperturbed plate run 2 TA heatmap.png"
 
 summary(unperturbed$signal)
 sd(unperturbed$signal)
@@ -204,14 +204,14 @@ plu2
 cal27_data_all_ann_summary  = cal27_data_ann %>% filter(plate<5) %>% group_by(plate,groups) %>% 
   summarise(Avg = mean(signal, na.rm=T), SD = sd(signal, na.rm=T))
 cal27_data_all_ann_summary %>% pivot_wider(names_from = plate, values_from = c(Avg,SD)) %>% 
-  write_csv("cal27 run 1 CTB summary.csv")
+  write_csv("cal27 run 2 CTB summary.csv")
 
 cal27_data_ann %>% mutate(annotation = paste(plate, groups)) %>%  
   ggplot(aes(x = as.factor(annotation),y = signal)) +
   geom_violin(trim = F)+ 
   geom_boxplot(width=0.1, color="red") +
   theme(axis.text.x = element_text(angle = 45))
-ggsave("cal27 run 1 CTB summary.png")
+ggsave("cal27 run 2 TA summary.png")
 
 
 #####
@@ -266,7 +266,7 @@ cal27_drugs_vs_ctrl = cal27_drugs_vs_ctrl %>%
   select(-row_max, -row_min,-col_max, -col_min)
 
 
-cal27_drugs_vs_ctrl %>% write_csv("cal27_drugs_vs_ctrl.csv")
+cal27_drugs_vs_ctrl %>% write_csv("cal27_drugs_vs_ctrl run2 TA.csv")
 
 
 
@@ -274,7 +274,7 @@ cal27_drugs_vs_ctrl_plot = cal27_drugs_vs_ctrl %>% bind_rows(cal27_data_controls
   select(plate, drugs, drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval) %>% 
   pivot_wider(names_from = plate, values_from = c(drug_avg,drug_sd,ctrl_avg, ctrl_sd, drug_to_ctlr, d_t_c_SD,ttest_pval,wilcox_pval))
 
-cal27_drugs_vs_ctrl_plot %>% write_csv("cal27_drugs_vs_ctrl_plot.csv")
+cal27_drugs_vs_ctrl_plot %>% write_csv("cal27_drugs_vs_ctrl_plot run2 TA.csv")
 
 
 fadu_data_all_ann_calc %>% 
